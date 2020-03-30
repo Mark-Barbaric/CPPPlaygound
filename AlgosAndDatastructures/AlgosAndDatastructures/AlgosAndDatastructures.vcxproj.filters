@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Algorithms">
+      <UniqueIdentifier>{629ad5bf-c9c3-4fc0-9bdf-fbdb4cbc0e70}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Datastructures">
+      <UniqueIdentifier>{f1156618-2e29-4c31-ac58-4b94639b61e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Algorithms\ArrayAlgorithms">
+      <UniqueIdentifier>{c6e118f1-4ce2-42b5-892d-bf8145df386e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Algorithms\Backtracking">
+      <UniqueIdentifier>{7da74a78-c5d7-4b77-abb0-06a1b2ea603d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Algorithms\BinarySearch">
+      <UniqueIdentifier>{35188062-13c3-41e2-a1b1-ef911743e463}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Algorithms\DynamicProgramming">
+      <UniqueIdentifier>{9553973e-d2a3-4257-a1a6-5f0325879ceb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Algorithms\Greedy">
+      <UniqueIdentifier>{5342cb21-452b-4d0d-896a-53027c977b6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Algorithms\Sorting">
+      <UniqueIdentifier>{74027c8f-3c92-46d1-966d-a94bda2010b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Algorithms\Tests">
+      <UniqueIdentifier>{5e2d167f-6fb0-4923-97cd-9bb97bccb31e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Datastructures\BST">
+      <UniqueIdentifier>{a3abfe57-2973-4b73-ae8c-d8f6ecdc5ca7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Datastructures\Graphs">
+      <UniqueIdentifier>{74f09632-f0c1-445c-8fce-b89bdfc73990}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Datastructures\LinkedList">
+      <UniqueIdentifier>{5f85bad0-92c5-4135-b4c5-b8086bc008c7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Datastructures\LRUCache">
+      <UniqueIdentifier>{9a5fc0f8-5a21-4370-a06b-4b079536e520}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Datastructures\StackQueue">
+      <UniqueIdentifier>{5d19b893-17ac-4a5f-ac2e-e37926ca8691}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Datastructures\Tests">
+      <UniqueIdentifier>{cc97e352-83b5-4e02-956d-c8d44760dd5d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithms\Tests\BinarySearchTests.cpp">
+      <Filter>Source Files\Algorithms\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithms\Tests\GeneralTests.cpp">
+      <Filter>Source Files\Algorithms\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithms\Tests\GreedyAlgorithmTests.cpp">
+      <Filter>Source Files\Algorithms\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithms\Tests\MediumArrayAlgoTests.cpp">
+      <Filter>Source Files\Algorithms\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithms\Tests\SimpleArrayAlgoTests.cpp">
+      <Filter>Source Files\Algorithms\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithms\Backtracking\GraphColoring.cpp">
+      <Filter>Source Files\Algorithms\Backtracking</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithms\Backtracking\QueensProblem.cpp">
+      <Filter>Source Files\Algorithms\Backtracking</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithms\BinarySearch\BSAlgorithms.cpp">
+      <Filter>Source Files\Algorithms\BinarySearch</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithms\DynamicProgramming\Fibonacci.cpp">
+      <Filter>Source Files\Algorithms\DynamicProgramming</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithms\DynamicProgramming\Knapsack.cpp">
+      <Filter>Source Files\Algorithms\DynamicProgramming</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructures\Tests\GraphTests.cpp">
+      <Filter>Source Files\Datastructures\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructures\Tests\LRUCacheTests.cpp">
+      <Filter>Source Files\Datastructures\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructures\Tests\StackQueueTests.cpp">
+      <Filter>Source Files\Datastructures\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithms\Tests\MediumDPTests.cpp">
+      <Filter>Source Files\Algorithms\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithms\DynamicProgramming\NumCombinations.cpp">
+      <Filter>Source Files\Algorithms\DynamicProgramming</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Helpers.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\ArrayAlgorithms\MediumArrayAlgorithms.h">
+      <Filter>Source Files\Algorithms\ArrayAlgorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\ArrayAlgorithms\SimpleArrayAlgorithms.h">
+      <Filter>Source Files\Algorithms\ArrayAlgorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\Backtracking\GraphColoring.h">
+      <Filter>Source Files\Algorithms\Backtracking</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\Backtracking\QueensProblem.h">
+      <Filter>Source Files\Algorithms\Backtracking</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\BinarySearch\BinarySearchHelpers.h">
+      <Filter>Source Files\Algorithms\BinarySearch</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\BinarySearch\Node.h">
+      <Filter>Source Files\Algorithms\BinarySearch</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\DynamicProgramming\Fibonacci.h">
+      <Filter>Source Files\Algorithms\DynamicProgramming</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\DynamicProgramming\Knapsack.h">
+      <Filter>Source Files\Algorithms\DynamicProgramming</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\GreedyAlgorithms\MediumGreedyAlgorithms.h">
+      <Filter>Source Files\Algorithms\Greedy</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\GreedyAlgorithms\SimpleGreedyAlgorithms.h">
+      <Filter>Source Files\Algorithms\Greedy</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\Sorting\BubbleSort.h">
+      <Filter>Source Files\Algorithms\Sorting</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\Sorting\CycleCount.h">
+      <Filter>Source Files\Algorithms\Sorting</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\Sorting\Helpers.h">
+      <Filter>Source Files\Algorithms\Sorting</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\Sorting\MergeSort.h">
+      <Filter>Source Files\Algorithms\Sorting</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\Sorting\MergeSortCount.h">
+      <Filter>Source Files\Algorithms\Sorting</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\Sorting\QuickSort.h">
+      <Filter>Source Files\Algorithms\Sorting</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructures\BST\BinarySearchTree.h">
+      <Filter>Source Files\Datastructures\BST</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructures\BST\BSTAlgorithms.h">
+      <Filter>Source Files\Datastructures\BST</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructures\BST\Tree.h">
+      <Filter>Source Files\Datastructures\BST</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructures\Graphs\Graph.h">
+      <Filter>Source Files\Datastructures\Graphs</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructures\Graphs\GraphAlgorithms.h">
+      <Filter>Source Files\Datastructures\Graphs</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructures\LinkedList\LinkedList.h">
+      <Filter>Source Files\Datastructures\LinkedList</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructures\LinkedList\LinkedListAlgorithms.h">
+      <Filter>Source Files\Datastructures\LinkedList</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructures\LinkedList\List.h">
+      <Filter>Source Files\Datastructures\LinkedList</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructures\LRUCache\Cache.h">
+      <Filter>Source Files\Datastructures\LRUCache</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructures\LRUCache\LRUCache.h">
+      <Filter>Source Files\Datastructures\LRUCache</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructures\Stack_Queue\Queue.h">
+      <Filter>Source Files\Datastructures\StackQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructures\Stack_Queue\Stack.h">
+      <Filter>Source Files\Datastructures\StackQueue</Filter>
+    </ClInclude>
+    <ClInclude Include="EasyDPAlgos.h">
+      <Filter>Source Files\Algorithms\DynamicProgramming</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\GeneralAlgorithms.h">
+      <Filter>Source Files\Algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Catch2\single_include\catch2\catch.hpp">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\DynamicProgramming\NumCombinations.h">
+      <Filter>Source Files\Algorithms\DynamicProgramming</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
