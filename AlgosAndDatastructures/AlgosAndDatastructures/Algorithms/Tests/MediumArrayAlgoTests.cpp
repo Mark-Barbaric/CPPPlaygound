@@ -1,4 +1,4 @@
-#include "../../../../Catch2/single_include/catch2/catch.hpp"
+#include "../../catch.hpp"
 #include "../ArrayAlgorithms/MediumArrayAlgorithms.h"
 
 TEST_CASE("Minimum Contiguous Sum Tests")

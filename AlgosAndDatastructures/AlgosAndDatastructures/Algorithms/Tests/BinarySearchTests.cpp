@@ -1,4 +1,4 @@
-#include "../../../../Catch2/single_include/catch2/catch.hpp"
+#include "../../catch.hpp"
 #include "../BinarySearch/BinarySearchHelpers.h"
 #include "../BinarySearch/BSAlgorithms.cpp"
 

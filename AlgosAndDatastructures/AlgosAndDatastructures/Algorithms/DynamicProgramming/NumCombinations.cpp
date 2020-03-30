@@ -18,24 +18,6 @@ NumCombinations::NumCombinations(const int finalScore_,
 
 //private methods
 
-void NumCombinations::recursiveCombinationsSearch(const int min, const int target, std::vector<int> temp, std::vector<std::vector<int>>& combinationsMatrix) const
-{
-	if (target == 0)
-		combinationsMatrix.push_back(temp);
-
-	for(int i = 0; i < scores.size(); ++i)
-	{
-		if(target - scores[i] >= 0 && scores[i] >= min)
-		{
-			temp.push_back(scores[i]);
-			recursiveCombinationsSearch(scores[i], target - scores[i], temp, combinationsMatrix);
-			temp.pop_back();
-		}
-		temp.push_back(scores[i]);
-	}
-}
-
-
 const int NumCombinations::numCombinations()
 {
 	for(int i = 0; i < scores.size(); ++i)
@@ -72,3 +54,26 @@ const int NumCombinations::numCombinationsOptimised()
 	return optNumCombinationsTable.back();
 }
 
+void NumCombinations::recursiveCombinationsSearch(const int min, const int target, std::vector<int> temp, std::vector<std::vector<int>>& combinationsMatrix) const
+{
+	if (target == 0)
+		combinationsMatrix.push_back(temp);
+
+	for (int i = 0; i < scores.size(); ++i)
+	{
+		if (target - scores[i] >= 0 && scores[i] >= min)
+		{
+			temp.push_back(scores[i]);
+			recursiveCombinationsSearch(scores[i], target - scores[i], temp, combinationsMatrix);
+			temp.pop_back();
+		}
+	}
+}
+
+std::vector<std::vector<int>> NumCombinations::combinationsMatrix() const
+{
+	std::vector<std::vector<int>> scoreCombinations;
+	std::vector<int> temp;
+	recursiveCombinationsSearch(0, finalScore, temp, scoreCombinations);
+	return scoreCombinations;
+}

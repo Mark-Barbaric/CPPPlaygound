@@ -11,25 +11,6 @@
 
 using namespace std;
 
-int numCombinationsForFinalScore(int score, const vector<int>& scores)
-{
-	vector<vector<int>> combinationsMatrix(scores.size(), vector<int>(score + 1, 0));
-
-	for (int i = 0; i < scores.size(); ++i)
-	{
-		combinationsMatrix[i][0] = 1;
-
-		for (int j = 1; j <= score; ++j)
-		{
-			auto withoutPlay = i >= 1 ? combinationsMatrix[i - 1][j] : 0;
-			auto withPlay = j >= scores[i] ? combinationsMatrix[i][j - scores[i]] : 0;
-			combinationsMatrix[i][j] = withoutPlay + withPlay;
-		}
-	}
-
-	return combinationsMatrix.back().back();
-}
-
 void search2(int n, int k, int start, int step, vector<int> temp, vector<vector<int>>& results)
 {
 	if (step == k)
