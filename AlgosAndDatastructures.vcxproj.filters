@@ -28,9 +28,6 @@
     <Filter Include="Source Files\Algorithms\BinarySearch">
       <UniqueIdentifier>{35188062-13c3-41e2-a1b1-ef911743e463}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Algorithms\DynamicProgramming">
-      <UniqueIdentifier>{9553973e-d2a3-4257-a1a6-5f0325879ceb}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Algorithms\Greedy">
       <UniqueIdentifier>{5342cb21-452b-4d0d-896a-53027c977b6a}</UniqueIdentifier>
     </Filter>
@@ -87,12 +84,6 @@
     <ClCompile Include="Algorithms\BinarySearch\BSAlgorithms.cpp">
       <Filter>Source Files\Algorithms\BinarySearch</Filter>
     </ClCompile>
-    <ClCompile Include="Algorithms\DynamicProgramming\Fibonacci.cpp">
-      <Filter>Source Files\Algorithms\DynamicProgramming</Filter>
-    </ClCompile>
-    <ClCompile Include="Algorithms\DynamicProgramming\Knapsack.cpp">
-      <Filter>Source Files\Algorithms\DynamicProgramming</Filter>
-    </ClCompile>
     <ClCompile Include="DataStructures\Tests\GraphTests.cpp">
       <Filter>Source Files\Datastructures\Tests</Filter>
     </ClCompile>
@@ -104,9 +95,6 @@
     </ClCompile>
     <ClCompile Include="Algorithms\Tests\MediumDPTests.cpp">
       <Filter>Source Files\Algorithms\Tests</Filter>
-    </ClCompile>
-    <ClCompile Include="Algorithms\DynamicProgramming\NumCombinations.cpp">
-      <Filter>Source Files\Algorithms\DynamicProgramming</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -130,12 +118,6 @@
     </ClInclude>
     <ClInclude Include="Algorithms\BinarySearch\Node.h">
       <Filter>Source Files\Algorithms\BinarySearch</Filter>
-    </ClInclude>
-    <ClInclude Include="Algorithms\DynamicProgramming\Fibonacci.h">
-      <Filter>Source Files\Algorithms\DynamicProgramming</Filter>
-    </ClInclude>
-    <ClInclude Include="Algorithms\DynamicProgramming\Knapsack.h">
-      <Filter>Source Files\Algorithms\DynamicProgramming</Filter>
     </ClInclude>
     <ClInclude Include="Algorithms\GreedyAlgorithms\MediumGreedyAlgorithms.h">
       <Filter>Source Files\Algorithms\Greedy</Filter>
@@ -197,17 +179,11 @@
     <ClInclude Include="DataStructures\Stack_Queue\Stack.h">
       <Filter>Source Files\Datastructures\StackQueue</Filter>
     </ClInclude>
-    <ClInclude Include="EasyDPAlgos.h">
-      <Filter>Source Files\Algorithms\DynamicProgramming</Filter>
-    </ClInclude>
     <ClInclude Include="Algorithms\GeneralAlgorithms.h">
       <Filter>Source Files\Algorithms</Filter>
     </ClInclude>
     <ClInclude Include="..\..\Catch2\single_include\catch2\catch.hpp">
       <Filter>Source Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Algorithms\DynamicProgramming\NumCombinations.h">
-      <Filter>Source Files\Algorithms\DynamicProgramming</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

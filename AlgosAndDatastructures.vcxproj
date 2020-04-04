@@ -158,9 +158,6 @@
     <ClCompile Include="Algorithms\Backtracking\GraphColoring.cpp" />
     <ClCompile Include="Algorithms\Backtracking\QueensProblem.cpp" />
     <ClCompile Include="Algorithms\BinarySearch\BSAlgorithms.cpp" />
-    <ClCompile Include="Algorithms\DynamicProgramming\Fibonacci.cpp" />
-    <ClCompile Include="Algorithms\DynamicProgramming\Knapsack.cpp" />
-    <ClCompile Include="Algorithms\DynamicProgramming\NumCombinations.cpp" />
     <ClCompile Include="Algorithms\Tests\BinarySearchTests.cpp" />
     <ClCompile Include="Algorithms\Tests\GeneralTests.cpp" />
     <ClCompile Include="Algorithms\Tests\GreedyAlgorithmTests.cpp" />
@@ -180,9 +177,6 @@
     <ClInclude Include="Algorithms\Backtracking\QueensProblem.h" />
     <ClInclude Include="Algorithms\BinarySearch\BinarySearchHelpers.h" />
     <ClInclude Include="Algorithms\BinarySearch\Node.h" />
-    <ClInclude Include="Algorithms\DynamicProgramming\Fibonacci.h" />
-    <ClInclude Include="Algorithms\DynamicProgramming\Knapsack.h" />
-    <ClInclude Include="Algorithms\DynamicProgramming\NumCombinations.h" />
     <ClInclude Include="Algorithms\GeneralAlgorithms.h" />
     <ClInclude Include="Algorithms\GreedyAlgorithms\MediumGreedyAlgorithms.h" />
     <ClInclude Include="Algorithms\GreedyAlgorithms\SimpleGreedyAlgorithms.h" />
@@ -204,7 +198,6 @@
     <ClInclude Include="DataStructures\LRUCache\LRUCache.h" />
     <ClInclude Include="DataStructures\Stack_Queue\Queue.h" />
     <ClInclude Include="DataStructures\Stack_Queue\Stack.h" />
-    <ClInclude Include="EasyDPAlgos.h" />
     <ClInclude Include="Helpers.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

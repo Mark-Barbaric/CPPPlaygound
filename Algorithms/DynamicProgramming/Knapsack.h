@@ -8,6 +8,34 @@
 #include <vector>
 #include <iostream>
 
+namespace knapsack
+{
+	struct Item
+	{
+		int value;
+		int weight;
+	};
+
+	
+	inline int maximumValue(const int capacity, const std::vector<Item> items)
+	{
+		std::vector<std::vector<int>> knapsackMatrix(capacity + 1, std::vector<int>(items.size(), 0));
+		
+		for(int i = 0; i < items.size(); ++i)
+		{
+			for (int j = 1; j <= capacity; ++j)
+			{
+
+				const auto excess = capacity - items[j].weight;
+			}
+			
+		}
+
+		return 0;
+		
+	}
+}
+
 class Knapsack {
     int numOfItems;
     int capacityOfItems;
