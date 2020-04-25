@@ -17,11 +17,10 @@
 		12AA68D02438FA930070E46D /* SimpleArrayAlgoTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AA68972438FA930070E46D /* SimpleArrayAlgoTests.cpp */; };
 		12AA68D12438FA930070E46D /* GreedyAlgorithmTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AA68982438FA930070E46D /* GreedyAlgorithmTests.cpp */; };
 		12AA68D22438FA930070E46D /* MediumDPTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AA68992438FA930070E46D /* MediumDPTests.cpp */; };
-		12AA68D32438FA930070E46D /* Knapsack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AA68A52438FA930070E46D /* Knapsack.cpp */; };
-		12AA68D42438FA930070E46D /* Fibonacci.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AA68A62438FA930070E46D /* Fibonacci.cpp */; };
 		12AA68D52438FA930070E46D /* GraphTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AA68B52438FA930070E46D /* GraphTests.cpp */; };
 		12AA68D62438FA930070E46D /* LRUCacheTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AA68B62438FA930070E46D /* LRUCacheTests.cpp */; };
 		12AA68D72438FA930070E46D /* StackQueueTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AA68B72438FA930070E46D /* StackQueueTests.cpp */; };
+		12FFD92624545E7B00C9CE86 /* SortingTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12FFD92424545E7B00C9CE86 /* SortingTests.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -60,15 +59,9 @@
 		12AA689F2438FA930070E46D /* CycleCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CycleCount.h; sourceTree = "<group>"; };
 		12AA68A02438FA930070E46D /* MergeSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MergeSort.h; sourceTree = "<group>"; };
 		12AA68A12438FA930070E46D /* BubbleSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BubbleSort.h; sourceTree = "<group>"; };
-		12AA68A22438FA930070E46D /* Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helpers.h; sourceTree = "<group>"; };
-		12AA68A32438FA930070E46D /* MergeSortCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MergeSortCount.h; sourceTree = "<group>"; };
-		12AA68A52438FA930070E46D /* Knapsack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Knapsack.cpp; sourceTree = "<group>"; };
-		12AA68A62438FA930070E46D /* Fibonacci.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Fibonacci.cpp; sourceTree = "<group>"; };
 		12AA68A72438FA930070E46D /* EasyDPAlgos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyDPAlgos.h; sourceTree = "<group>"; };
 		12AA68A82438FA930070E46D /* Knapsack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Knapsack.h; sourceTree = "<group>"; };
 		12AA68A92438FA930070E46D /* NumCombinations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NumCombinations.h; sourceTree = "<group>"; };
-		12AA68AA2438FA930070E46D /* Fibonacci.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Fibonacci.h; sourceTree = "<group>"; };
-		12AA68AB2438FA930070E46D /* GeneralAlgorithms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralAlgorithms.h; sourceTree = "<group>"; };
 		12AA68AD2438FA930070E46D /* MediumGreedyAlgorithms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediumGreedyAlgorithms.h; sourceTree = "<group>"; };
 		12AA68AE2438FA930070E46D /* SimpleGreedyAlgorithms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleGreedyAlgorithms.h; sourceTree = "<group>"; };
 		12AA68B12438FA930070E46D /* LinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
@@ -86,6 +79,7 @@
 		12AA68C22438FA930070E46D /* Tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tree.h; sourceTree = "<group>"; };
 		12AA68C32438FA930070E46D /* BSTAlgorithms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTAlgorithms.h; sourceTree = "<group>"; };
 		12AA68C42438FA930070E46D /* BinarySearchTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinarySearchTree.h; sourceTree = "<group>"; };
+		12FFD92424545E7B00C9CE86 /* SortingTests.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SortingTests.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +130,6 @@
 				12AA689A2438FA930070E46D /* ArrayAlgorithms */,
 				12AA689D2438FA930070E46D /* Sorting */,
 				12AA68A42438FA930070E46D /* DynamicProgramming */,
-				12AA68AB2438FA930070E46D /* GeneralAlgorithms.h */,
 				12AA68AC2438FA930070E46D /* GreedyAlgorithms */,
 			);
 			path = Algorithms;
@@ -172,6 +165,7 @@
 				12AA68972438FA930070E46D /* SimpleArrayAlgoTests.cpp */,
 				12AA68982438FA930070E46D /* GreedyAlgorithmTests.cpp */,
 				12AA68992438FA930070E46D /* MediumDPTests.cpp */,
+				12FFD92424545E7B00C9CE86 /* SortingTests.cpp */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -192,8 +186,6 @@
 				12AA689F2438FA930070E46D /* CycleCount.h */,
 				12AA68A02438FA930070E46D /* MergeSort.h */,
 				12AA68A12438FA930070E46D /* BubbleSort.h */,
-				12AA68A22438FA930070E46D /* Helpers.h */,
-				12AA68A32438FA930070E46D /* MergeSortCount.h */,
 			);
 			path = Sorting;
 			sourceTree = "<group>";
@@ -201,12 +193,9 @@
 		12AA68A42438FA930070E46D /* DynamicProgramming */ = {
 			isa = PBXGroup;
 			children = (
-				12AA68A52438FA930070E46D /* Knapsack.cpp */,
-				12AA68A62438FA930070E46D /* Fibonacci.cpp */,
 				12AA68A72438FA930070E46D /* EasyDPAlgos.h */,
 				12AA68A82438FA930070E46D /* Knapsack.h */,
 				12AA68A92438FA930070E46D /* NumCombinations.h */,
-				12AA68AA2438FA930070E46D /* Fibonacci.h */,
 			);
 			path = DynamicProgramming;
 			sourceTree = "<group>";
@@ -347,15 +336,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12AA68D42438FA930070E46D /* Fibonacci.cpp in Sources */,
 				12AA68D02438FA930070E46D /* SimpleArrayAlgoTests.cpp in Sources */,
 				12AA68D52438FA930070E46D /* GraphTests.cpp in Sources */,
+				12FFD92624545E7B00C9CE86 /* SortingTests.cpp in Sources */,
 				12AA68CC2438FA930070E46D /* QueensProblem.cpp in Sources */,
 				12AA68D62438FA930070E46D /* LRUCacheTests.cpp in Sources */,
 				12AA68D22438FA930070E46D /* MediumDPTests.cpp in Sources */,
 				12AA68D72438FA930070E46D /* StackQueueTests.cpp in Sources */,
 				12AA68CA2438FA930070E46D /* BSAlgorithms.cpp in Sources */,
-				12AA68D32438FA930070E46D /* Knapsack.cpp in Sources */,
 				12AA68CE2438FA930070E46D /* BinarySearchTests.cpp in Sources */,
 				12AA68CF2438FA930070E46D /* GeneralTests.cpp in Sources */,
 				12AA68CB2438FA930070E46D /* GraphColoring.cpp in Sources */,

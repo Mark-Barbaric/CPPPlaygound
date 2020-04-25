@@ -67,15 +67,8 @@ public:
         return x;
     }
 
-    const size_t size() const
-    {
-        return s1.size();
-    }
-
-    const bool isEmpty() const
-    {
-        return s1.empty();
-    }
+    const size_t size() const noexcept {return s1.size();}
+    const bool isEmpty() const noexcept {return s1.empty();}
 
 };
 

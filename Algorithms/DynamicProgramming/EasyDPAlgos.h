@@ -11,82 +11,6 @@
 
 using namespace std;
 
-
-int numCombinationsForFinalScore(int score, const vector<int>& scores)
-{
-    vector<vector<int>> combinationsMatrix(scores.size(), vector<int>(score + 1, 0));
-
-    for(int i = 0; i < scores.size(); ++i)
-    {
-        combinationsMatrix[i][0] = 1;
-
-        for(int j = 1; j <= score; ++j)
-        {
-            auto withoutPlay = i >= 1 ? combinationsMatrix[i - 1][j] : 0;
-            auto withPlay = j >= scores[i] ? combinationsMatrix[i][j - scores[i]] : 0;
-            combinationsMatrix[i][j] = withoutPlay + withPlay;
-        }
-    }
-
-    return combinationsMatrix.back().back();
-}
-
-void search2(int n, int k, int start, int step, vector<int> temp, vector<vector<int>>& results)
-{
-    if(step == k)
-        results.push_back(temp);
-
-    for(int i = start; i <= n; ++i)
-    {
-        temp.push_back(i);
-        search2(n, k, temp[temp.size() - 1] + 1, step + 1, temp, results);
-        temp.pop_back();
-    }
-}
-
-vector<vector<int>> combinations(int n, int k )
-{
-    vector<vector<int>> results;
-    vector<int> temp;
-    search2(n, k, 1, 0, temp, results);
-    return results;
-}
-
-void search(int min, int target, vector<int> temp, vector<vector<int>>& results, const vector<int>& scores)
-{
-    if(target == 0)
-        results.push_back(temp);
-
-    unordered_set<int> s;
-
-    for(int i = 0; i < scores.size(); ++i)
-    {
-        if(target - scores[i] >= 0 && scores[i] >= min)
-        {
-            temp.push_back(scores[i]);
-            search(scores[i], target - scores[i], temp, results, scores);
-            temp.pop_back();
-        }
-    }
-}
-
-vector<vector<int>> finalScoreCombinations(int target, const vector<int>& scores)
-{
-    vector<vector<int>> results;
-    vector<int> temp;
-    search(0, target, temp, results, scores);
-    return results;
-}
-
-
-vector<vector<int>> finalScoreCombinationsNoDups(int target, const vector<int>& scores)
-{
-    vector<vector<int>> results;
-    vector<int> temp;
-    search(0, target, temp, results, scores);
-    return results;
-}
-
 int fibonacci(int n)
 {
     if(n <= 1)
@@ -215,22 +139,6 @@ int maxAdjacentSum(vector<int>& arr)
 
     return (incl > excl ? incl : excl);
 }
-
-int knapsackAlgo(const vector<pair<int,int>>& items, int k, int capacity, vector<vector<int>>& matrix)
-{
-    if(k < 0)
-        return 0;
-    if(matrix[k][capacity] == -1)
-    {
-        auto withoutCurrent = knapsackAlgo(items, k -1, capacity, matrix);
-        auto withCurrent = capacity < items[k].first ? 0 : items[k].second + knapsackAlgo(items, k - 1, capacity - items[k].first, matrix);
-        matrix[k][capacity] = max(withCurrent, withoutCurrent);
-
-    }
-
-    return matrix[k][capacity];
-}
-
 
 
 
