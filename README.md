@@ -6,6 +6,7 @@ Project for experimenting and optimising Algorithm and Datastructure problems. U
 
 - Array Algorithms.
 - Backtracking Algorithms.
+- Dynamic Programming
 - Binary Search Algorithms.
 - Greedy Algorithms.
 - Sorting Algorithsm
@@ -19,8 +20,3 @@ Project for experimenting and optimising Algorithm and Datastructure problems. U
 - Stacks.
 - Queues.
 
-## 3. Dynamic Programming
-
-- Knapsack Problem.
-- Queens Problem.
-- Num Score Combinations Problems.

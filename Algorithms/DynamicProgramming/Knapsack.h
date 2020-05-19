@@ -10,12 +10,12 @@
 
 namespace knapsack
 {
+
 	struct Item
 	{
 		int value;
 		int weight;
 	};
-
 
 	//Complexity O(ic), Space 0(ic)
 	inline int maximumValue(const int capacity, const std::vector<Item> items)
@@ -59,5 +59,6 @@ namespace knapsack
 		
 	}
 }
+
 
 #endif //DYNAMIC_PROGRAMMING_KNAPSACK_H

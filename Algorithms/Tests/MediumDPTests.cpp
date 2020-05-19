@@ -6,16 +6,16 @@ TEST_CASE("Score Combination Tests")
 {
 	SECTION("Num Combination Tests")
 	{
-		REQUIRE(num_combinations::numCombinations(12, { 2, 3 ,7 }) == 4);
-		REQUIRE(num_combinations::numCombinationsOptimised(12, { 2, 3 ,7 }) == 4);
+    NumCombinations numCombinations(3, 12);
+		REQUIRE(numCombinations.numCombinations(12, { 2, 3 ,7 }) == 4);
+		REQUIRE(numCombinations.numCombinationsOptimised(12, { 2, 3 ,7 }) == 4);
 	}
 
 	SECTION("Score Combination Tests")
 	{
-		std::vector<std::vector<int>> response = { {1, 1}, {2} };
+    NumCombinations numCombinations(3, 3);
 		std::vector<std::vector<int>> response2 = { {1, 1, 1}, {1, 2}, {3} };
-		REQUIRE(num_combinations::combinationsMatrix(2, { 1, 2}) == response);
-		REQUIRE(num_combinations::combinationsMatrix(3, { 1, 2, 3 }) == response2);
+		REQUIRE(numCombinations.numCombinationsOutcomes(3, { 1, 2, 3 }) == response2);
 	}
 }
 

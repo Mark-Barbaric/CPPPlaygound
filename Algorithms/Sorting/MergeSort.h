@@ -1,61 +1,85 @@
 //
-// Created by Mark Barbaric on 24/09/2019.
+// Created by Mark Barbaric on 27/09/2019.
 //
 
-#ifndef MERGESORT_H
-#define MERGESORT_H
+#ifndef SORTING_MERGESORT_H
+#define SORTING_MERGESORT_H
 
-#include <vector>
-
-template<typename Type>
+template<typename Container>
 class MergeSort
 {
+  // Time complexity o(nLogn)
+  // Space o(n)
+  
+  
+  int merge(Container& vec, int l, int m, int r)
+  {
+    // populate left and right vectors for swapping
+    auto i = 0, j = 0, k = l;
+    auto count = 0;
+    const auto n1 = m - l + 1;
+    const auto n2 = r - m;
+    
+    std::vector<int> leftArr (n1, 0), rightArr(n2, 0);
+    
+    for(int a = 0; a < n1; ++a)
+      leftArr[a] = vec[l + a]; // up to mid point
+    
+    for(int b = 0; b < n2; ++b)
+      rightArr[b] = vec[m + b + 1]; // after mid point
+    
+    while(i < n1 && j < n2)
+    {
+      //compare left and right arrays
+      if(leftArr[i] <= rightArr[j])
+      {
+        vec[k++] = leftArr[i++];
+      }
+      else
+      {
+        vec[k++] = rightArr[j++];
+        count = count + n1 - i;
+      }
+    }
+    
+    while(i < n1)
+      vec[k++] = leftArr[i++];
+    while(j < n2)
+      vec[k++] = rightArr[j++];
+    
+    return count;
+  }
+  
+  
 public:
-    MergeSort() = default;
-
-    void merge(std::vector<Type>& vec, int l , int m , int r)
+  MergeSort() = default;
+  
+  void mergeSort(Container& vec, int l, int r)
+  {
+    if (l < r)
     {
-        auto i = 0, j = 0, k = l;
-        auto n1 = m - l + 1;
-        auto n2 = r - m;
-
-        std::vector<int> leftArr;
-        std::vector<int> rightArr;
-
-        for(i = 0; i < n1; i++)
-            leftArr.push_back(vec[l + i]);
-        for(j = 0; j < n2; j++)
-            rightArr.push_back(vec[m + j + 1]);
-
-        while(i < n1 && j < n2)
-        {
-            if(leftArr[i] <= rightArr[j])
-                vec[k++] = leftArr[i++];
-            else
-                vec[k++] = rightArr[j++];
-        }
-
-        //left over l elements
-        while(i < n1)
-            vec[k++] = leftArr[i++];
-
-        //left over r elements
-        while(j < n2)
-            vec[k++] = rightArr[j++];
+      const auto mid = l + (r - l) / 2;
+      mergeSort(vec, l, mid); //up to and including mid
+      mergeSort(vec, mid + 1, r); // after mid
+      merge(vec, l, mid, r);
     }
-
-    void mergeSort(std::vector<Type>& vec, int l, int r)
+    
+  }
+  
+  int mergeSortCount(Container& vec, int l, int r)
+  {
+    auto sortCount = 0;
+    
+    if(l < r)
     {
-        if(l < r)
-        {
-            auto mid = l + (r - l) / 2;
-            mergeSort(vec, l, mid);
-            mergeSort(vec, mid + 1, r);
-            merge(vec, l, mid, r);
-        }
+      auto mid = l + (r - l) / 2;
+      sortCount = mergeSortCount(vec, l, mid);
+      sortCount += mergeSortCount(vec, mid + 1, r);
+      sortCount += merge(vec, l, mid, r);
     }
-
-
+    
+    return sortCount;
+  }
 };
 
-#endif //SORTING_MERGESORT_H
+#endif //SORTING_MERGESORTCOUNT_H
