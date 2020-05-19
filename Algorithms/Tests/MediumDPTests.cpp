@@ -19,12 +19,13 @@ TEST_CASE("Score Combination Tests")
 	}
 }
 
-//TEST_CASE("Knapsck Tests")
-//{
-//	SECTION("Maximum Value Tests")
-//	{
-//		std::vector<knapsack::Item> items = { {60, 10}, {100, 20}, {120, 30} };
-//		const auto maxWeight = 50;
-//		REQUIRE(knapsack::maximumValue(maxWeight, items) == 220);
-//	}
-//}
+TEST_CASE("Knapsack Tests")
+{
+	SECTION("Maximum Value Tests")
+	{
+		std::vector<knapsack::Item> items = { {6, 5}, {5, 3}, {7, 4}, {3, 2} };
+		const auto maxWeight = 5;
+		REQUIRE(knapsack::maximumValue(maxWeight, items) == 8);
+		REQUIRE(knapsack::maximumValueOptimised(maxWeight, items) == 8);
+	}
+}

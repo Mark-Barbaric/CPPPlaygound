@@ -55,6 +55,9 @@
     <Filter Include="Source Files\Datastructures\Tests">
       <UniqueIdentifier>{cc97e352-83b5-4e02-956d-c8d44760dd5d}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Algorithms\DynamicProgramming">
+      <UniqueIdentifier>{b7d8cd76-8c09-43c6-b8d1-406261719036}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -95,6 +98,9 @@
     </ClCompile>
     <ClCompile Include="Algorithms\Tests\MediumDPTests.cpp">
       <Filter>Source Files\Algorithms\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithms\DynamicProgramming\Fibonacci.cpp">
+      <Filter>Source Files\Algorithms\DynamicProgramming</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -184,6 +190,18 @@
     </ClInclude>
     <ClInclude Include="..\..\Catch2\single_include\catch2\catch.hpp">
       <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\DynamicProgramming\EasyDPAlgos.h">
+      <Filter>Source Files\Algorithms\DynamicProgramming</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\DynamicProgramming\Fibonacci.h">
+      <Filter>Source Files\Algorithms\DynamicProgramming</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\DynamicProgramming\Knapsack.h">
+      <Filter>Source Files\Algorithms\DynamicProgramming</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\DynamicProgramming\NumCombinations.h">
+      <Filter>Source Files\Algorithms\DynamicProgramming</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

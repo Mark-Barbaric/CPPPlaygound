@@ -6,7 +6,7 @@
 #define DYNAMIC_PROGRAMMING_KNAPSACK_H
 
 #include <vector>
-#include <iostream>
+#include <algorithm>
 
 namespace knapsack
 {
@@ -16,41 +16,48 @@ namespace knapsack
 		int weight;
 	};
 
-	
+
+	//Complexity O(ic), Space 0(ic)
 	inline int maximumValue(const int capacity, const std::vector<Item> items)
 	{
-		std::vector<std::vector<int>> knapsackMatrix(capacity + 1, std::vector<int>(items.size(), 0));
+		std::vector<std::vector<int>> knapsackMatrix(items.size(), std::vector<int>(capacity + 1, 0));
 		
 		for(int i = 0; i < items.size(); ++i)
 		{
-			for (int j = 1; j <= capacity; ++j)
+			for (int w = 1; w <= capacity; ++w)
 			{
-
-				const auto excess = capacity - items[j].weight;
+				const auto notTakingThis = i > 0 ? knapsackMatrix[i - 1][w] : 0;
+				const auto takingThis = items[i].weight <= w ? (items[i].value + knapsackMatrix[i][w - items[i].weight]) : 0;
+				knapsackMatrix[i][w] = std::max(notTakingThis, takingThis);
 			}
 			
 		}
 
-		return 0;
+		return knapsackMatrix.back().back();
+		
+	}
+
+	//Complexity O(c), Space 0(c)
+	inline int maximumValueOptimised(const int capacity, const std::vector<Item> items)
+	{
+		std::vector<int> knapsackVector(capacity + 1, 0);
+
+		for (auto& i : items)
+			knapsackVector[i.weight] = i.value;
+
+		for(int i = 0; i < items.size(); ++i)
+		{
+			const auto itemWeight = items[i].weight;
+
+			for(int w = itemWeight; w < capacity + 1; ++w)
+			{
+				knapsackVector[w] = knapsackVector[w - itemWeight];
+			}
+		}
+
+		return knapsackVector.back();
 		
 	}
 }
-
-class Knapsack {
-    int numOfItems;
-    int capacityOfItems;
-    std::vector<std::vector<int>> knapsackTable;
-    int totalBenefit {0};
-    std::vector<int> weights;
-    std::vector<int> values;
-
-public:
-    Knapsack(int numOfItems, int capacity, const std::vector<int>& weights, const std::vector<int>& values);
-
-    void operator()();
-    void showResult();
-
-};
-
 
 #endif //DYNAMIC_PROGRAMMING_KNAPSACK_H
