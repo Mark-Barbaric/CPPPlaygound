@@ -155,15 +155,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Algorithms\BinarySearch\BSAlgorithms.cpp" />
     <ClCompile Include="Algorithms\Tests\BacktrackingTests.cpp" />
-    <ClCompile Include="Algorithms\Tests\BinarySearchTests.cpp" />
     <ClCompile Include="Algorithms\Tests\EasyDPTests.cpp" />
     <ClCompile Include="Algorithms\Tests\GreedyAlgorithmTests.cpp" />
     <ClCompile Include="Algorithms\Tests\MediumArrayAlgoTests.cpp" />
     <ClCompile Include="Algorithms\Tests\MediumDPTests.cpp" />
     <ClCompile Include="Algorithms\Tests\SimpleArrayAlgoTests.cpp" />
-    <ClCompile Include="Algorithms\Tests\SortingTests.cpp" />
+    <ClCompile Include="Algorithms\Tests\DivideAndConquer.cpp" />
     <ClCompile Include="DataStructures\Tests\GraphTests.cpp" />
     <ClCompile Include="DataStructures\Tests\LinkedListTests.cpp" />
     <ClCompile Include="DataStructures\Tests\LRUCacheTests.cpp" />
@@ -176,17 +174,16 @@
     <ClInclude Include="Algorithms\ArrayAlgorithms\SimpleArrayAlgorithms.h" />
     <ClInclude Include="Algorithms\Backtracking\QueensProblem.h" />
     <ClInclude Include="Algorithms\Backtracking\Sudoku.h" />
-    <ClInclude Include="Algorithms\BinarySearch\BinarySearchHelpers.h" />
-    <ClInclude Include="Algorithms\BinarySearch\Node.h" />
+    <ClInclude Include="Algorithms\DivideAndConquer\BSAlgorithms.h" />
+    <ClInclude Include="Algorithms\DivideAndConquer\MergeSort.h" />
+    <ClInclude Include="Algorithms\DivideAndConquer\MinMax.h" />
+    <ClInclude Include="Algorithms\DivideAndConquer\QuickSort.h" />
     <ClInclude Include="Algorithms\DynamicProgramming\EasyDPAlgos.h" />
     <ClInclude Include="Algorithms\DynamicProgramming\Knapsack.h" />
     <ClInclude Include="Algorithms\DynamicProgramming\NumCombinations.h" />
     <ClInclude Include="Algorithms\GreedyAlgorithms\MediumGreedyAlgorithms.h" />
     <ClInclude Include="Algorithms\GreedyAlgorithms\SimpleGreedyAlgorithms.h" />
     <ClInclude Include="Algorithms\Sorting\BubbleSort.h" />
-    <ClInclude Include="Algorithms\Sorting\CycleCount.h" />
-    <ClInclude Include="Algorithms\Sorting\MergeSort.h" />
-    <ClInclude Include="Algorithms\Sorting\QuickSort.h" />
     <ClInclude Include="DataStructures\BST\BinarySearchTree.h" />
     <ClInclude Include="DataStructures\BST\BSTAlgorithms.h" />
     <ClInclude Include="DataStructures\BST\Tree.h" />
@@ -198,8 +195,6 @@
     <ClInclude Include="DataStructures\Stack_Queue\Queue.h" />
     <ClInclude Include="DataStructures\Stack_Queue\Stack.h" />
     <ClInclude Include="Helpers.h" />
-    <ClInclude Include="InsertionSort.h" />
-    <ClInclude Include="SortingAlgorithms.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

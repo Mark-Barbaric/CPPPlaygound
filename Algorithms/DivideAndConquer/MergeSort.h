@@ -5,14 +5,12 @@
 #ifndef SORTING_MERGESORT_H
 #define SORTING_MERGESORT_H
 
-template<typename Container>
+template<typename T>
 class MergeSort
 {
   // Time complexity o(nLogn)
   // Space o(n)
-  
-  
-  int merge(Container& vec, int l, int m, int r)
+  int merge(std::vector<T>& vec, int l, int m, int r)
   {
     // populate left and right vectors for swapping
     auto i = 0, j = 0, k = l;
@@ -20,7 +18,7 @@ class MergeSort
     const auto n1 = m - l + 1;
     const auto n2 = r - m;
     
-    std::vector<int> leftArr (n1, 0), rightArr(n2, 0);
+    std::vector<T> leftArr (n1, 0), rightArr(n2, 0);
     
     for(int a = 0; a < n1; ++a)
       leftArr[a] = vec[l + a]; // up to mid point
@@ -54,32 +52,21 @@ class MergeSort
 public:
   MergeSort() = default;
   
-  void mergeSort(Container& vec, int l, int r)
+  int mergeSort(std::vector<T>& vec, int l, int r)
   {
-    if (l < r)
-    {
-      const auto mid = l + (r - l) / 2;
-      mergeSort(vec, l, mid); //up to and including mid
-      mergeSort(vec, mid + 1, r); // after mid
-      merge(vec, l, mid, r);
-    }
-    
+      auto sortCount = 0;
+
+      if (l < r)
+      {
+          auto mid = l + (r - l) / 2;
+          sortCount = mergeSort(vec, l, mid);
+          sortCount += mergeSort(vec, mid + 1, r);
+          sortCount += merge(vec, l, mid, r);
+      }
+
+      return sortCount;
   }
-  
-  int mergeSortCount(Container& vec, int l, int r)
-  {
-    auto sortCount = 0;
-    
-    if(l < r)
-    {
-      auto mid = l + (r - l) / 2;
-      sortCount = mergeSortCount(vec, l, mid);
-      sortCount += mergeSortCount(vec, mid + 1, r);
-      sortCount += merge(vec, l, mid, r);
-    }
-    
-    return sortCount;
-  }
+
 };
 
 #endif //SORTING_MERGESORTCOUNT_H

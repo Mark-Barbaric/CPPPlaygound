@@ -29,7 +29,6 @@ public:
             }
             if(!flag)
             {
-                std::cout << "No sorting needed. \n";
                 break;
             }
         }
