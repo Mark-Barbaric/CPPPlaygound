@@ -66,9 +66,6 @@
     <ClCompile Include="Algorithms\Tests\BinarySearchTests.cpp">
       <Filter>Source Files\Algorithms\Tests</Filter>
     </ClCompile>
-    <ClCompile Include="Algorithms\Tests\GeneralTests.cpp">
-      <Filter>Source Files\Algorithms\Tests</Filter>
-    </ClCompile>
     <ClCompile Include="Algorithms\Tests\GreedyAlgorithmTests.cpp">
       <Filter>Source Files\Algorithms\Tests</Filter>
     </ClCompile>
@@ -77,12 +74,6 @@
     </ClCompile>
     <ClCompile Include="Algorithms\Tests\SimpleArrayAlgoTests.cpp">
       <Filter>Source Files\Algorithms\Tests</Filter>
-    </ClCompile>
-    <ClCompile Include="Algorithms\Backtracking\GraphColoring.cpp">
-      <Filter>Source Files\Algorithms\Backtracking</Filter>
-    </ClCompile>
-    <ClCompile Include="Algorithms\Backtracking\QueensProblem.cpp">
-      <Filter>Source Files\Algorithms\Backtracking</Filter>
     </ClCompile>
     <ClCompile Include="Algorithms\BinarySearch\BSAlgorithms.cpp">
       <Filter>Source Files\Algorithms\BinarySearch</Filter>
@@ -99,8 +90,17 @@
     <ClCompile Include="Algorithms\Tests\MediumDPTests.cpp">
       <Filter>Source Files\Algorithms\Tests</Filter>
     </ClCompile>
-    <ClCompile Include="Algorithms\DynamicProgramming\Fibonacci.cpp">
-      <Filter>Source Files\Algorithms\DynamicProgramming</Filter>
+    <ClCompile Include="DataStructures\Tests\LinkedListTests.cpp">
+      <Filter>Source Files\Datastructures\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithms\Tests\EasyDPTests.cpp">
+      <Filter>Source Files\Algorithms\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithms\Tests\BacktrackingTests.cpp">
+      <Filter>Source Files\Algorithms\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithms\Tests\SortingTests.cpp">
+      <Filter>Source Files\Algorithms\Tests</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -112,12 +112,6 @@
     </ClInclude>
     <ClInclude Include="Algorithms\ArrayAlgorithms\SimpleArrayAlgorithms.h">
       <Filter>Source Files\Algorithms\ArrayAlgorithms</Filter>
-    </ClInclude>
-    <ClInclude Include="Algorithms\Backtracking\GraphColoring.h">
-      <Filter>Source Files\Algorithms\Backtracking</Filter>
-    </ClInclude>
-    <ClInclude Include="Algorithms\Backtracking\QueensProblem.h">
-      <Filter>Source Files\Algorithms\Backtracking</Filter>
     </ClInclude>
     <ClInclude Include="Algorithms\BinarySearch\BinarySearchHelpers.h">
       <Filter>Source Files\Algorithms\BinarySearch</Filter>
@@ -137,13 +131,7 @@
     <ClInclude Include="Algorithms\Sorting\CycleCount.h">
       <Filter>Source Files\Algorithms\Sorting</Filter>
     </ClInclude>
-    <ClInclude Include="Algorithms\Sorting\Helpers.h">
-      <Filter>Source Files\Algorithms\Sorting</Filter>
-    </ClInclude>
     <ClInclude Include="Algorithms\Sorting\MergeSort.h">
-      <Filter>Source Files\Algorithms\Sorting</Filter>
-    </ClInclude>
-    <ClInclude Include="Algorithms\Sorting\MergeSortCount.h">
       <Filter>Source Files\Algorithms\Sorting</Filter>
     </ClInclude>
     <ClInclude Include="Algorithms\Sorting\QuickSort.h">
@@ -164,13 +152,7 @@
     <ClInclude Include="DataStructures\Graphs\GraphAlgorithms.h">
       <Filter>Source Files\Datastructures\Graphs</Filter>
     </ClInclude>
-    <ClInclude Include="DataStructures\LinkedList\LinkedList.h">
-      <Filter>Source Files\Datastructures\LinkedList</Filter>
-    </ClInclude>
     <ClInclude Include="DataStructures\LinkedList\LinkedListAlgorithms.h">
-      <Filter>Source Files\Datastructures\LinkedList</Filter>
-    </ClInclude>
-    <ClInclude Include="DataStructures\LinkedList\List.h">
       <Filter>Source Files\Datastructures\LinkedList</Filter>
     </ClInclude>
     <ClInclude Include="DataStructures\LRUCache\Cache.h">
@@ -185,16 +167,10 @@
     <ClInclude Include="DataStructures\Stack_Queue\Stack.h">
       <Filter>Source Files\Datastructures\StackQueue</Filter>
     </ClInclude>
-    <ClInclude Include="Algorithms\GeneralAlgorithms.h">
-      <Filter>Source Files\Algorithms</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\Catch2\single_include\catch2\catch.hpp">
       <Filter>Source Files</Filter>
     </ClInclude>
     <ClInclude Include="Algorithms\DynamicProgramming\EasyDPAlgos.h">
-      <Filter>Source Files\Algorithms\DynamicProgramming</Filter>
-    </ClInclude>
-    <ClInclude Include="Algorithms\DynamicProgramming\Fibonacci.h">
       <Filter>Source Files\Algorithms\DynamicProgramming</Filter>
     </ClInclude>
     <ClInclude Include="Algorithms\DynamicProgramming\Knapsack.h">
@@ -202,6 +178,18 @@
     </ClInclude>
     <ClInclude Include="Algorithms\DynamicProgramming\NumCombinations.h">
       <Filter>Source Files\Algorithms\DynamicProgramming</Filter>
+    </ClInclude>
+    <ClInclude Include="InsertionSort.h">
+      <Filter>Source Files\Algorithms\Sorting</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\Backtracking\Sudoku.h">
+      <Filter>Source Files\Algorithms\Backtracking</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\Backtracking\QueensProblem.h">
+      <Filter>Source Files\Algorithms\Backtracking</Filter>
+    </ClInclude>
+    <ClInclude Include="SortingAlgorithms.h">
+      <Filter>Source Files\Algorithms\Sorting</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

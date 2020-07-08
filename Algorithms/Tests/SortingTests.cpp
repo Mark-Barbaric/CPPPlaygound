@@ -6,6 +6,7 @@
 //  Copyright © 2020 Mark Barbaric. All rights reserved.
 //
 #include "../../catch.hpp"
+#include "../Sorting/SortingAlgorithms.h"
 #include "../Sorting/QuickSort.h"
 #include "../Sorting/MergeSort.h"
 

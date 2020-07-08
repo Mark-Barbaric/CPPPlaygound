@@ -5,13 +5,51 @@
     &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::Score Combination Tests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=437bf59a_002D3889_002D4f5a_002Dbc0a_002Dbcdc18e68c58/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Sum Two Number Tests #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::Sum Two Number Tests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=45b15563_002D5011_002D4f80_002Dadb1_002De115e0d11261/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Sudoku Solution Tests #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::Sudoku Solution Tests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=476bf93d_002Da632_002D4d10_002D863b_002Db52bd8fdc4f7/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Knapsack Tests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::Knapsack Tests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=4c35608c_002Dd980_002D49d0_002Db14b_002Dd771a93a00f8/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Count Paths Tests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::Count Paths Tests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::Simple Linked List Tests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::Linked List Delete Node Tests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::Linked List Reverse Test&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=8de1fa00_002D665f_002D457c_002D91ef_002Ddde3bd259c28/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Intro Algo Tests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::Intro Algo Tests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b729d918_002Df5db_002D44a8_002Db8a7_002D2e8a1cf0746c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Linked List Reverse Test" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::Linked List Reverse Test&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b8bc3dd6_002D3b30_002D400f_002Da4a7_002D0fa88020e53e/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Sum Two Number Tests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::Sum Two Number Tests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c216ba38_002D2e56_002D4f4a_002D9f68_002D11d30040570a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Knapsck Tests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::Knapsck Tests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c9c67674_002Dcd52_002D42d9_002D9c1d_002D9c9e17c12275/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Sudoku Solution Tests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::Sudoku Solution Tests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>
