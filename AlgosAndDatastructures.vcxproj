@@ -161,7 +161,8 @@
     <ClCompile Include="Algorithms\Tests\MediumArrayAlgoTests.cpp" />
     <ClCompile Include="Algorithms\Tests\MediumDPTests.cpp" />
     <ClCompile Include="Algorithms\Tests\SimpleArrayAlgoTests.cpp" />
-    <ClCompile Include="Algorithms\Tests\DivideAndConquer.cpp" />
+    <ClCompile Include="Algorithms\Tests\DivideAndConquerTests.cpp" />
+    <ClCompile Include="DataStructures\Tests\BSTTests.cpp" />
     <ClCompile Include="DataStructures\Tests\GraphTests.cpp" />
     <ClCompile Include="DataStructures\Tests\LinkedListTests.cpp" />
     <ClCompile Include="DataStructures\Tests\LRUCacheTests.cpp" />
@@ -186,9 +187,11 @@
     <ClInclude Include="Algorithms\Sorting\BubbleSort.h" />
     <ClInclude Include="DataStructures\BST\BinarySearchTree.h" />
     <ClInclude Include="DataStructures\BST\BSTAlgorithms.h" />
+    <ClInclude Include="DataStructures\BST\BasicBSTAlgorithms.h" />
     <ClInclude Include="DataStructures\BST\Tree.h" />
     <ClInclude Include="DataStructures\Graphs\Graph.h" />
     <ClInclude Include="DataStructures\Graphs\GraphAlgorithms.h" />
+    <ClInclude Include="DataStructures\Graphs\GraphDFSAlgos.h" />
     <ClInclude Include="DataStructures\LinkedList\LinkedListAlgorithms.h" />
     <ClInclude Include="DataStructures\LRUCache\Cache.h" />
     <ClInclude Include="DataStructures\LRUCache\LRUCache.h" />

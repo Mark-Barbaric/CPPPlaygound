@@ -93,8 +93,11 @@
     <ClCompile Include="Algorithms\Tests\BacktrackingTests.cpp">
       <Filter>Source Files\Algorithms\Tests</Filter>
     </ClCompile>
-    <ClCompile Include="Algorithms\Tests\DivideAndConquer.cpp">
+    <ClCompile Include="Algorithms\Tests\DivideAndConquerTests.cpp">
       <Filter>Source Files\Algorithms\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="DataStructures\Tests\BSTTests.cpp">
+      <Filter>Source Files\Datastructures\Tests</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -175,6 +178,12 @@
     </ClInclude>
     <ClInclude Include="Algorithms\DivideAndConquer\BSAlgorithms.h">
       <Filter>Source Files\Algorithms\DivideAndConquer</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructures\BST\BasicBSTAlgorithms.h">
+      <Filter>Source Files\Datastructures\BST</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructures\Graphs\GraphDFSAlgos.h">
+      <Filter>Source Files\Datastructures\Graphs</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

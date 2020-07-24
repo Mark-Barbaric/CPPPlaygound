@@ -6,14 +6,11 @@
 #define BACKTRACKING_GRAPH_H
 
 #include <vector>
-#include <iostream>
-#include <stack>
+#include <queue>
 
 class Graph
 {
 
-    std::vector<std::vector<int>> adjacencyList;
-    std::vector<std::vector<int>> matrix;
     const int v;
 
     void updateAdjacencyList(int w, int u)
@@ -23,8 +20,8 @@ class Graph
     }
 
     void updateMatrix(int w, int u) {
-        matrix[w][u] = 1;
-        matrix[u][w] = 1;
+        adjacencyMatrix[w][u] = 1;
+        adjacencyMatrix[u][w] = 1;
     }
 
     void dfsUtil(int u, std::vector<bool>& visited)
@@ -38,16 +35,15 @@ class Graph
 
 public:
 
+    std::vector<std::vector<int>> adjacencyList;
+    std::vector<std::vector<int>> adjacencyMatrix;
+	
     explicit Graph(const int v_)
     :v(v_)
      {
-         adjacencyList.resize(v);
-         matrix.resize(v);
-
-         for(int i = 0; i < v; ++i)
-             matrix[i].resize(v);
+         adjacencyList.resize(v, std::vector<int>(v,0));
+         adjacencyMatrix.resize(v, std::vector<int>(v, 0));
      }
-
 
     void addEdge(int w, int u)
     {
@@ -58,7 +54,7 @@ public:
     void dfs(int start)
     {
         std::vector<bool> visited (v, false);
-        for(int i = 0; i < v; ++i)
+        for(int i = start; i < v; ++i)
         {
             if (!visited[i])
                 dfsUtil(i, visited);
@@ -68,13 +64,13 @@ public:
     void bfs(int start)
     {
         std::vector<bool> visited(v, false);
-        std::stack<int> s;
+        std::queue<int> s;
         visited[start] = true;
         s.push(start);
 
         while(!s.empty())
         {
-            const auto next = s.top();
+            const auto next = s.front();
             s.pop();
 
             for(auto it = adjacencyList[next].begin(); it != adjacencyList[next].end(); ++it)

@@ -1,4 +1,14 @@
 ﻿<wpf:ResourceDictionary xml:space="preserve" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:ss="urn:shemas-jetbrains-com:settings-storage-xaml" xmlns:wpf="http://schemas.microsoft.com/winfx/2006/xaml/presentation">
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=162cd337_002D5b0b_002D4ed6_002Db441_002Db0218d5e10da/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Divide And Conquery Sorting Tests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::Divide And Conquery Sorting Tests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=268ac5f6_002D06ae_002D4def_002Db901_002D8ff7a1af918f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="BST Basic Tests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::BST Basic Tests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=331126d4_002Dccd4_002D48dc_002Da3de_002Da172ef189ba4/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Knapsack Tests #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::Knapsack Tests&lt;/TestId&gt;&#xD;
@@ -30,9 +40,20 @@
     &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::Linked List Reverse Test&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=82094ada_002De1e5_002D4eac_002Da46d_002Da72df2745402/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="BST Basic Tests #4" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::BST Basic Tests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::Graph DFS Tests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=8de1fa00_002D665f_002D457c_002D91ef_002Ddde3bd259c28/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Intro Algo Tests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::Intro Algo Tests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=a5a27714_002D081b_002D4741_002D8453_002D32c2d9275a65/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="BST Basic Tests #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::BST Basic Tests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=b729d918_002Df5db_002D44a8_002Db8a7_002D2e8a1cf0746c/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Linked List Reverse Test" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
@@ -53,5 +74,10 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c9c67674_002Dcd52_002D42d9_002D9c1d_002D9c9e17c12275/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Sudoku Solution Tests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::Sudoku Solution Tests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=e8d6c5b0_002Dce6b_002D44f9_002D9186_002De0590f693212/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="BST Basic Tests #3" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::BST Basic Tests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String></wpf:ResourceDictionary>

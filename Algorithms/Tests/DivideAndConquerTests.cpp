@@ -23,12 +23,12 @@ TEST_CASE("Divide And Conquery Sorting Tests")
   
   SECTION("Merge Sort Tests")
   {
-    std::vector<int> arr1 {12, 11, 13, 5, 6, 7};
-    const std::vector<int> sortedArr {5, 6, 7, 11, 12, 13};
+    std::vector<int> arr1 {2, 1, 3, 1, 2};
+    const std::vector<int> sortedArr {1, 1, 2, 2, 3};
     MergeSort<int> mergeSort;
     const auto sortResult = mergeSort.mergeSort(arr1, 0, static_cast<int>(arr1.size() - 1));
     REQUIRE(arr1 == sortedArr);
-    const auto count = 10;
+    const auto count = 4;
     REQUIRE(sortResult == count);
   }
 }
