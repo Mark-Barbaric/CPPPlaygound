@@ -5,7 +5,7 @@
 #include "../Stack_Queue/Queue.h"
 #include "../Stack_Queue/Stack.h"
 
-TEST_CASE("Queue Functionality Tests")
+SCENARIO("Queue Functionality Tests")
 {
     TwoStackQueue <int> q;
 
@@ -16,6 +16,16 @@ TEST_CASE("Queue Functionality Tests")
 
     REQUIRE(!q.isEmpty());
     REQUIRE(q.size() == 2);
+  
+  WHEN("Queue is Enqueued")
+  {
+    q.enqueue(1);
+    q.enqueue(2);
+    q.enqueue(3);
+
+    REQUIRE(q.dequeue() == 1);
+    REQUIRE(q.front() == 2);
+  }
 }
 
 TEST_CASE("Queue FIFO Test")

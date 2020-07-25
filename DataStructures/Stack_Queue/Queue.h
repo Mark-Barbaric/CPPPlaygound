@@ -13,16 +13,6 @@ template <typename Type>
 class TwoStackQueue
 {
     std::stack<Type> s1, s2;
-
-    class QueueEmptyException : public std::exception{
-
-        const char* what() const noexcept override
-        {
-            return "Queue Cannot Be Empty";
-        }
-
-    };
-
 public:
     void enqueue(Type s)
     {
@@ -31,11 +21,6 @@ public:
 
     Type dequeue()
     {
-        if(s1.empty() && s2.empty())
-        {
-            throw QueueEmptyException();
-        }
-
         if(s2.empty()){
             while(!s1.empty())
             {
@@ -51,10 +36,6 @@ public:
 
     Type front()
     {
-
-        if(s1.empty() && s2.empty())
-            throw QueueEmptyException();
-
         if(s2.empty()){
             while(!s1.empty()){
                 s2.push(s1.top());

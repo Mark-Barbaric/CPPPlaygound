@@ -9,6 +9,21 @@
 #include <list>
 #include "Cache.h"
 
+template<typename Data>
+struct Cache
+{
+    const size_t capacity;
+    explicit Cache(const size_t c)
+            :capacity(c)
+    {
+
+    }
+
+    virtual void put(int index, const Data& data) = 0;
+    virtual Data get(int index) = 0;
+    virtual void insert(int index, const Data& data) = 0;
+};
+
 struct LRUZeroSizeException : std::exception
 {
     LRUZeroSizeException() = default;
@@ -40,12 +55,6 @@ class LRUCache : public Cache<Data>
 
     std::list<Node> stack;
     std::map<int, typename std::list<Node>::iterator> map;
-
-    /*
-        Set or insert the value if not present.
-        When capacity is reached then least recently used item
-        should be invalidated.
-     */
 
     void insert(int index, const Data& data) override
     {

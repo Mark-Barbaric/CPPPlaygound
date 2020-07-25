@@ -8,19 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		12AA68C92438FA930070E46D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AA68862438FA930070E46D /* main.cpp */; };
-		12AA68CA2438FA930070E46D /* BSAlgorithms.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AA688D2438FA930070E46D /* BSAlgorithms.cpp */; };
-		12AA68CB2438FA930070E46D /* GraphColoring.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AA68912438FA930070E46D /* GraphColoring.cpp */; };
-		12AA68CC2438FA930070E46D /* QueensProblem.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AA68922438FA930070E46D /* QueensProblem.cpp */; };
 		12AA68CD2438FA930070E46D /* MediumArrayAlgoTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AA68942438FA930070E46D /* MediumArrayAlgoTests.cpp */; };
-		12AA68CE2438FA930070E46D /* BinarySearchTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AA68952438FA930070E46D /* BinarySearchTests.cpp */; };
-		12AA68CF2438FA930070E46D /* GeneralTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AA68962438FA930070E46D /* GeneralTests.cpp */; };
 		12AA68D02438FA930070E46D /* SimpleArrayAlgoTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AA68972438FA930070E46D /* SimpleArrayAlgoTests.cpp */; };
 		12AA68D12438FA930070E46D /* GreedyAlgorithmTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AA68982438FA930070E46D /* GreedyAlgorithmTests.cpp */; };
 		12AA68D22438FA930070E46D /* MediumDPTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AA68992438FA930070E46D /* MediumDPTests.cpp */; };
 		12AA68D52438FA930070E46D /* GraphTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AA68B52438FA930070E46D /* GraphTests.cpp */; };
 		12AA68D62438FA930070E46D /* LRUCacheTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AA68B62438FA930070E46D /* LRUCacheTests.cpp */; };
 		12AA68D72438FA930070E46D /* StackQueueTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AA68B72438FA930070E46D /* StackQueueTests.cpp */; };
-		12FFD92624545E7B00C9CE86 /* SortingTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12FFD92424545E7B00C9CE86 /* SortingTests.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -36,28 +30,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1203323224CC466600C338C7 /* MinMax.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MinMax.h; sourceTree = "<group>"; };
+		1203323324CC466600C338C7 /* QuickSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickSort.h; sourceTree = "<group>"; };
+		1203323424CC466600C338C7 /* MergeSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MergeSort.h; sourceTree = "<group>"; };
+		1203323524CC466600C338C7 /* BSAlgorithms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSAlgorithms.h; sourceTree = "<group>"; };
 		125DEC012438FA3C00707F03 /* AlgorithmsAndDatastructures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AlgorithmsAndDatastructures; sourceTree = BUILT_PRODUCTS_DIR; };
 		12AA68862438FA930070E46D /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = SOURCE_ROOT; };
 		12AA68872438FA930070E46D /* Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helpers.h; sourceTree = SOURCE_ROOT; };
 		12AA68882438FA930070E46D /* catch.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = catch.hpp; sourceTree = SOURCE_ROOT; };
-		12AA688B2438FA930070E46D /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
-		12AA688C2438FA930070E46D /* BinarySearchHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinarySearchHelpers.h; sourceTree = "<group>"; };
-		12AA688D2438FA930070E46D /* BSAlgorithms.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BSAlgorithms.cpp; sourceTree = "<group>"; };
 		12AA688F2438FA930070E46D /* QueensProblem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueensProblem.h; sourceTree = "<group>"; };
 		12AA68902438FA930070E46D /* GraphColoring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphColoring.h; sourceTree = "<group>"; };
-		12AA68912438FA930070E46D /* GraphColoring.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GraphColoring.cpp; sourceTree = "<group>"; };
-		12AA68922438FA930070E46D /* QueensProblem.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = QueensProblem.cpp; sourceTree = "<group>"; };
 		12AA68942438FA930070E46D /* MediumArrayAlgoTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MediumArrayAlgoTests.cpp; sourceTree = "<group>"; };
-		12AA68952438FA930070E46D /* BinarySearchTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BinarySearchTests.cpp; sourceTree = "<group>"; };
-		12AA68962438FA930070E46D /* GeneralTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GeneralTests.cpp; sourceTree = "<group>"; };
 		12AA68972438FA930070E46D /* SimpleArrayAlgoTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleArrayAlgoTests.cpp; sourceTree = "<group>"; };
 		12AA68982438FA930070E46D /* GreedyAlgorithmTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GreedyAlgorithmTests.cpp; sourceTree = "<group>"; };
 		12AA68992438FA930070E46D /* MediumDPTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MediumDPTests.cpp; sourceTree = "<group>"; };
 		12AA689B2438FA930070E46D /* MediumArrayAlgorithms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediumArrayAlgorithms.h; sourceTree = "<group>"; };
 		12AA689C2438FA930070E46D /* SimpleArrayAlgorithms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleArrayAlgorithms.h; sourceTree = "<group>"; };
-		12AA689E2438FA930070E46D /* QuickSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickSort.h; sourceTree = "<group>"; };
-		12AA689F2438FA930070E46D /* CycleCount.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CycleCount.h; sourceTree = "<group>"; };
-		12AA68A02438FA930070E46D /* MergeSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MergeSort.h; sourceTree = "<group>"; };
 		12AA68A12438FA930070E46D /* BubbleSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BubbleSort.h; sourceTree = "<group>"; };
 		12AA68A72438FA930070E46D /* EasyDPAlgos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EasyDPAlgos.h; sourceTree = "<group>"; };
 		12AA68A82438FA930070E46D /* Knapsack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Knapsack.h; sourceTree = "<group>"; };
@@ -75,11 +63,9 @@
 		12AA68BC2438FA930070E46D /* Graph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Graph.h; sourceTree = "<group>"; };
 		12AA68BD2438FA930070E46D /* GraphAlgorithms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphAlgorithms.h; sourceTree = "<group>"; };
 		12AA68BF2438FA930070E46D /* LRUCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRUCache.h; sourceTree = "<group>"; };
-		12AA68C02438FA930070E46D /* Cache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cache.h; sourceTree = "<group>"; };
 		12AA68C22438FA930070E46D /* Tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tree.h; sourceTree = "<group>"; };
 		12AA68C32438FA930070E46D /* BSTAlgorithms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTAlgorithms.h; sourceTree = "<group>"; };
 		12AA68C42438FA930070E46D /* BinarySearchTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BinarySearchTree.h; sourceTree = "<group>"; };
-		12FFD92424545E7B00C9CE86 /* SortingTests.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SortingTests.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +79,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1203323124CC466600C338C7 /* DivideAndConquer */ = {
+			isa = PBXGroup;
+			children = (
+				1203323224CC466600C338C7 /* MinMax.h */,
+				1203323324CC466600C338C7 /* QuickSort.h */,
+				1203323424CC466600C338C7 /* MergeSort.h */,
+				1203323524CC466600C338C7 /* BSAlgorithms.h */,
+			);
+			path = DivideAndConquer;
+			sourceTree = "<group>";
+		};
 		125DEBF82438FA3C00707F03 = {
 			isa = PBXGroup;
 			children = (
@@ -124,7 +121,7 @@
 		12AA68892438FA930070E46D /* Algorithms */ = {
 			isa = PBXGroup;
 			children = (
-				12AA688A2438FA930070E46D /* BinarySearch */,
+				1203323124CC466600C338C7 /* DivideAndConquer */,
 				12AA688E2438FA930070E46D /* Backtracking */,
 				12AA68932438FA930070E46D /* Tests */,
 				12AA689A2438FA930070E46D /* ArrayAlgorithms */,
@@ -135,23 +132,11 @@
 			path = Algorithms;
 			sourceTree = SOURCE_ROOT;
 		};
-		12AA688A2438FA930070E46D /* BinarySearch */ = {
-			isa = PBXGroup;
-			children = (
-				12AA688B2438FA930070E46D /* Node.h */,
-				12AA688C2438FA930070E46D /* BinarySearchHelpers.h */,
-				12AA688D2438FA930070E46D /* BSAlgorithms.cpp */,
-			);
-			path = BinarySearch;
-			sourceTree = "<group>";
-		};
 		12AA688E2438FA930070E46D /* Backtracking */ = {
 			isa = PBXGroup;
 			children = (
 				12AA688F2438FA930070E46D /* QueensProblem.h */,
 				12AA68902438FA930070E46D /* GraphColoring.h */,
-				12AA68912438FA930070E46D /* GraphColoring.cpp */,
-				12AA68922438FA930070E46D /* QueensProblem.cpp */,
 			);
 			path = Backtracking;
 			sourceTree = "<group>";
@@ -160,12 +145,9 @@
 			isa = PBXGroup;
 			children = (
 				12AA68942438FA930070E46D /* MediumArrayAlgoTests.cpp */,
-				12AA68952438FA930070E46D /* BinarySearchTests.cpp */,
-				12AA68962438FA930070E46D /* GeneralTests.cpp */,
 				12AA68972438FA930070E46D /* SimpleArrayAlgoTests.cpp */,
 				12AA68982438FA930070E46D /* GreedyAlgorithmTests.cpp */,
 				12AA68992438FA930070E46D /* MediumDPTests.cpp */,
-				12FFD92424545E7B00C9CE86 /* SortingTests.cpp */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -182,9 +164,6 @@
 		12AA689D2438FA930070E46D /* Sorting */ = {
 			isa = PBXGroup;
 			children = (
-				12AA689E2438FA930070E46D /* QuickSort.h */,
-				12AA689F2438FA930070E46D /* CycleCount.h */,
-				12AA68A02438FA930070E46D /* MergeSort.h */,
 				12AA68A12438FA930070E46D /* BubbleSort.h */,
 			);
 			path = Sorting;
@@ -264,7 +243,6 @@
 			isa = PBXGroup;
 			children = (
 				12AA68BF2438FA930070E46D /* LRUCache.h */,
-				12AA68C02438FA930070E46D /* Cache.h */,
 			);
 			path = LRUCache;
 			sourceTree = "<group>";
@@ -338,15 +316,9 @@
 			files = (
 				12AA68D02438FA930070E46D /* SimpleArrayAlgoTests.cpp in Sources */,
 				12AA68D52438FA930070E46D /* GraphTests.cpp in Sources */,
-				12FFD92624545E7B00C9CE86 /* SortingTests.cpp in Sources */,
-				12AA68CC2438FA930070E46D /* QueensProblem.cpp in Sources */,
 				12AA68D62438FA930070E46D /* LRUCacheTests.cpp in Sources */,
 				12AA68D22438FA930070E46D /* MediumDPTests.cpp in Sources */,
 				12AA68D72438FA930070E46D /* StackQueueTests.cpp in Sources */,
-				12AA68CA2438FA930070E46D /* BSAlgorithms.cpp in Sources */,
-				12AA68CE2438FA930070E46D /* BinarySearchTests.cpp in Sources */,
-				12AA68CF2438FA930070E46D /* GeneralTests.cpp in Sources */,
-				12AA68CB2438FA930070E46D /* GraphColoring.cpp in Sources */,
 				12AA68C92438FA930070E46D /* main.cpp in Sources */,
 				12AA68CD2438FA930070E46D /* MediumArrayAlgoTests.cpp in Sources */,
 				12AA68D12438FA930070E46D /* GreedyAlgorithmTests.cpp in Sources */,
