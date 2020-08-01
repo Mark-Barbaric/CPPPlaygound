@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12A332FF24D0673600D5CF4D /* SubsetSumAlgorithmTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12A332FE24D0673600D5CF4D /* SubsetSumAlgorithmTests.cpp */; };
 		12AA68C92438FA930070E46D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AA68862438FA930070E46D /* main.cpp */; };
 		12AA68CD2438FA930070E46D /* MediumArrayAlgoTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AA68942438FA930070E46D /* MediumArrayAlgoTests.cpp */; };
 		12AA68D02438FA930070E46D /* SimpleArrayAlgoTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AA68972438FA930070E46D /* SimpleArrayAlgoTests.cpp */; };
@@ -35,6 +36,8 @@
 		1203323424CC466600C338C7 /* MergeSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MergeSort.h; sourceTree = "<group>"; };
 		1203323524CC466600C338C7 /* BSAlgorithms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSAlgorithms.h; sourceTree = "<group>"; };
 		125DEC012438FA3C00707F03 /* AlgorithmsAndDatastructures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AlgorithmsAndDatastructures; sourceTree = BUILT_PRODUCTS_DIR; };
+		12A332FD24D066E500D5CF4D /* SubsetSumAlgorithms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubsetSumAlgorithms.h; sourceTree = "<group>"; };
+		12A332FE24D0673600D5CF4D /* SubsetSumAlgorithmTests.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SubsetSumAlgorithmTests.cpp; sourceTree = "<group>"; };
 		12AA68862438FA930070E46D /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = SOURCE_ROOT; };
 		12AA68872438FA930070E46D /* Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helpers.h; sourceTree = SOURCE_ROOT; };
 		12AA68882438FA930070E46D /* catch.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = catch.hpp; sourceTree = SOURCE_ROOT; };
@@ -118,9 +121,18 @@
 			path = AlgorithmsAndDatastructures;
 			sourceTree = "<group>";
 		};
+		12A332FC24D066D900D5CF4D /* SubsetSum */ = {
+			isa = PBXGroup;
+			children = (
+				12A332FD24D066E500D5CF4D /* SubsetSumAlgorithms.h */,
+			);
+			path = SubsetSum;
+			sourceTree = "<group>";
+		};
 		12AA68892438FA930070E46D /* Algorithms */ = {
 			isa = PBXGroup;
 			children = (
+				12A332FC24D066D900D5CF4D /* SubsetSum */,
 				1203323124CC466600C338C7 /* DivideAndConquer */,
 				12AA688E2438FA930070E46D /* Backtracking */,
 				12AA68932438FA930070E46D /* Tests */,
@@ -145,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				12AA68942438FA930070E46D /* MediumArrayAlgoTests.cpp */,
+				12A332FE24D0673600D5CF4D /* SubsetSumAlgorithmTests.cpp */,
 				12AA68972438FA930070E46D /* SimpleArrayAlgoTests.cpp */,
 				12AA68982438FA930070E46D /* GreedyAlgorithmTests.cpp */,
 				12AA68992438FA930070E46D /* MediumDPTests.cpp */,
@@ -316,6 +329,7 @@
 			files = (
 				12AA68D02438FA930070E46D /* SimpleArrayAlgoTests.cpp in Sources */,
 				12AA68D52438FA930070E46D /* GraphTests.cpp in Sources */,
+				12A332FF24D0673600D5CF4D /* SubsetSumAlgorithmTests.cpp in Sources */,
 				12AA68D62438FA930070E46D /* LRUCacheTests.cpp in Sources */,
 				12AA68D22438FA930070E46D /* MediumDPTests.cpp in Sources */,
 				12AA68D72438FA930070E46D /* StackQueueTests.cpp in Sources */,
