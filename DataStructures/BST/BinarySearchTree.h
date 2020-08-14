@@ -26,7 +26,7 @@ struct Node
 namespace BasicBSTAlgorithms
 {
 	//Preorder Root/Left/Right || Inorder Left/Root/Right || PostOrder Left/Right/Root
-	enum class TraversalType {Preorder = 0, Inorder, Postorder};
+	enum TraversalType {Preorder = 0, Inorder, Postorder};
 	
     template<typename T>
     inline std::string Traverse(Node<T>* root, TraversalType type)
