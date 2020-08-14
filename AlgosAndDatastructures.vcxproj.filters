@@ -19,9 +19,6 @@
     <Filter Include="Source Files\Datastructures">
       <UniqueIdentifier>{f1156618-2e29-4c31-ac58-4b94639b61e7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Algorithms\ArrayAlgorithms">
-      <UniqueIdentifier>{c6e118f1-4ce2-42b5-892d-bf8145df386e}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Algorithms\Backtracking">
       <UniqueIdentifier>{7da74a78-c5d7-4b77-abb0-06a1b2ea603d}</UniqueIdentifier>
     </Filter>
@@ -58,6 +55,9 @@
     <Filter Include="Source Files\Algorithms\DivideAndConquer">
       <UniqueIdentifier>{fb81d371-8f26-4dee-b7c7-a58c6f9fd8b6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Algorithms\GeneralAlgorithms">
+      <UniqueIdentifier>{9fe3514e-48ee-4b00-a8f2-33ac797cf64a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -67,9 +67,6 @@
       <Filter>Source Files\Algorithms\Tests</Filter>
     </ClCompile>
     <ClCompile Include="Algorithms\Tests\MediumArrayAlgoTests.cpp">
-      <Filter>Source Files\Algorithms\Tests</Filter>
-    </ClCompile>
-    <ClCompile Include="Algorithms\Tests\SimpleArrayAlgoTests.cpp">
       <Filter>Source Files\Algorithms\Tests</Filter>
     </ClCompile>
     <ClCompile Include="DataStructures\Tests\GraphTests.cpp">
@@ -99,16 +96,16 @@
     <ClCompile Include="DataStructures\Tests\BSTTests.cpp">
       <Filter>Source Files\Datastructures\Tests</Filter>
     </ClCompile>
+    <ClCompile Include="Algorithms\Tests\DailyProblemTests.cpp">
+      <Filter>Source Files\Algorithms\Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithms\Tests\StringAlgorithmTests.cpp">
+      <Filter>Source Files\Algorithms\Tests</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Helpers.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Algorithms\ArrayAlgorithms\MediumArrayAlgorithms.h">
-      <Filter>Source Files\Algorithms\ArrayAlgorithms</Filter>
-    </ClInclude>
-    <ClInclude Include="Algorithms\ArrayAlgorithms\SimpleArrayAlgorithms.h">
-      <Filter>Source Files\Algorithms\ArrayAlgorithms</Filter>
     </ClInclude>
     <ClInclude Include="Algorithms\GreedyAlgorithms\MediumGreedyAlgorithms.h">
       <Filter>Source Files\Algorithms\Greedy</Filter>
@@ -125,9 +122,6 @@
     <ClInclude Include="DataStructures\BST\BSTAlgorithms.h">
       <Filter>Source Files\Datastructures\BST</Filter>
     </ClInclude>
-    <ClInclude Include="DataStructures\BST\Tree.h">
-      <Filter>Source Files\Datastructures\BST</Filter>
-    </ClInclude>
     <ClInclude Include="DataStructures\Graphs\Graph.h">
       <Filter>Source Files\Datastructures\Graphs</Filter>
     </ClInclude>
@@ -136,9 +130,6 @@
     </ClInclude>
     <ClInclude Include="DataStructures\LinkedList\LinkedListAlgorithms.h">
       <Filter>Source Files\Datastructures\LinkedList</Filter>
-    </ClInclude>
-    <ClInclude Include="DataStructures\LRUCache\Cache.h">
-      <Filter>Source Files\Datastructures\LRUCache</Filter>
     </ClInclude>
     <ClInclude Include="DataStructures\LRUCache\LRUCache.h">
       <Filter>Source Files\Datastructures\LRUCache</Filter>
@@ -179,11 +170,26 @@
     <ClInclude Include="Algorithms\DivideAndConquer\BSAlgorithms.h">
       <Filter>Source Files\Algorithms\DivideAndConquer</Filter>
     </ClInclude>
-    <ClInclude Include="DataStructures\BST\BasicBSTAlgorithms.h">
-      <Filter>Source Files\Datastructures\BST</Filter>
-    </ClInclude>
     <ClInclude Include="DataStructures\Graphs\GraphDFSAlgos.h">
       <Filter>Source Files\Datastructures\Graphs</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\DynamicProgramming\PalindromeDP.h">
+      <Filter>Source Files\Algorithms\DynamicProgramming</Filter>
+    </ClInclude>
+    <ClInclude Include="Header.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\GeneralAlgorithms\MediumArrayAlgorithms.h">
+      <Filter>Source Files\Algorithms\GeneralAlgorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\GeneralAlgorithms\DailyProblems.h">
+      <Filter>Source Files\Algorithms\GeneralAlgorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\GeneralAlgorithms\StringAlgorithms.h">
+      <Filter>Source Files\Algorithms\GeneralAlgorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructures\BST\MediumBSTAlgorithms.h">
+      <Filter>Source Files\Datastructures\BST</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

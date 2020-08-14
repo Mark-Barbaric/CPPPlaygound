@@ -15,20 +15,26 @@ namespace LinkedListTestHelpers
 
 		return arr;
 	}
+
+	LinkedList* vectorToLinkedList(std::vector<int>& arr)
+	{
+		auto* head = new LinkedList(arr[0]);
+		auto* node = head;
+
+		for (int i = 1; i < arr.size(); ++i)
+		{
+			node->next = new LinkedList(arr[i]);
+			node = node->next;
+		}
+
+		return head;
+	}
 }
 
 TEST_CASE("Linked List Delete Node Tests")
 {	
 	std::vector<int> arr = { 0, 2, 4, 6, 8, 9, 11 };
-	auto* head = new LinkedList(arr[0]);
-	auto* node = head;
-
-	for(int i = 1; i < arr.size(); ++i)
-	{
-		node->next = new LinkedList(arr[i]);
-		node = node->next;
-	}
-
+	auto* head = LinkedListTestHelpers::vectorToLinkedList(arr);
 	SECTION("Delete Non Existant Number")
 	{
 		auto* resultNode = LinkedListAlgorithms::deleteNode(head, 12);
@@ -60,15 +66,7 @@ TEST_CASE("Linked List Delete Node Tests")
 TEST_CASE("Linked List Reverse Test")
 {
 	std::vector<int> arr = { 0, 2, 4, 6, 8, 9, 11 };
-	auto* head = new LinkedList(arr[0]);
-	auto* node = head;
-
-	for (int i = 1; i < arr.size(); ++i)
-	{
-		node->next = new LinkedList(arr[i]);
-		node = node->next;
-	}
-
+	auto* head = LinkedListTestHelpers::vectorToLinkedList(arr);
 	auto* resultLinkedList = LinkedListAlgorithms::reverseLinkedList(head);
 	std::vector<int> resultArr = {11, 9, 8, 6, 4, 2, 0};
 	REQUIRE(LinkedListTestHelpers::linkedListToVector(resultLinkedList) == resultArr);
@@ -77,27 +75,30 @@ TEST_CASE("Linked List Reverse Test")
 
 TEST_CASE("Linked List Sum Two Number Tests")
 {
-	std::vector<int> arr1 = { 2, 4, 3 };
-	std::vector<int> arr2 = { 5, 6 ,4 };
-	const std::vector<int> resultArr = { 7, 0, 8 };
-
-	auto* node1 = new LinkedList(arr1[0]);
-	auto* dumm1 = node1;
-	auto* node2 = new LinkedList(arr2[0]);
-	auto* dumm2 = node2;
-
-	for (int i = 1; i < arr1.size(); ++i)
+	SECTION("Sum Two Numbers Tests")
 	{
-		dumm1->next = new LinkedList(arr1[i]);
-		dumm1 = dumm1->next;
+		std::vector<int> arr1 = { 2, 4, 3 };
+		std::vector<int> arr2 = { 5, 6 ,4 };
+		const std::vector<int> resultArr = { 7, 0, 8 };
+
+		auto* node1 = LinkedListTestHelpers::vectorToLinkedList(arr1);
+		auto* node2 = LinkedListTestHelpers::vectorToLinkedList(arr2);
+
+		auto* resultLinkedList = LinkedListAlgorithms::addTwoNumbers(node1, node2);
+		REQUIRE(LinkedListTestHelpers::linkedListToVector(resultLinkedList) == resultArr);
 	}
 
-	for (int i = 1; i < arr2.size(); ++i)
+	SECTION("Sum Two Numbers Tests Two")
 	{
-		dumm2->next = new LinkedList(arr2[i]);
-		dumm2 = dumm2->next;
-	}
 
-	auto* resultLinkedList = LinkedListAlgorithms::addTwoNumbers(node1, node2);
-	REQUIRE(LinkedListTestHelpers::linkedListToVector(resultLinkedList) == resultArr);
+		std::vector<int> arr1 = { 7, 2, 4, 3};
+		std::vector<int> arr2 = { 5, 6 ,4 };
+		const std::vector<int> resultArr = { 7, 8, 0, 7 };
+
+		auto* node1 = LinkedListTestHelpers::vectorToLinkedList(arr1);
+		auto* node2 = LinkedListTestHelpers::vectorToLinkedList(arr2);
+
+		auto* resultLinkedList = LinkedListAlgorithms::addTwoNumbersTwo(node1, node2);
+		REQUIRE(LinkedListTestHelpers::linkedListToVector(resultLinkedList) == resultArr);
+	}
 }

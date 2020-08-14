@@ -1,36 +1,49 @@
 #include "../../catch.hpp"
-#include "../ArrayAlgorithms/MediumArrayAlgorithms.h"
+#include "../GeneralAlgorithms/MediumArrayAlgorithms.h"
 
-TEST_CASE("Minimum Contiguous Sum Tests")
+TEST_CASE("Subarray Algorithms")
 {
-    MediumArrayAlgorithms<int, std::vector<int>> mediumArrayAlgorithms;
-
-    SECTION("Basic Tests")
+    SECTION("Minimum Size Subarray Sum")
     {
         std::vector<int> v {2,3,1,2,4,3};
-        REQUIRE(mediumArrayAlgorithms.minimumSizeContiguousSubarraySum(v, 7, v.size()) == 2);
+        REQUIRE(MediumArrayAlgorithms::MinimumSizeContiguousSubarraySum(v, 7) == 2);
         std::vector<int> v1 {1,1,1};
-        REQUIRE(mediumArrayAlgorithms.minimumSizeContiguousSubarraySum(v1, 2, v1.size()) == 2);
+        REQUIRE(MediumArrayAlgorithms::MinimumSizeContiguousSubarraySum(v1, 2) == 2);
         std::vector<int> v2 {1,2,3,1};
-        REQUIRE(mediumArrayAlgorithms.minimumSizeContiguousSubarraySum(v2, 3, v2.size()) == 1);
+        REQUIRE(MediumArrayAlgorithms::MinimumSizeContiguousSubarraySum(v2, 3) == 1);
     }
 
-    SECTION("Empty Array Tests")
+    SECTION("Subarray Sum Equals K")
     {
-        std::vector<int> v {};
-        REQUIRE(mediumArrayAlgorithms.minimumSizeContiguousSubarraySum(v, 7, v.size()) == 0);
+        std::vector<int> v1{ 1,1,1 };
+        REQUIRE(MediumArrayAlgorithms::SubarraySumEqualsK(v1, 2, v1.size()) == 2);
+        std::vector<int> v2{ 1,2,3,1 };
+        REQUIRE(MediumArrayAlgorithms::SubarraySumEqualsK(v2, 3, v2.size()) == 2);
+    }
+
+	SECTION("Kadane Max Subarray Sum")
+    {
+        std::vector<int> v1{ -2,1,-3,4,-1,2,1,-5,4 };
+        REQUIRE(MediumArrayAlgorithms::KadaneMaxSubArray(v1) == 6);
     }
 }
 
-TEST_CASE("Contiguous Subarray Sum Equals K")
+TEST_CASE("Subarray Product Algorithms")
 {
-    MediumArrayAlgorithms<int, std::vector<int>> mediumArrayAlgorithms;
-
-    SECTION("Basic Tests")
+    SECTION("Max Product")
     {
-        std::vector<int> v1 {1,1,1};
-        REQUIRE(mediumArrayAlgorithms.subarraySumEqualsK(v1, 2, v1.size()) == 2);
-        std::vector<int> v2 {1,2,3,1};
-        REQUIRE(mediumArrayAlgorithms.subarraySumEqualsK(v2, 3, v2.size()) == 2);
+        std::vector<int> v1{ 2, 3, -2, 4 };
+        REQUIRE(MediumArrayAlgorithms::MaxProduct(v1) == 6);
+        std::vector<int> v2{ -2, 0, -1 };
+        REQUIRE(MediumArrayAlgorithms::MaxProduct(v2) == 0);
+    }
+
+	SECTION("Max Product Except Self")
+    {
+        std::vector<int> v1{ 1, 2, 3, 4 };
+        std::vector<int> ans{ 24, 12, 8, 6 };
+        REQUIRE(MediumArrayAlgorithms::ProductExceptSelf(v1) == ans);
     }
 }
+
+

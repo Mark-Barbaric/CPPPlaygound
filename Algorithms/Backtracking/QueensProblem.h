@@ -3,9 +3,9 @@
 
 #include  <vector>
 
-namespace N_Queens_Problem
+namespace NQueensProblem
 {
-	bool isRowSafe(int r, int c, std::vector<std::vector<int>>& board)
+	bool IsRowSafe(int r, int c, std::vector<std::vector<int>>& board)
 	{
 		for (int i = 0; i < c; i++)
 			if (board[r][i])
@@ -14,7 +14,7 @@ namespace N_Queens_Problem
 		return true;
 	}
 	
-	bool isLeftDiagonalSafe(int r, int c, std::vector<std::vector<int>>& board)
+	bool IsLeftDiagonalSafe(int r, int c, std::vector<std::vector<int>>& board)
 	{
 		for (int i = r, j = c; i >= 0 && j >= 0; --i, --j)
 			if (board[i][j])
@@ -23,7 +23,7 @@ namespace N_Queens_Problem
 		return true;		
 	}
 	
-	bool isRightDiagonalSafe(int r, int c, std::vector<std::vector<int>>& board)
+	bool IsRightDiagonalSafe(int r, int c, std::vector<std::vector<int>>& board)
 	{
 		for(int i = r, j = c; i < board.size(), j >= 0, i < board.size(); ++i, --j)			
 			if (board[i][j])
@@ -32,32 +32,39 @@ namespace N_Queens_Problem
 		return true;
 	}
 	
-	bool isSafe(int r, int c, std::vector<std::vector<int>>& board)
+	bool IsSafe(int r, int c, std::vector<std::vector<int>>& board)
 	{
-		if (isRowSafe(r, c, board) &&
-			isLeftDiagonalSafe(r, c, board) &&
-			isRightDiagonalSafe(r, c, board))
+		if (IsRowSafe(r, c, board) &&
+			IsLeftDiagonalSafe(r, c, board) &&
+			IsRightDiagonalSafe(r, c, board))
 			return true;
 
 		return false;
 	}
 
-	bool setQueens(int c, std::vector<std::vector<int>>& board)
+	bool SetQueens(int c, std::vector<std::vector<int>>& board)
 	{
 		if (c >= board.size())
 			return true;
 
 		for(int i = 0; i < board.size(); ++i)
 		{
-			if(isSafe(i, c, board))
+			if(IsSafe(i, c, board))
 			{
 				board[i][c]= 1;
-				setQueens(c + 1, board);
+				SetQueens(c + 1, board);
 				board[i][c] = 0;
 			}
 		}
 
 		return false;		
+	}
+
+	std::vector<std::vector<int>> SolveQueens(int n)
+	{
+		std::vector<std::vector<int>> board(n, std::vector<int>(n, 0));
+		SetQueens(0, board);
+		return board;
 	}
 }
 

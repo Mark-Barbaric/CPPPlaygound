@@ -7,7 +7,6 @@
 
 #include <map>
 #include <list>
-#include "Cache.h"
 
 template<typename Data>
 struct Cache

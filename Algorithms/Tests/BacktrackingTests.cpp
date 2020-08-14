@@ -27,3 +27,8 @@ TEST_CASE("Sudoku Solution Tests")
     REQUIRE(Sudoku_Solver::solveSudoku(grid) == true);
     REQUIRE(grid == result);
 }
+
+TEST_CASE("N Queens Problem Tests")
+{
+	
+}
