@@ -156,12 +156,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Algorithms\Tests\BacktrackingTests.cpp" />
+    <ClCompile Include="Algorithms\Tests\DailyProblemTests.cpp" />
     <ClCompile Include="Algorithms\Tests\EasyDPTests.cpp" />
     <ClCompile Include="Algorithms\Tests\GreedyAlgorithmTests.cpp" />
     <ClCompile Include="Algorithms\Tests\MediumArrayAlgoTests.cpp" />
     <ClCompile Include="Algorithms\Tests\MediumDPTests.cpp" />
-    <ClCompile Include="Algorithms\Tests\SimpleArrayAlgoTests.cpp" />
     <ClCompile Include="Algorithms\Tests\DivideAndConquerTests.cpp" />
+    <ClCompile Include="Algorithms\Tests\StringAlgorithmTests.cpp" />
     <ClCompile Include="DataStructures\Tests\BSTTests.cpp" />
     <ClCompile Include="DataStructures\Tests\GraphTests.cpp" />
     <ClCompile Include="DataStructures\Tests\LinkedListTests.cpp" />
@@ -171,8 +172,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\Catch2\single_include\catch2\catch.hpp" />
-    <ClInclude Include="Algorithms\ArrayAlgorithms\MediumArrayAlgorithms.h" />
-    <ClInclude Include="Algorithms\ArrayAlgorithms\SimpleArrayAlgorithms.h" />
     <ClInclude Include="Algorithms\Backtracking\QueensProblem.h" />
     <ClInclude Include="Algorithms\Backtracking\Sudoku.h" />
     <ClInclude Include="Algorithms\DivideAndConquer\BSAlgorithms.h" />
@@ -182,21 +181,24 @@
     <ClInclude Include="Algorithms\DynamicProgramming\EasyDPAlgos.h" />
     <ClInclude Include="Algorithms\DynamicProgramming\Knapsack.h" />
     <ClInclude Include="Algorithms\DynamicProgramming\NumCombinations.h" />
+    <ClInclude Include="Algorithms\DynamicProgramming\PalindromeDP.h" />
+    <ClInclude Include="Algorithms\GeneralAlgorithms\DailyProblems.h" />
+    <ClInclude Include="Algorithms\GeneralAlgorithms\MediumArrayAlgorithms.h" />
+    <ClInclude Include="Algorithms\GeneralAlgorithms\StringAlgorithms.h" />
     <ClInclude Include="Algorithms\GreedyAlgorithms\MediumGreedyAlgorithms.h" />
     <ClInclude Include="Algorithms\GreedyAlgorithms\SimpleGreedyAlgorithms.h" />
     <ClInclude Include="Algorithms\Sorting\BubbleSort.h" />
     <ClInclude Include="DataStructures\BST\BinarySearchTree.h" />
     <ClInclude Include="DataStructures\BST\BSTAlgorithms.h" />
-    <ClInclude Include="DataStructures\BST\BasicBSTAlgorithms.h" />
-    <ClInclude Include="DataStructures\BST\Tree.h" />
+    <ClInclude Include="DataStructures\BST\MediumBSTAlgorithms.h" />
     <ClInclude Include="DataStructures\Graphs\Graph.h" />
     <ClInclude Include="DataStructures\Graphs\GraphAlgorithms.h" />
     <ClInclude Include="DataStructures\Graphs\GraphDFSAlgos.h" />
     <ClInclude Include="DataStructures\LinkedList\LinkedListAlgorithms.h" />
-    <ClInclude Include="DataStructures\LRUCache\Cache.h" />
     <ClInclude Include="DataStructures\LRUCache\LRUCache.h" />
     <ClInclude Include="DataStructures\Stack_Queue\Queue.h" />
     <ClInclude Include="DataStructures\Stack_Queue\Stack.h" />
+    <ClInclude Include="Header.h" />
     <ClInclude Include="Helpers.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

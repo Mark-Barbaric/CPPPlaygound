@@ -128,7 +128,7 @@ public:
 
         while (i < n && j < n)
         {
-            if(set.count(s[i]) == 0)
+            if(set.count(s[i]) == 0) 
             {
                 set.insert(s[i++]);
                 count = std::max(count, i - j);
@@ -139,11 +139,7 @@ public:
         }
 
         return count;
-
     }
-
-
-
 };
 
 

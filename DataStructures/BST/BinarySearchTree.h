@@ -5,10 +5,7 @@
 #ifndef BINARYSEARCHTREE_H
 #define BINARYSEARCHTREE_H
 
-#include <memory>
-#include <iostream>
-#include <vector>
-#include "Tree.h"
+#include "../../Header.h"
 
 template<typename Type>
 struct Node
@@ -26,6 +23,46 @@ struct Node
 
 #endif
 
+namespace BasicBSTAlgorithms
+{
+	//Preorder Root/Left/Right || Inorder Left/Root/Right || PostOrder Left/Right/Root
+	enum TraversalType {Preorder = 0, Inorder, Postorder};
+	
+    template<typename T>
+    inline std::string Traverse(Node<T>* root, TraversalType type)
+    {
+        if (!root)
+            return "";
+
+        if (type == Preorder)
+            return std::to_string(root->data) + Traverse(root->left, type) + Traverse(root->right, type);
+
+    	if(type == Inorder)
+            return Traverse(root->left, type) + std::to_string(root->data) + Traverse(root->right, type);
+
+        if (type == Postorder)
+            return Traverse(root->left, type)  + Traverse(root->right, type) + std::to_string(root->data);
+    }
+
+	template<typename T>
+	inline int MaxMinHeight(Node<T>* root, bool max)
+    {
+        if (!root)
+            return 0;
+
+        return max ? 1 + std::max(MaxMinHeight(root->left, max), MaxMinHeight(root->right, max)) : 1 + std::min(MaxMinHeight(root->left, max), MaxMinHeight(root->right, max));
+    }
+
+	template<typename T>
+	inline int Sum(Node<T>* root)
+    {
+        if (!root)
+            return 0;
+
+        return root->data + Sum(root->left) + Sum(root->right);
+    }
+    	
+}
 
 //template<typename Data>
 //class BinarySearchTree : public Tree<Data>
@@ -126,26 +163,7 @@ struct Node
 //
 //    }
 //
-//    void traverseNodes(Node* root, TraversalType type) const
-//    {
-//        if(!root)
-//            return;
-//
-//        if(type == PreOrder)
-//            std::cout << root->data << " ";
-//
-//        traverseNodes(root->left.get(), type);
-//
-//        if(type == InOrder)
-//            std::cout << root->data << " ";
-//
-//        traverseNodes(root->right.get(), type);
-//
-//        if(type == PostOrder)
-//            std::cout << root->data << " ";
-//
-//    }
-//
+//  //
 //    std::unique_ptr<Node> detachRightMost(std::unique_ptr<Node> &nodeRef) {
 //        if (nodeRef->right)
 //            return detachRightMost(nodeRef->right);

@@ -35,10 +35,22 @@ TEST_CASE("Divide And Conquery Sorting Tests")
 
 TEST_CASE("Divide And Conquery Binary Search Tests")
 {
-	SECTION("Search")
+	SECTION("Binary Search")
 	{
         const std::vector vec = { 1, 2, 3, 4, 5, 6, 7, 9 };
-        REQUIRE(BS_Algorithms::binarySearch(0, vec.size() - 1, 9, vec) == 7);
-		
+        REQUIRE(BSAlgorithms::RecursiveBinarySearch(0, vec.size() - 1, 9, vec) == 7);
+        REQUIRE(BSAlgorithms::IterativeBinarySearch(9, vec) == 7);
+        REQUIRE(BSAlgorithms::RecursiveBinarySearch(0, vec.size() - 1, 8, vec) == -1);
+        REQUIRE(BSAlgorithms::IterativeBinarySearch(8, vec) == -1);
+	}
+
+	SECTION("Pivoted Binary Search")
+	{
+        const std::vector<int> arr = { 3, 4, 0, 1, 2 };
+        const std::vector<int> arr2 = { 0, 1, 2, 3, 4 };
+        REQUIRE(BSAlgorithms::FindPivot(0, arr.size() - 1, arr) == 2);
+        REQUIRE(BSAlgorithms::FindPivot(0, arr2.size() - 1, arr2) == 0);
+        REQUIRE(BSAlgorithms::PivotedBinarySearch(0, arr.size() - 1, 2, arr) == 4);
+        REQUIRE(BSAlgorithms::PivotedBinarySearch(0, arr.size() - 1, 4, arr) == 1);
 	}
 }

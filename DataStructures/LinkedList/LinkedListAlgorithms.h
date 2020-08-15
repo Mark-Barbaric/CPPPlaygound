@@ -96,6 +96,58 @@ namespace LinkedListAlgorithms
 
         return dummyHead->next;
     }
+
+	LinkedList* addTwoNumbersTwo(LinkedList* l1, LinkedList* l2)
+    {
+        std::vector<int> arr1, arr2, arr3;
+
+    	while(l1 || l2)
+    	{
+            const auto x1 = l1 ? l1->val : 0;
+            const auto x2 = l2 ? l2->val : 0;
+
+            if (l1)
+            {
+                arr1.push_back(x1);
+                l1 = l1->next;
+            }
+            if (l2)
+            {
+
+                arr2.push_back(x2);
+                l2 = l2->next;
+            }  		
+    	}
+
+        int i = arr1.size() - 1, j = arr2.size() - 1, remainder = 0;
+
+    	while(i>=0 || j >=0)
+    	{
+            const auto l1 = i >= 0 ? arr1[i] : 0;
+            const auto l2 = j >= 0 ? arr2[j] : 0;
+
+            auto sum = l1 + l2 + remainder;
+            remainder = sum / 10;
+            sum %= 10;
+
+            arr3.push_back(sum);
+    		
+            i--;
+            j--;
+    	}
+
+        LinkedList* head = new LinkedList(arr3[arr3.size() - 1]);
+        LinkedList* dummy = head;
+
+    	for(int i = arr3.size() - 2; i >= 0; --i)
+    	{
+            LinkedList* node = new LinkedList(arr3[i]);
+            dummy->next = node;
+            dummy = dummy->next;
+    	}
+
+        return head;    	
+    }
 }
 
 #endif //BACKTRACKING_LINKEDLISTALGORITHMS_H
