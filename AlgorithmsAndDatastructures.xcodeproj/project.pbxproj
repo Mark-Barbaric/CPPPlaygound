@@ -10,7 +10,6 @@
 		12A332FF24D0673600D5CF4D /* SubsetSumAlgorithmTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12A332FE24D0673600D5CF4D /* SubsetSumAlgorithmTests.cpp */; };
 		12AA68C92438FA930070E46D /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AA68862438FA930070E46D /* main.cpp */; };
 		12AA68CD2438FA930070E46D /* MediumArrayAlgoTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AA68942438FA930070E46D /* MediumArrayAlgoTests.cpp */; };
-		12AA68D02438FA930070E46D /* SimpleArrayAlgoTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AA68972438FA930070E46D /* SimpleArrayAlgoTests.cpp */; };
 		12AA68D12438FA930070E46D /* GreedyAlgorithmTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AA68982438FA930070E46D /* GreedyAlgorithmTests.cpp */; };
 		12AA68D22438FA930070E46D /* MediumDPTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AA68992438FA930070E46D /* MediumDPTests.cpp */; };
 		12AA68D52438FA930070E46D /* GraphTests.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12AA68B52438FA930070E46D /* GraphTests.cpp */; };
@@ -35,16 +34,21 @@
 		1203323324CC466600C338C7 /* QuickSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuickSort.h; sourceTree = "<group>"; };
 		1203323424CC466600C338C7 /* MergeSort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MergeSort.h; sourceTree = "<group>"; };
 		1203323524CC466600C338C7 /* BSAlgorithms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSAlgorithms.h; sourceTree = "<group>"; };
+		12036AE924E825F100129DBF /* Sudoku.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sudoku.h; sourceTree = "<group>"; };
+		12036AEB24E8260200129DBF /* MediumArrayAlgorithms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediumArrayAlgorithms.h; sourceTree = "<group>"; };
+		12036AEC24E8260200129DBF /* StringAlgorithms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringAlgorithms.h; sourceTree = "<group>"; };
+		12036AED24E8260200129DBF /* DailyProblems.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DailyProblems.h; sourceTree = "<group>"; };
+		12036AEE24E8336700129DBF /* Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = SOURCE_ROOT; };
+		12036AEF24E8404000129DBF /* GraphIslandAlgos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraphIslandAlgos.h; sourceTree = "<group>"; };
+		12036AF024E84B5900129DBF /* GraphConnectionAlgorithms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraphConnectionAlgorithms.h; sourceTree = "<group>"; };
+		12036AF124E85C2D00129DBF /* GraphBFSAlgorithms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GraphBFSAlgorithms.h; sourceTree = "<group>"; };
 		125DEC012438FA3C00707F03 /* AlgorithmsAndDatastructures */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AlgorithmsAndDatastructures; sourceTree = BUILT_PRODUCTS_DIR; };
 		12A332FD24D066E500D5CF4D /* SubsetSumAlgorithms.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubsetSumAlgorithms.h; sourceTree = "<group>"; };
 		12A332FE24D0673600D5CF4D /* SubsetSumAlgorithmTests.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = SubsetSumAlgorithmTests.cpp; sourceTree = "<group>"; };
 		12AA68862438FA930070E46D /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = SOURCE_ROOT; };
-		12AA68872438FA930070E46D /* Helpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Helpers.h; sourceTree = SOURCE_ROOT; };
 		12AA68882438FA930070E46D /* catch.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = catch.hpp; sourceTree = SOURCE_ROOT; };
 		12AA688F2438FA930070E46D /* QueensProblem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueensProblem.h; sourceTree = "<group>"; };
-		12AA68902438FA930070E46D /* GraphColoring.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphColoring.h; sourceTree = "<group>"; };
 		12AA68942438FA930070E46D /* MediumArrayAlgoTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MediumArrayAlgoTests.cpp; sourceTree = "<group>"; };
-		12AA68972438FA930070E46D /* SimpleArrayAlgoTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = SimpleArrayAlgoTests.cpp; sourceTree = "<group>"; };
 		12AA68982438FA930070E46D /* GreedyAlgorithmTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GreedyAlgorithmTests.cpp; sourceTree = "<group>"; };
 		12AA68992438FA930070E46D /* MediumDPTests.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MediumDPTests.cpp; sourceTree = "<group>"; };
 		12AA689B2438FA930070E46D /* MediumArrayAlgorithms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediumArrayAlgorithms.h; sourceTree = "<group>"; };
@@ -64,7 +68,6 @@
 		12AA68B92438FA930070E46D /* Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Stack.h; sourceTree = "<group>"; };
 		12AA68BA2438FA930070E46D /* Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Queue.h; sourceTree = "<group>"; };
 		12AA68BC2438FA930070E46D /* Graph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Graph.h; sourceTree = "<group>"; };
-		12AA68BD2438FA930070E46D /* GraphAlgorithms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphAlgorithms.h; sourceTree = "<group>"; };
 		12AA68BF2438FA930070E46D /* LRUCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRUCache.h; sourceTree = "<group>"; };
 		12AA68C22438FA930070E46D /* Tree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tree.h; sourceTree = "<group>"; };
 		12AA68C32438FA930070E46D /* BSTAlgorithms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSTAlgorithms.h; sourceTree = "<group>"; };
@@ -93,6 +96,16 @@
 			path = DivideAndConquer;
 			sourceTree = "<group>";
 		};
+		12036AEA24E8260200129DBF /* GeneralAlgorithms */ = {
+			isa = PBXGroup;
+			children = (
+				12036AEB24E8260200129DBF /* MediumArrayAlgorithms.h */,
+				12036AEC24E8260200129DBF /* StringAlgorithms.h */,
+				12036AED24E8260200129DBF /* DailyProblems.h */,
+			);
+			path = GeneralAlgorithms;
+			sourceTree = "<group>";
+		};
 		125DEBF82438FA3C00707F03 = {
 			isa = PBXGroup;
 			children = (
@@ -112,10 +125,10 @@
 		125DEC032438FA3C00707F03 /* AlgorithmsAndDatastructures */ = {
 			isa = PBXGroup;
 			children = (
+				12036AEE24E8336700129DBF /* Header.h */,
 				12AA68892438FA930070E46D /* Algorithms */,
 				12AA68882438FA930070E46D /* catch.hpp */,
 				12AA68AF2438FA930070E46D /* DataStructures */,
-				12AA68872438FA930070E46D /* Helpers.h */,
 				12AA68862438FA930070E46D /* main.cpp */,
 			);
 			path = AlgorithmsAndDatastructures;
@@ -132,6 +145,7 @@
 		12AA68892438FA930070E46D /* Algorithms */ = {
 			isa = PBXGroup;
 			children = (
+				12036AEA24E8260200129DBF /* GeneralAlgorithms */,
 				12A332FC24D066D900D5CF4D /* SubsetSum */,
 				1203323124CC466600C338C7 /* DivideAndConquer */,
 				12AA688E2438FA930070E46D /* Backtracking */,
@@ -147,8 +161,8 @@
 		12AA688E2438FA930070E46D /* Backtracking */ = {
 			isa = PBXGroup;
 			children = (
+				12036AE924E825F100129DBF /* Sudoku.h */,
 				12AA688F2438FA930070E46D /* QueensProblem.h */,
-				12AA68902438FA930070E46D /* GraphColoring.h */,
 			);
 			path = Backtracking;
 			sourceTree = "<group>";
@@ -158,7 +172,6 @@
 			children = (
 				12AA68942438FA930070E46D /* MediumArrayAlgoTests.cpp */,
 				12A332FE24D0673600D5CF4D /* SubsetSumAlgorithmTests.cpp */,
-				12AA68972438FA930070E46D /* SimpleArrayAlgoTests.cpp */,
 				12AA68982438FA930070E46D /* GreedyAlgorithmTests.cpp */,
 				12AA68992438FA930070E46D /* MediumDPTests.cpp */,
 			);
@@ -247,7 +260,9 @@
 			isa = PBXGroup;
 			children = (
 				12AA68BC2438FA930070E46D /* Graph.h */,
-				12AA68BD2438FA930070E46D /* GraphAlgorithms.h */,
+				12036AF124E85C2D00129DBF /* GraphBFSAlgorithms.h */,
+				12036AF024E84B5900129DBF /* GraphConnectionAlgorithms.h */,
+				12036AEF24E8404000129DBF /* GraphIslandAlgos.h */,
 			);
 			path = Graphs;
 			sourceTree = "<group>";
@@ -327,7 +342,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12AA68D02438FA930070E46D /* SimpleArrayAlgoTests.cpp in Sources */,
 				12AA68D52438FA930070E46D /* GraphTests.cpp in Sources */,
 				12A332FF24D0673600D5CF4D /* SubsetSumAlgorithmTests.cpp in Sources */,
 				12AA68D62438FA930070E46D /* LRUCacheTests.cpp in Sources */,

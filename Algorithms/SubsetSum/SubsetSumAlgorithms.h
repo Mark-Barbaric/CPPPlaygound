@@ -9,8 +9,7 @@
 #ifndef SubsetSumAlgorithms_h
 #define SubsetSumAlgorithms_h
 
-#include <vector>
-#include <algorithm>
+#include "../../Header.h"
 
 namespace SubsetSumAlgorithms
 {

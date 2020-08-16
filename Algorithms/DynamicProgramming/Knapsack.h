@@ -36,28 +36,6 @@ namespace knapsack
 		return knapsackMatrix.back().back();
 		
 	}
-
-	//Complexity O(c), Space 0(c)
-	inline int maximumValueOptimised(const int capacity, const std::vector<Item> items)
-	{
-		std::vector<int> knapsackVector(capacity + 1, 0);
-
-		for (auto& i : items)
-			knapsackVector[i.weight] = i.value;
-
-		for(int i = 0; i < items.size(); ++i)
-		{
-			const auto itemWeight = items[i].weight;
-
-			for(int w = itemWeight; w < capacity + 1; ++w)
-			{
-				knapsackVector[w] = knapsackVector[w - itemWeight];
-			}
-		}
-
-		return knapsackVector.back();
-		
-	}
 }
 
 

@@ -27,10 +27,8 @@ TEST_CASE("Knapsack Tests")
 		std::vector<knapsack::Item> items = { {6, 5}, {5, 3}, {7, 4}, {3, 2} };
 		const auto maxWeight = 5;
 		REQUIRE(knapsack::maximumValue(maxWeight, items) == 8);
-		REQUIRE(knapsack::maximumValueOptimised(maxWeight, items) == 8);
 	}
 }
-
 
 TEST_CASE("Palindrome Tests")
 {

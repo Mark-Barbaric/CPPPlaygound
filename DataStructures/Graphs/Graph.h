@@ -2,88 +2,93 @@
 // Created by Mark Barbaric on 30/10/2019.
 //
 
-#ifndef BACKTRACKING_GRAPH_H
-#define BACKTRACKING_GRAPH_H
+#ifndef GRAPH_H
+#define GRAPH_H
 
-#include <vector>
-#include <queue>
+#include "../../Header.h"
 
 class Graph
 {
-
-    const int v;
-
-    void updateAdjacencyList(int w, int u)
+  const int v;
+  
+  void DFSUtil(int u, std::vector<bool>& visited, std::string& s)
+  {
+    s += std::to_string(u);
+    visited[u] = true;
+    
+    for(auto it = adjacencyList[u].begin(); it != adjacencyList[u].end(); ++it)
     {
-        adjacencyList[w].push_back(u);
-        adjacencyList[u].push_back(w);
+      if(!visited[*it])
+      {
+        visited[*it];
+        DFSUtil(*it, visited, s);
+      }
     }
-
-    void updateMatrix(int w, int u) {
-        adjacencyMatrix[w][u] = 1;
-        adjacencyMatrix[u][w] = 1;
-    }
-
-    void dfsUtil(int u, std::vector<bool>& visited)
+  }
+  
+  void BFSUtil(int u, std::vector<bool>& visited, std::string& s)
+  {
+    std::list<int> queue;
+    queue.push_back(u);
+    visited[u] = true;
+    
+    while(!queue.empty())
     {
-        visited[u] = true;
-
-        for(int i = 0; i < adjacencyList[u].size(); ++i)
-            if(!visited[adjacencyList[u][i]])
-                dfsUtil(adjacencyList[u][i], visited);
+      const auto w = queue.front();
+      queue.pop_front();
+      s += std::to_string(w);
+      
+      for(auto it = adjacencyList[w].begin(); it != adjacencyList[w].end(); ++it)
+      {
+        if(!visited[*it])
+        {
+          visited[*it] = true;
+          queue.push_back(*it);
+        }
+      }
     }
+  }
 
 public:
 
-    std::vector<std::vector<int>> adjacencyList;
-    std::vector<std::vector<int>> adjacencyMatrix;
+  std::vector<std::vector<int>> adjacencyMatrix;
+  std::vector<std::list<int>> adjacencyList;
+  std::vector<bool> visited;
 	
     explicit Graph(const int v_)
     :v(v_)
      {
-         adjacencyList.resize(v, std::vector<int>(v,0));
-         adjacencyMatrix.resize(v, std::vector<int>(v, 0));
+        adjacencyMatrix.resize(v, std::vector<int>(v,0));
+        adjacencyList.resize(v);
+        visited.resize(v, false);
      }
 
     void addEdge(int w, int u)
     {
-        updateAdjacencyList(w, u);
-        updateMatrix(w, u);
+      adjacencyList[w].push_back(u);
+      adjacencyList[u].push_back(w);
+      adjacencyMatrix[w][u] = 1;
     }
-
-    void dfs(int start)
+  
+  void BFS(std::string& s)
+  {
+    std::fill(visited.begin(), visited.end(), false);
+    BFSUtil(0, visited,s );
+  }
+  
+  void DFS(std::string& s)
+  {
+    std::fill(visited.begin(), visited.end(), false);
+    
+    for(int i = 0; i < v; ++i)
     {
-        std::vector<bool> visited (v, false);
-        for(int i = start; i < v; ++i)
-        {
-            if (!visited[i])
-                dfsUtil(i, visited);
-        }
+      if(!visited[i])
+      {
+        DFSUtil(i, visited, s);
+      }
     }
-
-    void bfs(int start)
-    {
-        std::vector<bool> visited(v, false);
-        std::queue<int> s;
-        visited[start] = true;
-        s.push(start);
-
-        while(!s.empty())
-        {
-            const auto next = s.front();
-            s.pop();
-
-            for(auto it = adjacencyList[next].begin(); it != adjacencyList[next].end(); ++it)
-            {
-                if(!visited[*it])
-                {
-                    visited[*it] = true;
-                    s.push((*it));
-                }
-            }
-        }
-    }
-
+  }
+  
 };
 
 #endif //BACKTRACKING_GRAPH_H

@@ -11,4 +11,5 @@
 #include <algorithm>
 #include <memory>
 #include <string>
+#include <list>
 #endif
