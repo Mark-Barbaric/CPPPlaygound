@@ -194,6 +194,7 @@
     <ClInclude Include="DataStructures\Graphs\Graph.h" />
     <ClInclude Include="DataStructures\Graphs\GraphAlgorithms.h" />
     <ClInclude Include="DataStructures\Graphs\GraphDFSAlgos.h" />
+    <ClInclude Include="DataStructures\Graphs\ShortestPathAlgorithms.h" />
     <ClInclude Include="DataStructures\LinkedList\LinkedListAlgorithms.h" />
     <ClInclude Include="DataStructures\LRUCache\LRUCache.h" />
     <ClInclude Include="DataStructures\Stack_Queue\Queue.h" />

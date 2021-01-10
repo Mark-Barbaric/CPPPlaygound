@@ -191,5 +191,8 @@
     <ClInclude Include="DataStructures\BST\MediumBSTAlgorithms.h">
       <Filter>Source Files\Datastructures\BST</Filter>
     </ClInclude>
+    <ClInclude Include="DataStructures\Graphs\ShortestPathAlgorithms.h">
+      <Filter>Source Files\Datastructures\Graphs</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

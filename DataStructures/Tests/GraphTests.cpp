@@ -1,24 +1,25 @@
 #include "../../catch.hpp"
-#include "Graph.h"
+#include "../Graphs/Graph.h"
 #include "../Graphs/GraphBFSAlgorithms.h"
 #include "../Graphs/GraphIslandAlgos.h"
 #include "../Graphs/GraphConnectionAlgorithms.h"
+#include "../Graphs/ShortestPathAlgorithms.h"
 
-TEST_CASE("Graph Base Functionality Tests")
+TEST_CASE("Shortest Path Algorithm Tests")
 {
-	Graph g(5);
-  g.addEdge(0, 1);
-  g.addEdge(0, 3);
-  g.addEdge(0, 2);
-  g.addEdge(1, 2);
-  g.addEdge(2, 4);
-  
-  std::string bfsString = "";
-  g.BFS(bfsString);
-  REQUIRE(bfsString == "01324");
-  std::string dfsString = "";
-  g.DFS(dfsString);
-  REQUIRE(dfsString == "01243");
+	SECTION("Dijkstra's Shortest Path")
+	{
+        Graph graph(6);
+        graph.addEdge(1, 2, 5);
+        graph.addEdge(2, 3, 6);
+        graph.addEdge(3, 4, 2);
+        graph.addEdge(1, 3, 15);
+        graph.addEdge(5, 5, 0);
+
+        std::vector<int> ans = { INT_MAX, 0, 5, 11, 13, INT_MAX};
+
+        REQUIRE(ShortestPathAlgorithms::DijkstrasShortestPath(graph, 1) == ans);
+	}
 }
 
 TEST_CASE("Graph BFS Algorithms")
