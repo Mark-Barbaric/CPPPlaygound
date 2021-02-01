@@ -126,6 +126,25 @@ class BinarySearchTree
 
 		return root;
 	}
+
+	Node<Type>* findNodeUtil(Node<Type>* root, Type val)
+	{
+		if(!root)
+		{
+			return root;
+		}
+
+		if(val < root->val)
+		{
+			return findNodeUtil(root->left, val);
+		}
+		else if(val > root->val)
+		{
+			return findNodeUtil(root->right, val);
+		}
+
+		return root;
+	}
 	
 public:
 
@@ -142,7 +161,11 @@ public:
 	{
 		root = deleteNodeUtil(root, val);
 	}
-	
+
+	Node<Type>* findNode(Type val)
+	{
+		return findNodeUtil(root, val);
+	}
 };
 
 

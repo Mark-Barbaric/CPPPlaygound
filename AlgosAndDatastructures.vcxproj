@@ -166,6 +166,7 @@
     <ClCompile Include="Algorithms\Tests\StringAlgorithmTests.cpp" />
     <ClCompile Include="DataStructures\Tests\BSTTests.cpp" />
     <ClCompile Include="DataStructures\Tests\GraphTests.cpp" />
+    <ClCompile Include="DataStructures\Tests\HashTests.cpp" />
     <ClCompile Include="DataStructures\Tests\LinkedListTests.cpp" />
     <ClCompile Include="DataStructures\Tests\LRUCacheTests.cpp" />
     <ClCompile Include="DataStructures\Tests\StackQueueTests.cpp" />
@@ -190,16 +191,18 @@
     <ClInclude Include="Algorithms\GreedyAlgorithms\SimpleGreedyAlgorithms.h" />
     <ClInclude Include="Algorithms\Sorting\BubbleSort.h" />
     <ClInclude Include="Algorithms\Sorting\SortingAlgorithms.h" />
-    <ClInclude Include="DataStructures\BST\BinarySearchTree.h" />
     <ClInclude Include="DataStructures\Graphs\Graph.h" />
     <ClInclude Include="DataStructures\Graphs\MSTAlgorithms.h" />
     <ClInclude Include="DataStructures\Graphs\ShortestPathAlgorithms.h" />
     <ClInclude Include="DataStructures\HashMap\HashMap.h" />
+    <ClInclude Include="DataStructures\Hash\HashSet.h" />
     <ClInclude Include="DataStructures\Heap\MedianHeap.h" />
     <ClInclude Include="DataStructures\LinkedList\LinkedListAlgorithms.h" />
     <ClInclude Include="DataStructures\LRUCache\LRUCache.h" />
     <ClInclude Include="DataStructures\Stack_Queue\Queue.h" />
     <ClInclude Include="DataStructures\Stack_Queue\Stack.h" />
+    <ClInclude Include="DataStructures\Tests\LinkedList.h" />
+    <ClInclude Include="DataStructures\Trees\BinarySearchTree.h" />
     <ClInclude Include="Header.h" />
     <ClInclude Include="Helpers.h" />
   </ItemGroup>

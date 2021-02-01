@@ -2,51 +2,35 @@
 // Created by Mark Barbaric on 27/10/2019.
 //
 
-#ifndef LINKEDLISTALGORITHMS_H
-#define LINKEDLISTALGORITHMS_H
+#ifndef LINKED_LIST_ALGORITHMS_H
+#define LINKED_LIST_ALGORITHMS_H
 
-struct LinkedList {
-    int val;
-    LinkedList* next;
-    LinkedList() : val(0), next(nullptr) {}
-    LinkedList(int x) : val(x), next(nullptr) {}
-    LinkedList(int x, LinkedList* next) : val(x), next(next) {}
-};
+#include "../Tests/LinkedList.h"
+
 
 namespace LinkedListAlgorithms
 {
-    LinkedList* deleteNode(LinkedList* l, const int val)
+    std::string traverseNodesUtil(ListNode<int>* head)
     {
-        auto* head = l;
-        auto* prev = l;
-        auto* node = l->next;
+        std::string ans = "";
 
-        if (head->val == val)
+        while (head)
         {
+            if (!ans.empty())
+            {
+                ans += ' ';
+            }
+
+            ans += std::to_string(head->val);
             head = head->next;
-            return head;
         }
 
-    	while(node)
-    	{
-    		if(node->val == val)
-    		{
-                prev->next = node->next;
-                break;
-    		}
-
-            prev = node;
-            node = node->next;
-    	}
-
-        return head;    	
+        return ans;
     }
-
-    LinkedList* reverseLinkedList(LinkedList* l)
+	
+    ListNode<int>* reverseLinkedList(ListNode<int>* l)
     {
-        auto* cur = l;
-        LinkedList* prev = nullptr;
-        LinkedList* next = nullptr;
+        ListNode<int>* cur = l, *prev = nullptr, *next = nullptr;
 
         while(cur)
         {
@@ -61,14 +45,13 @@ namespace LinkedListAlgorithms
         	//iterate next with stored next pointer
             cur = next;
         }
-
-        cur = prev;    	
-        return cur;
+   	
+        return prev;
     }
 	
-    LinkedList* addTwoNumbers(LinkedList* l1, LinkedList* l2) {
+    ListNode<int>* addTwoNumbers(ListNode<int>* l1, ListNode<int>* l2) {
 
-        auto* dummyHead = new LinkedList(0);
+        auto* dummyHead = new ListNode<int>(0);
         auto* cur = dummyHead;
         auto remainder = 0;
 
@@ -81,7 +64,7 @@ namespace LinkedListAlgorithms
             remainder = sum / 10;
             sum %= 10;
 
-            auto* newNode = new LinkedList(sum);
+            auto* newNode = new ListNode<int>(sum);
             cur->next = newNode;
             cur = cur->next;
 
@@ -92,12 +75,12 @@ namespace LinkedListAlgorithms
         }
 
         if (remainder)
-            cur->next = new LinkedList(remainder);
+            cur->next = new ListNode<int>(remainder);
 
         return dummyHead->next;
     }
 
-	LinkedList* addTwoNumbersTwo(LinkedList* l1, LinkedList* l2)
+	ListNode<int>* addTwoNumbersTwo(ListNode<int>* l1, ListNode<int>* l2)
     {
         std::vector<int> arr1, arr2, arr3;
 
@@ -136,12 +119,12 @@ namespace LinkedListAlgorithms
             j--;
     	}
 
-        LinkedList* head = new LinkedList(arr3[arr3.size() - 1]);
-        LinkedList* dummy = head;
+        ListNode<int>* head = new ListNode<int>(arr3[arr3.size() - 1]);
+        ListNode<int>* dummy = head;
 
     	for(int i = arr3.size() - 2; i >= 0; --i)
     	{
-            LinkedList* node = new LinkedList(arr3[i]);
+            ListNode<int>* node = new ListNode<int>(arr3[i]);
             dummy->next = node;
             dummy = dummy->next;
     	}
@@ -150,4 +133,4 @@ namespace LinkedListAlgorithms
     }
 }
 
-#endif //BACKTRACKING_LINKEDLISTALGORITHMS_H
+#endif //BACKTRACKING_ListNode<int>ALGORITHMS_H

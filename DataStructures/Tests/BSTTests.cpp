@@ -1,5 +1,5 @@
 #include "../../catch.hpp"
-#include "../BST/BinarySearchTree.h"
+#include "../Trees/BinarySearchTree.h"
 
 TEST_CASE("BST Basic Tests")
 {
@@ -19,7 +19,8 @@ TEST_CASE("BST Basic Tests")
 	bst.insertNode(13);
 
 	REQUIRE(bst.inorderTraversal() == "1 3 4 5 6 7 8 9 10 11 12 13");
-
+	REQUIRE(bst.findNode(3) != nullptr);
+	REQUIRE(bst.findNode(42) == nullptr);
 
 	SECTION("Delete Leaf Node")
 	{

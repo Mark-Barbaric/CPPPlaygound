@@ -31,9 +31,6 @@
     <Filter Include="Source Files\Algorithms\Tests">
       <UniqueIdentifier>{5e2d167f-6fb0-4923-97cd-9bb97bccb31e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Datastructures\BST">
-      <UniqueIdentifier>{a3abfe57-2973-4b73-ae8c-d8f6ecdc5ca7}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Datastructures\Graphs">
       <UniqueIdentifier>{74f09632-f0c1-445c-8fce-b89bdfc73990}</UniqueIdentifier>
     </Filter>
@@ -58,11 +55,14 @@
     <Filter Include="Source Files\Algorithms\GeneralAlgorithms">
       <UniqueIdentifier>{9fe3514e-48ee-4b00-a8f2-33ac797cf64a}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\Datastructures\HashMap">
-      <UniqueIdentifier>{0baecdf5-3205-438e-95f9-856801231f3c}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Source Files\Datastructures\Heap">
       <UniqueIdentifier>{620ea096-ced8-42d4-9b90-57d62d81119d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Datastructures\Trees">
+      <UniqueIdentifier>{a3abfe57-2973-4b73-ae8c-d8f6ecdc5ca7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Datastructures\Hash">
+      <UniqueIdentifier>{0baecdf5-3205-438e-95f9-856801231f3c}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -111,6 +111,9 @@
     <ClCompile Include="Algorithms\Tests\SortingTests.cpp">
       <Filter>Source Files\Algorithms\Tests</Filter>
     </ClCompile>
+    <ClCompile Include="DataStructures\Tests\HashTests.cpp">
+      <Filter>Source Files\Datastructures\Tests</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Helpers.h">
@@ -124,9 +127,6 @@
     </ClInclude>
     <ClInclude Include="Algorithms\Sorting\BubbleSort.h">
       <Filter>Source Files\Algorithms\Sorting</Filter>
-    </ClInclude>
-    <ClInclude Include="DataStructures\BST\BinarySearchTree.h">
-      <Filter>Source Files\Datastructures\BST</Filter>
     </ClInclude>
     <ClInclude Include="DataStructures\Graphs\Graph.h">
       <Filter>Source Files\Datastructures\Graphs</Filter>
@@ -198,10 +198,19 @@
       <Filter>Source Files\Algorithms\Sorting</Filter>
     </ClInclude>
     <ClInclude Include="DataStructures\HashMap\HashMap.h">
-      <Filter>Source Files\Datastructures\HashMap</Filter>
+      <Filter>Source Files\Datastructures\Hash</Filter>
     </ClInclude>
     <ClInclude Include="DataStructures\Heap\MedianHeap.h">
       <Filter>Source Files\Datastructures\Heap</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructures\Trees\BinarySearchTree.h">
+      <Filter>Source Files\Datastructures\Trees</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructures\Hash\HashSet.h">
+      <Filter>Source Files\Datastructures\Hash</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructures\Tests\LinkedList.h">
+      <Filter>Source Files\Datastructures\LinkedList</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
