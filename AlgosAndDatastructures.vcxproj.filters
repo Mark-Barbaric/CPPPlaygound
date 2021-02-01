@@ -58,6 +58,12 @@
     <Filter Include="Source Files\Algorithms\GeneralAlgorithms">
       <UniqueIdentifier>{9fe3514e-48ee-4b00-a8f2-33ac797cf64a}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Datastructures\HashMap">
+      <UniqueIdentifier>{0baecdf5-3205-438e-95f9-856801231f3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Datastructures\Heap">
+      <UniqueIdentifier>{620ea096-ced8-42d4-9b90-57d62d81119d}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -102,6 +108,9 @@
     <ClCompile Include="Algorithms\Tests\StringAlgorithmTests.cpp">
       <Filter>Source Files\Algorithms\Tests</Filter>
     </ClCompile>
+    <ClCompile Include="Algorithms\Tests\SortingTests.cpp">
+      <Filter>Source Files\Algorithms\Tests</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Helpers.h">
@@ -119,13 +128,7 @@
     <ClInclude Include="DataStructures\BST\BinarySearchTree.h">
       <Filter>Source Files\Datastructures\BST</Filter>
     </ClInclude>
-    <ClInclude Include="DataStructures\BST\BSTAlgorithms.h">
-      <Filter>Source Files\Datastructures\BST</Filter>
-    </ClInclude>
     <ClInclude Include="DataStructures\Graphs\Graph.h">
-      <Filter>Source Files\Datastructures\Graphs</Filter>
-    </ClInclude>
-    <ClInclude Include="DataStructures\Graphs\GraphAlgorithms.h">
       <Filter>Source Files\Datastructures\Graphs</Filter>
     </ClInclude>
     <ClInclude Include="DataStructures\LinkedList\LinkedListAlgorithms.h">
@@ -170,9 +173,6 @@
     <ClInclude Include="Algorithms\DivideAndConquer\BSAlgorithms.h">
       <Filter>Source Files\Algorithms\DivideAndConquer</Filter>
     </ClInclude>
-    <ClInclude Include="DataStructures\Graphs\GraphDFSAlgos.h">
-      <Filter>Source Files\Datastructures\Graphs</Filter>
-    </ClInclude>
     <ClInclude Include="Algorithms\DynamicProgramming\PalindromeDP.h">
       <Filter>Source Files\Algorithms\DynamicProgramming</Filter>
     </ClInclude>
@@ -188,11 +188,20 @@
     <ClInclude Include="Algorithms\GeneralAlgorithms\StringAlgorithms.h">
       <Filter>Source Files\Algorithms\GeneralAlgorithms</Filter>
     </ClInclude>
-    <ClInclude Include="DataStructures\BST\MediumBSTAlgorithms.h">
-      <Filter>Source Files\Datastructures\BST</Filter>
-    </ClInclude>
     <ClInclude Include="DataStructures\Graphs\ShortestPathAlgorithms.h">
       <Filter>Source Files\Datastructures\Graphs</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructures\Graphs\MSTAlgorithms.h">
+      <Filter>Source Files\Datastructures\Graphs</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\Sorting\SortingAlgorithms.h">
+      <Filter>Source Files\Algorithms\Sorting</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructures\HashMap\HashMap.h">
+      <Filter>Source Files\Datastructures\HashMap</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructures\Heap\MedianHeap.h">
+      <Filter>Source Files\Datastructures\Heap</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

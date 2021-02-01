@@ -45,6 +45,11 @@
     &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::Linked List Reverse Test&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=54e7b19d_002Dc16a_002D4f95_002Db028_002D453ff95407d3/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="BST Basic Tests #5" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::BST Basic Tests&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=690d0abe_002D8c4a_002D49d2_002D95ee_002Df8c4ec64506f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Palindrome Tests #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::Palindrome Tests&lt;/TestId&gt;&#xD;
@@ -108,10 +113,20 @@
     &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::Divide And Conquery Binary Search Tests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
-	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c587dd14_002D205c_002D4285_002Dadd1_002D534c85af0f4a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" IsActive="True" Name="Shortest Path Algorithm Tests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
-  &lt;TestAncestor&gt;&#xD;
-    &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::Shortest Path Algorithm Tests&lt;/TestId&gt;&#xD;
-  &lt;/TestAncestor&gt;&#xD;
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c587dd14_002D205c_002D4285_002Dadd1_002D534c85af0f4a/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Shortest Path Algorithm Tests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;And&gt;&#xD;
+    &lt;TestAncestor&gt;&#xD;
+      &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::Shortest Path Algorithm Tests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::Heap Sort&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::Merge Sort Tests&lt;/TestId&gt;&#xD;
+    &lt;/TestAncestor&gt;&#xD;
+    &lt;Not&gt;&#xD;
+      &lt;TestAncestor&gt;&#xD;
+        &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::Merge Sort Tests&lt;/TestId&gt;&#xD;
+        &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::Shortest Path Algorithm Tests&lt;/TestId&gt;&#xD;
+      &lt;/TestAncestor&gt;&#xD;
+    &lt;/Not&gt;&#xD;
+  &lt;/And&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=c816ee60_002D8380_002D41c9_002D818f_002D226cc6157922/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Medium String Algorithm Tests #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;And&gt;&#xD;
@@ -133,6 +148,13 @@
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=cc684985_002D83ae_002D49c4_002Da0d7_002D6dcd16ec33fa/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="String Testss" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
   &lt;TestAncestor&gt;&#xD;
     &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::String Testss&lt;/TestId&gt;&#xD;
+  &lt;/TestAncestor&gt;&#xD;
+&lt;/SessionState&gt;</s:String>
+	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=ce1fd4bc_002D2889_002D465d_002Dafa4_002D33ffcce6f1d2/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Merge Sort Tests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;
+  &lt;TestAncestor&gt;&#xD;
+    &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::Merge Sort Tests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::Shortest Path Algorithm Tests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::BST Basic Tests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=d4481dc1_002Df131_002D40b2_002Db041_002D73762c79f379/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Medium String Algorithm Tests" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;

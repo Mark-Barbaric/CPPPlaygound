@@ -1,8 +1,5 @@
 #include "../../catch.hpp"
 #include "../Graphs/Graph.h"
-#include "../Graphs/GraphBFSAlgorithms.h"
-#include "../Graphs/GraphIslandAlgos.h"
-#include "../Graphs/GraphConnectionAlgorithms.h"
 #include "../Graphs/ShortestPathAlgorithms.h"
 
 TEST_CASE("Shortest Path Algorithm Tests")
@@ -20,45 +17,21 @@ TEST_CASE("Shortest Path Algorithm Tests")
 
         REQUIRE(ShortestPathAlgorithms::DijkstrasShortestPath(graph, 1) == ans);
 	}
+
+    SECTION("Negative Weight Dijkstra's Shortest Path")
+    {
+        Graph graph(4);
+        graph.addEdge(1, 2, 3);
+        graph.addEdge(2, 3, -2);
+        graph.addEdge(1, 3, 2);
+
+        std::vector<int> ans = { INT_MAX, 0, 3, 2};
+
+        REQUIRE(ShortestPathAlgorithms::DijkstrasShortestPath(graph, 1) == ans);
+    }
 }
 
-TEST_CASE("Graph BFS Algorithms")
-{
-  Graph g(6);
-  g.addEdge(0, 1);
-  g.addEdge(0, 2);
-  g.addEdge(0, 3);
-  g.addEdge(3, 4);
-  g.addEdge(3, 5);
-  
-  REQUIRE(GraphBFSAlgorithms::MinimumDistance(0, g.adjacencyList) == 2);
-}
 
-TEST_CASE("Graph Island Algorithms")
-{
-  Graph g(4);
-  g.addEdge(0, 0);
-  g.addEdge(0, 1);
-  g.addEdge(0, 2);
-  g.addEdge(1, 0);
-  g.addEdge(2, 2);
-  g.addEdge(3, 0);
-  g.addEdge(3, 1);
-  
-  REQUIRE(GraphIslandsAlgos::MaxAreaOfIsland(g.adjacencyMatrix) == 4);
-  
-}
 
-TEST_CASE("Graph Connection Algorithms")
-{
-  Graph g (6);
-  g.addEdge(0, 1);
-  g.addEdge(0, 2);
-  g.addEdge(0, 3);
-  g.addEdge(4, 5);
-  
-  REQUIRE(GraphConnectionAlgorithms::NumConnectedComponents(g.adjacencyList) == 2);
-  std::vector<std::vector<int>> connectionAns = {{0, 3}, {4,5}};
-}
 
 

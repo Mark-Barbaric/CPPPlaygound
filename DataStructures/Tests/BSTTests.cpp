@@ -3,26 +3,46 @@
 
 TEST_CASE("BST Basic Tests")
 {
-	Node<int>* root = new Node<int>(1);
-	root->left = new Node<int>(2);
-	root->right = new Node<int>(3);
-	root->left->left = new Node<int>(4);
-	root->left->right = new Node<int>(5);
+	BinarySearchTree<int> bst;
 
-	SECTION("Traversal Tests")
+	bst.insertNode(3);
+	bst.insertNode(1);
+	bst.insertNode(6);
+	bst.insertNode(5);
+	bst.insertNode(4);
+	bst.insertNode(8);
+	bst.insertNode(7);
+	bst.insertNode(9);
+	bst.insertNode(11);
+	bst.insertNode(10);
+	bst.insertNode(12);
+	bst.insertNode(13);
+
+	REQUIRE(bst.inorderTraversal() == "1 3 4 5 6 7 8 9 10 11 12 13");
+
+
+	SECTION("Delete Leaf Node")
 	{
-		const auto preOrderString = BasicBSTAlgorithms::Traverse(root, BasicBSTAlgorithms::TraversalType::Preorder);
-		REQUIRE(preOrderString == "12453");
-		const auto inOrderString = BasicBSTAlgorithms::Traverse(root, BasicBSTAlgorithms::TraversalType::Inorder);
-		REQUIRE(inOrderString == "42513");
-		const auto postOrderString = BasicBSTAlgorithms::Traverse(root, BasicBSTAlgorithms::TraversalType::Postorder);
-		REQUIRE(postOrderString == "45231");
+		bst.deleteNode(1);
+		REQUIRE(bst.inorderTraversal() == "3 4 5 6 7 8 9 10 11 12 13");
 	}
 
-	SECTION("Sum and Height Tests")
+	SECTION("Delete Node With Left Child")
 	{
-		REQUIRE(BasicBSTAlgorithms::MaxMinHeight(root, true) == 3);
-		REQUIRE(BasicBSTAlgorithms::MaxMinHeight(root, false) == 2);
-		REQUIRE(BasicBSTAlgorithms::Sum(root) == 15);
+		bst.deleteNode(4);
+		REQUIRE(bst.inorderTraversal() == "1 3 5 6 7 8 9 10 11 12 13");
 	}
+
+	SECTION("Delete Node With Right Child")
+	{
+		bst.deleteNode(12);
+		REQUIRE(bst.inorderTraversal() == "1 3 4 5 6 7 8 9 10 11 13");
+	}
+
+	SECTION("Delete Node With Two Children")
+	{
+		bst.deleteNode(3);
+		REQUIRE(bst.inorderTraversal() == "1 4 5 6 7 8 9 10 11 12 13");
+	}
+
 }

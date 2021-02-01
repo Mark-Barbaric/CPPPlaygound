@@ -7,18 +7,6 @@
 
 #include <queue>
 
-template<typename Type>
-class Stack
-{
-  
-  std::unique_ptr<Type> buffer;
-public:
-  
-  
-  
-  
-  
-};
 
 template<typename Type>
 class TwoQueueStack
@@ -27,9 +15,7 @@ class TwoQueueStack
   size_t currentSize;
   
 public:
-  TwoQueueStack()
-  {
-  }
+    TwoQueueStack() = default;
   
   void push(int x)
   {

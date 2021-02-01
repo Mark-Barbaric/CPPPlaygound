@@ -1,6 +1,7 @@
 #ifndef HEADER_H
 #define HEADER_H
 #include <vector>
+#include <queue>
 #include <iostream>
 #include <unordered_map>
 #include <stack>
