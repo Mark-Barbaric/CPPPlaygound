@@ -50,6 +50,8 @@
     &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::BST Basic Tests&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::Linked List Base Functionality Tests&lt;/TestId&gt;&#xD;
     &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::Linked List Algorithm Tests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::Cycle Algorithm Tests&lt;/TestId&gt;&#xD;
+    &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::Graph Cycle Algorithm Tests&lt;/TestId&gt;&#xD;
   &lt;/TestAncestor&gt;&#xD;
 &lt;/SessionState&gt;</s:String>
 	<s:String x:Key="/Default/Environment/UnitTesting/UnitTestSessionStore/Sessions/=690d0abe_002D8c4a_002D49d2_002D95ee_002Df8c4ec64506f/@EntryIndexedValue">&lt;SessionState ContinuousTestingMode="0" Name="Palindrome Tests #2" xmlns="urn:schemas-jetbrains-com:jetbrains-ut-session"&gt;&#xD;

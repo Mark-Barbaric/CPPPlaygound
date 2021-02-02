@@ -47,16 +47,4 @@ public:
  
 };
 
-
-class WeightedGraph : public Graph
-{
-
-public:
-    WeightedGraph(int n) :Graph(n)
-    {
-
-    }
-
-};
-
 #endif //BACKTRACKING_GRAPH_H

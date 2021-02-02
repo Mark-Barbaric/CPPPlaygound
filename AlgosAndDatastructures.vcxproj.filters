@@ -212,5 +212,8 @@
     <ClInclude Include="DataStructures\Tests\LinkedList.h">
       <Filter>Source Files\Datastructures\LinkedList</Filter>
     </ClInclude>
+    <ClInclude Include="DataStructures\Graphs\CycleAlgorithms.h">
+      <Filter>Source Files\Datastructures\Graphs</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

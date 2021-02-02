@@ -103,16 +103,14 @@ class BinarySearchTree
 			//left child
 			else if (!root->right && root->left)
 			{
-				root->val = root->left->val;
-				root->left = nullptr;
+				root = root->left;
 			}
 
 
 			//right child
 			else if (!root->left && root->right)
 			{
-				root->val = root->right->val;
-				root->right = nullptr;
+				root = root->right;
 			}
 
 			//two children

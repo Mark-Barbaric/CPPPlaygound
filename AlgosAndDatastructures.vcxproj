@@ -191,6 +191,7 @@
     <ClInclude Include="Algorithms\GreedyAlgorithms\SimpleGreedyAlgorithms.h" />
     <ClInclude Include="Algorithms\Sorting\BubbleSort.h" />
     <ClInclude Include="Algorithms\Sorting\SortingAlgorithms.h" />
+    <ClInclude Include="DataStructures\Graphs\CycleAlgorithms.h" />
     <ClInclude Include="DataStructures\Graphs\Graph.h" />
     <ClInclude Include="DataStructures\Graphs\MSTAlgorithms.h" />
     <ClInclude Include="DataStructures\Graphs\ShortestPathAlgorithms.h" />

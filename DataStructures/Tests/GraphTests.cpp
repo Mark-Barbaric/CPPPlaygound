@@ -1,6 +1,50 @@
 #include "../../catch.hpp"
 #include "../Graphs/Graph.h"
 #include "../Graphs/ShortestPathAlgorithms.h"
+#include "../Graphs/CycleAlgorithms.h"
+
+TEST_CASE("Graph Cycle Algorithm Tests")
+{
+	SECTION("Undirected Graph Cycle Tests")
+	{
+        Graph graph(7);
+        graph.addEdge(1, 3);
+        graph.addEdge(3, 5);
+        graph.addEdge(5, 2);
+        graph.addEdge(2, 6);
+
+        SECTION("Doesn't contain Cycle")
+        {
+            REQUIRE(CycleAlgorithms::containsCycle(graph, false) == false);
+        }
+
+        SECTION("Contains Cycle")
+        {
+            graph.addEdge(5, 6);
+            REQUIRE(CycleAlgorithms::containsCycle(graph, false) == true);
+        }
+	}
+
+    SECTION("Directed Graph Cycle Tests")
+    {
+        Graph graph(7, true);
+        graph.addEdge(1, 3);
+        graph.addEdge(3, 5);
+        graph.addEdge(5, 2);
+        graph.addEdge(2, 6);
+
+        SECTION("Doesn't contain Cycle")
+        {
+            REQUIRE(CycleAlgorithms::containsCycle(graph, true) == false);
+        }
+
+        SECTION("Contains Cycle")
+        {
+            graph.addEdge(6, 5);
+            REQUIRE(CycleAlgorithms::containsCycle(graph, true) == true);
+        }
+    }
+}
 
 TEST_CASE("Shortest Path Algorithm Tests")
 {
