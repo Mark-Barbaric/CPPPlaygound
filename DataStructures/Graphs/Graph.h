@@ -16,6 +16,7 @@ public:
 
   std::vector<std::vector<int>> adjacencyMatrix;
   std::vector<std::list<int>> adjacencyList;
+  std::vector<std::vector<int>> weightedEdgeList;
 	
     explicit Graph(const int v_, const bool directed_ = false)
     :v(v_),
@@ -25,24 +26,28 @@ public:
         adjacencyList.resize(v);
      }
 
-    void addEdge(int w, int u)
+    void addEdge(int u, int v)
     {
-      adjacencyList[w].push_back(u);
-      adjacencyMatrix[w][u] = 1;
+      adjacencyList[u].push_back(v);
+      adjacencyMatrix[u][v] = 1;
+      weightedEdgeList.push_back({ 0, u, v});
 
       if (!directed)
       {
-          adjacencyMatrix[u][w] = 1;
-          adjacencyList[u].push_back(w);
+          adjacencyMatrix[v][u] = 1;
+          adjacencyList[v].push_back(u);
       }
     }
 
 	void addEdge(int u, int v, int w)
     {
         adjacencyMatrix[u][v] = w;
+        weightedEdgeList.push_back({ w, u, v});
 
     	if(!directed)
-			adjacencyMatrix[v][u] = w;
+    	{
+            adjacencyMatrix[v][u] = w;
+    	}
     }
  
 };

@@ -10,6 +10,40 @@
 
 namespace LinkedListAlgorithms
 {
+
+    ListNode<int>* containsCycle(ListNode<int>* root)
+    {
+        ListNode<int>* slow = root, * fast = root;
+
+        while (fast && fast->next)
+        {
+            slow = slow->next;
+            fast = fast->next->next;
+        	
+            if (slow == fast)
+                return slow;
+        }
+
+        return nullptr;
+    }
+	
+    ListNode<int>* findCycleIntersection(ListNode<int>* head)
+    {
+        auto* intersection = containsCycle(head);
+
+        if (!intersection || !head)
+            return nullptr;
+    	
+        auto* ptr1 = head, * ptr2 = intersection;
+    	while(ptr2 != ptr1)
+    	{
+            ptr1 = ptr1->next;
+            ptr2 = ptr2->next;
+    	}
+
+        return ptr1;
+    }
+	
     std::string traverseNodesUtil(ListNode<int>* head)
     {
         std::string ans = "";

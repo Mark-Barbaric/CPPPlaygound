@@ -2,6 +2,7 @@
 #include "../Graphs/Graph.h"
 #include "../Graphs/ShortestPathAlgorithms.h"
 #include "../Graphs/CycleAlgorithms.h"
+#include "../Graphs/MSTAlgorithms.h"
 
 TEST_CASE("Graph Cycle Algorithm Tests")
 {
@@ -16,12 +17,14 @@ TEST_CASE("Graph Cycle Algorithm Tests")
         SECTION("Doesn't contain Cycle")
         {
             REQUIRE(CycleAlgorithms::containsCycle(graph, false) == false);
+            REQUIRE(CycleAlgorithms::containsCycleUnionFind(graph) == false);
         }
 
         SECTION("Contains Cycle")
         {
             graph.addEdge(5, 6);
             REQUIRE(CycleAlgorithms::containsCycle(graph, false) == true);
+            REQUIRE(CycleAlgorithms::containsCycleUnionFind(graph) == true);
         }
 	}
 
@@ -36,12 +39,14 @@ TEST_CASE("Graph Cycle Algorithm Tests")
         SECTION("Doesn't contain Cycle")
         {
             REQUIRE(CycleAlgorithms::containsCycle(graph, true) == false);
+            REQUIRE(CycleAlgorithms::containsCycleUnionFind(graph) == false);
         }
 
         SECTION("Contains Cycle")
         {
             graph.addEdge(6, 5);
             REQUIRE(CycleAlgorithms::containsCycle(graph, true) == true);
+            REQUIRE(CycleAlgorithms::containsCycleUnionFind(graph) == true);
         }
     }
 }
@@ -60,22 +65,42 @@ TEST_CASE("Shortest Path Algorithm Tests")
         std::vector<int> ans = { INT_MAX, 0, 5, 11, 13, INT_MAX};
 
         REQUIRE(ShortestPathAlgorithms::DijkstrasShortestPath(graph, 1) == ans);
+        REQUIRE(ShortestPathAlgorithms::OptimisedDijkstrasShortestPath(graph, 1) == ans);
 	}
 
-    SECTION("Negative Weight Dijkstra's Shortest Path")
-    {
-        Graph graph(4);
-        graph.addEdge(1, 2, 3);
-        graph.addEdge(2, 3, -2);
-        graph.addEdge(1, 3, 2);
-
-        std::vector<int> ans = { INT_MAX, 0, 3, 2};
-
-        REQUIRE(ShortestPathAlgorithms::DijkstrasShortestPath(graph, 1) == ans);
-    }
 }
 
+TEST_CASE("MST Tests")
+{
+    Graph graph(10);
+    graph.addEdge(1, 2, 4);
+    graph.addEdge(1, 8, 8);
+    graph.addEdge(2, 8, 11);
+    graph.addEdge(2, 3, 8);
+    graph.addEdge(8, 9, 7);
+    graph.addEdge(8, 7, 1);
+    graph.addEdge(3, 9, 2);
+    graph.addEdge(9, 7, 6);
+    graph.addEdge(3, 4, 7);
+    graph.addEdge(3, 6, 4);
+    graph.addEdge(7, 6, 2);
+    graph.addEdge(4, 5, 9);
+    graph.addEdge(4, 6, 14);
+    graph.addEdge(6, 5, 10);
 
+    std::vector<int> ans = { 0, 0, 4, 8, 7, 9, 4, 2, 1, 2 };
+	
+	SECTION("Prims MST Test")
+	{
+        REQUIRE(MSTAlgorithms::PrimsMST(graph) == ans);
+	}
+
+	SECTION("Kruskal MST Test")
+	{
+        REQUIRE(MSTAlgorithms::KruskalsMST(graph) == ans);
+	}
+    
+}
 
 
 

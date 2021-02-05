@@ -29,7 +29,6 @@ namespace ShortestPathAlgorithms
 		const auto& adjacencyMatrix = graph.adjacencyMatrix;
 		std::vector<bool> processed(n, false);
 		std::vector<int> values(n, INT_MAX);
-
 		values[s] = 0;
 
 		for(int i = 1; i < n - 1; ++i)
@@ -39,7 +38,6 @@ namespace ShortestPathAlgorithms
 
 			for(int v = 1; v < n; ++v)
 			{
-				std::cout << u << " " << v << " " << adjacencyMatrix[u][v] << std::endl;
 				
 				if(adjacencyMatrix[u][v] > 0 && !processed[v] && values[u] != INT_MAX && values[u] + adjacencyMatrix[u][v] < values[v])
 				{
@@ -54,28 +52,35 @@ namespace ShortestPathAlgorithms
 
 	inline std::vector<int> OptimisedDijkstrasShortestPath(Graph& graph, int s)
 	{
-		const auto adjacencyMatrix = graph.adjacencyMatrix;
-		const auto n = adjacencyMatrix.size();
+		const auto adj = graph.adjacencyMatrix;
+		const auto n = adj.size();
+
+		std::vector<int> values(n, INT_MAX);
 		std::vector<bool> processed(n, false);
-		std::priority_queue<std::pair<int, int>, std::vector<std::pair<int, int>>>	queue;
-		queue.push(std::make_pair(s - 1, 0));
-
-
-		for(int i = 0; i < n; ++i)
+		std::priority_queue < std::pair<int, int>, std::vector<std::pair<int, int>>, std::greater<std::pair<int,int>>> q;
+		q.push(std::make_pair(0, s));
+		values[s] = 0;
+		
+		while(!q.empty())
 		{
-			auto size = queue.size();
+			const auto cur = q.top();
+			q.pop();
+			const auto u = cur.second;
+			processed[u] = true;
 
-			while(size > 0)
+			for(int v = 1; v < n; ++v)
 			{
-				const auto cur = queue.top();
-				const auto u = cur.first;
-				const auto dist = cur.second;
-				queue.pop();
-
+				if(adj[u][v] != 0 && !processed[v] && values[u] != INT_MAX && values[u] + adj[u][v] < values[v])
+				{
+					values[v] = values[u] + adj[u][v];
+					q.push({ values[v], v });
+				}
+				
 			}
-
-			
 		}
+
+		return values;			
+		
 	}
 
 	

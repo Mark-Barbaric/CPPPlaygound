@@ -59,6 +59,32 @@ TEST_CASE("Linked List Algorithm Tests")
 	std::string ans = "11 9 8 6 4 2 0";
 	REQUIRE(LinkedListAlgorithms::traverseNodesUtil(reversedHead) == ans);
 }
+
+TEST_CASE("Linked List Cycle Tests")
+{
+
+	SECTION("Cycle Test 1")
+	{
+		ListNode<int>* head = new ListNode<int>(3);
+		ListNode<int>* cycleRoot = new ListNode<int>(2);
+		head->next = cycleRoot;
+		head->next->next = new ListNode<int>(0);
+		head->next->next->next = new ListNode<int>(-4);
+		REQUIRE(LinkedListAlgorithms::findCycleIntersection(head) == nullptr);
+		head->next->next->next->next = cycleRoot;
+		REQUIRE(LinkedListAlgorithms::findCycleIntersection(head) == cycleRoot);
+	}
+
+	SECTION("Cycle Test 2")
+	{
+		ListNode<int>* head = new ListNode<int>(1);
+		head->next = new ListNode<int>(2);
+		REQUIRE(LinkedListAlgorithms::findCycleIntersection(head) == nullptr);
+		head->next->next = head;
+		REQUIRE(LinkedListAlgorithms::findCycleIntersection(head) == head);
+	}
+}
+
 //
 //TEST_CASE("Linked List Sum Two Number Tests")
 //{
