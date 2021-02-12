@@ -185,6 +185,8 @@
     &lt;/And&gt;&#xD;
     &lt;TestAncestor&gt;&#xD;
       &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::MST Tests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::BST Path Sum Tests&lt;/TestId&gt;&#xD;
+      &lt;TestId&gt;Catch::FBF2BF33-D013-4375-A132-8E9646AA82F2::.NETFramework,Version=v4.0::Score Combination Tests&lt;/TestId&gt;&#xD;
     &lt;/TestAncestor&gt;&#xD;
   &lt;/Or&gt;&#xD;
 &lt;/SessionState&gt;</s:String>

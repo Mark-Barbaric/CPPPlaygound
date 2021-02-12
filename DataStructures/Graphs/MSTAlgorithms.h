@@ -73,8 +73,9 @@ namespace MSTAlgorithms
 		}
 
         std::vector<int> rank (n, 0);
-        std::vector<int> values(n, 0);
+        std::vector<int> values (2, 0);
         auto sum = 0;
+        auto i = 0;
         for (auto it = weightedEdgeList.begin(); it != weightedEdgeList.end(); ++it)
 		{
             auto cur = *it;
@@ -88,7 +89,7 @@ namespace MSTAlgorithms
 			if(parentU != parentV)
 			{
 				rankedUnion(parentU, parentV, parent, rank);
-                values[v] = weight;
+                values.push_back(weight);
                 sum += weight;
 			}
 		}

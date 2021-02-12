@@ -7,17 +7,15 @@ TEST_CASE("Score Combination Tests")
 {
 	SECTION("Num Combination Tests")
 	{
-    NumCombinations numCombinations(3, 12);
-		REQUIRE(numCombinations.numCombinations(12, { 2, 3 ,7 }) == 4);
-		REQUIRE(numCombinations.numCombinationsOptimised(12, { 2, 3 ,7 }) == 4);
+		REQUIRE(CombinationDP::numCombinationsTabulated(4, { 1,2,3 }) == 7);
+		REQUIRE(CombinationDP::numCombinationsMemoization(4, { 1,2,3 }) == 7);
+		REQUIRE(CombinationDP::numUniqueCombinationsTabulated(4, { 1,2,3 }) == 4);
+
+		
+		const std::vector<std::vector<int>> ans1 = { {1,1,1}, {1,2}, {3} };
+		REQUIRE(CombinationDP::numCombinationsOutcomes(3, { 1, 2, 3 }) == ans1);
 	}
 
-	SECTION("Score Combination Tests")
-	{
-    NumCombinations numCombinations(3, 3);
-		std::vector<std::vector<int>> response2 = { {1, 1, 1}, {1, 2}, {3} };
-		REQUIRE(numCombinations.numCombinationsOutcomes(3, { 1, 2, 3 }) == response2);
-	}
 }
 
 TEST_CASE("Knapsack Tests")

@@ -1,5 +1,6 @@
 #include "../../catch.hpp"
 #include "../Trees/BinarySearchTree.h"
+#include "../Trees/BSTAlgorithms.h"
 
 TEST_CASE("BST Basic Tests")
 {
@@ -46,4 +47,23 @@ TEST_CASE("BST Basic Tests")
 		REQUIRE(bst.inorderTraversal() == "1 4 5 6 7 8 9 10 11 12 13");
 	}
 
+}
+
+TEST_CASE("BST Path Sum Tests")
+{
+
+	BinarySearchTree<int> bst;
+	bst.insertNode(5);
+	bst.insertNode(4);
+	bst.insertNode(8);
+	bst.insertNode(7);
+	bst.insertNode(2);
+	bst.insertNode(1);
+
+	std::vector<std::string> ans = { "542187", "421", "87", "21", "7", "1" };
+	std::vector<std::string> arr;
+	BSTAlgorithms::nodeKeys(bst.getRoot(), arr);
+	std::sort(ans.begin(), ans.end());
+	std::sort(arr.begin(), arr.end());
+	REQUIRE(arr == ans);
 }

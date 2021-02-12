@@ -88,16 +88,17 @@ TEST_CASE("MST Tests")
     graph.addEdge(4, 6, 14);
     graph.addEdge(6, 5, 10);
 
-    std::vector<int> ans = { 0, 0, 4, 8, 7, 9, 4, 2, 1, 2 };
 	
 	SECTION("Prims MST Test")
 	{
-        REQUIRE(MSTAlgorithms::PrimsMST(graph) == ans);
+        std::vector<int> mstAns = { 0, 0, 4, 8, 7, 9, 4, 2, 1, 2 };
+        REQUIRE(MSTAlgorithms::PrimsMST(graph) == mstAns);
 	}
 
 	SECTION("Kruskal MST Test")
 	{
-        REQUIRE(MSTAlgorithms::KruskalsMST(graph) == ans);
+        std::vector<int> kruskalsAns = { 0, 0, 1, 2, 2, 4, 4, 7, 8, 9 };
+        REQUIRE(MSTAlgorithms::KruskalsMST(graph) == kruskalsAns);
 	}
     
 }

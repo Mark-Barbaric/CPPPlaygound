@@ -164,6 +164,8 @@ public:
 	{
 		return findNodeUtil(root, val);
 	}
+
+	Node<Type>* getRoot() { return root; }
 };
 
 

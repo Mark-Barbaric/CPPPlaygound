@@ -18,6 +18,8 @@ namespace knapsack
 	};
 
 	//Complexity O(ic), Space 0(ic)
+
+	
 	inline int maximumValue(const int capacity, const std::vector<Item> items)
 	{
 		std::vector<std::vector<int>> knapsackMatrix(items.size(), std::vector<int>(capacity + 1, 0));

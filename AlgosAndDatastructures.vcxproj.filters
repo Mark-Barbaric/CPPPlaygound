@@ -64,6 +64,9 @@
     <Filter Include="Source Files\Datastructures\Hash">
       <UniqueIdentifier>{0baecdf5-3205-438e-95f9-856801231f3c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Concurrency">
+      <UniqueIdentifier>{6664e154-06ec-4916-b0c0-175f2faa2abb}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -214,6 +217,12 @@
     </ClInclude>
     <ClInclude Include="DataStructures\Graphs\CycleAlgorithms.h">
       <Filter>Source Files\Datastructures\Graphs</Filter>
+    </ClInclude>
+    <ClInclude Include="DataStructures\Trees\BSTAlgorithms.h">
+      <Filter>Source Files\Datastructures\Trees</Filter>
+    </ClInclude>
+    <ClInclude Include="Algorithms\Backtracking\TowersOfHanoi.h">
+      <Filter>Source Files\Algorithms\Backtracking</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

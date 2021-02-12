@@ -1,86 +1,134 @@
 #ifndef NUM_COMBINATIONS_H
 #define NUM_COMBINATIONS_H
 
+#include <iostream>
 #include <vector>
-class NumCombinations{
-  
-  const int numScores;
-  const int finalScore;
-  std::unique_ptr<std::vector<std::vector<int>>> combinationsMatrix;
-  std::unique_ptr<std::vector<int>> combinationsVector;
-  
-  inline void recursiveCombinationsSearch(const int min, const int target, std::vector<int> scores, std::vector<int> temp, std::vector<std::vector<int>>& combinationsMatrix)
-  {
-    if (target == 0)
-      combinationsMatrix.push_back(temp);
 
-    for (int i = 0; i < scores.size(); ++i)
-    {
-      if (target - scores[i] >= 0 && scores[i] >= min)
-      {
-        temp.push_back(scores[i]);
-        recursiveCombinationsSearch(scores[i], target - scores[i], scores, temp, combinationsMatrix);
-        temp.pop_back();
-      }
-    }
-  }
-  
-public:
-  
-  NumCombinations(const int numScores_,
-                  const int finalScore_)
-  :numScores(numScores_),
-  finalScore(finalScore_)
-  {
-    combinationsMatrix.reset(new std::vector<std::vector<int>>(numScores, std::vector<int>(finalScore + 1, 0)));
-    combinationsVector.reset(new std::vector<int> (finalScore + 1, 0));
-  }
-  
-  const int numCombinations(const int finalScore, std::vector<int> scores)
-  {
-    for (int i = 0; i < scores.size(); ++i)
-    {
-      //only one way to get a score of 0
-      (*combinationsMatrix)[i][0] = 1;
+namespace CombinationDP
+{
 
-      for (int j = 1; j <= finalScore; ++j)
-      {
-        //take previous calculated work [i - 1]
-        const auto withoutThisScore = i > 0 ? (*combinationsMatrix)[i - 1][j] : 0;
-        const auto withThisScore = j >= scores[i] ? (*combinationsMatrix)[i][j - scores[i]] : 0;
-        (*combinationsMatrix)[i][j] = withThisScore + withoutThisScore;
-      }
+    inline int numUniqueCombinationsTabulated(const int finalScore, std::vector<int> scores)
+    {
+         std::vector<int> dp (finalScore + 1, 0);
+         dp[0] = 1;
+
+         for (auto& s : scores) {
+
+             for (int j = 1; j <= finalScore; ++j)
+             {
+             	if(j >= s)
+             	{
+                    dp[j] += dp[j - s];
+             	}
+             }
+         }
+        
+
+        return dp.back();
     }
 
-    return (*combinationsMatrix).back().back();
-  }
-
-  const int numCombinationsOptimised(const int finalScore, std::vector<int> scores)
-  {
-    (*combinationsVector)[0] = 1;
-
-    for (int i = 0; i < scores.size(); ++i)
+	inline int numCombinationsTabulated(const int finalScore, std::vector<int> scores)
     {
-      const auto score = scores[i];
+        std::vector<int> dp(finalScore + 1, 0);
+        dp[0] = 1;
 
-      for (int j = score; j <= finalScore; ++j)
-      {
-        (*combinationsVector)[j] += (*combinationsVector)[j - score];
-      }
+        for (int j = 1; j <= finalScore; ++j)
+        {
+
+            for (auto& s : scores) {
+                if (j >= s)
+                {
+                    dp[j] += dp[j - s];
+                }
+            }
+        }
+
+        return dp.back();
     }
 
-    return (*combinationsVector).back();
-  }
+    inline int topDownHelper(const int min, const int finalScore, std::vector<int> scores, std::vector<int>& dp)
+    {
+        if(dp[finalScore] != -1)
+        {
+            return dp[finalScore];
+        }
 
-  std::vector<std::vector<int>> numCombinationsOutcomes(const int finalScore, const std::vector<int> scores)
-  {
-    std::vector<std::vector<int>> scoreCombinations;
-    std::vector<int> temp;
-    recursiveCombinationsSearch(0, finalScore, scores, temp, scoreCombinations);
-    return scoreCombinations;
-  }
-  
-};
+    	for(auto& s : scores)
+    	{
+    		if(finalScore >= s && s >= min)
+    		{
+                auto cur = topDownHelper(s, finalScore - s, scores, dp);
+                dp[finalScore] = dp[finalScore] == -1 ? cur : dp[finalScore] + cur;
+    		}
+    	}
+
+        return dp[finalScore];
+    }
+	
+	inline int numCombinationsMemoization(const int finalScore, std::vector<int> scores)
+    {
+        std::vector<int> dp(finalScore + 1, -1);
+        dp[0] = 1;
+        topDownHelper(0, finalScore, scores, dp);
+        return dp.back();
+    }
+
+    inline int topDownHelper2(const int finalScore, const int score, std::vector<int>& dp)
+    {
+    	if(dp[finalScore] != -1)
+    	{
+            return dp[finalScore];
+    	}
+
+    	if(finalScore >= score)
+    	{
+            auto cur = topDownHelper2(finalScore - score, score, dp);
+            dp[finalScore] = dp[finalScore] == -1 ? cur : dp[finalScore] + cur;
+    	}
+
+        return dp[finalScore];
+    }
+
+	
+	inline int numCombinationsUniqueMoization(const int finalScore, std::vector<int> scores)
+    {
+        std::vector<int> dp(finalScore + 1, -1);
+        dp[0] = 1;
+
+    	for(auto& s : scores)
+    	{
+            topDownHelper2(finalScore, s, dp);
+    	}
+
+        return dp.back();
+    }
+
+    inline void recursiveCombinationsSearch(const int min, const int target, std::vector<int> scores, std::vector<int> temp, std::vector<std::vector<int>>& combinationsMatrix)
+    {
+        if (target == 0)
+            combinationsMatrix.push_back(temp);
+
+        for (int i = 0; i < scores.size(); ++i)
+        {
+            if (target - scores[i] >= 0 && scores[i] >= min)
+            {
+                temp.push_back(scores[i]);
+                recursiveCombinationsSearch(scores[i], target - scores[i], scores, temp, combinationsMatrix);
+                temp.pop_back();
+            }
+        }
+    }
+
+    inline std::vector<std::vector<int>> numCombinationsOutcomes(const int finalScore, const std::vector<int> scores)
+    {
+        std::vector<std::vector<int>> scoreCombinations;
+        std::vector<int> temp;
+        recursiveCombinationsSearch(0, finalScore, scores, temp, scoreCombinations);
+        return scoreCombinations;
+    }
+
+
+}
 
 
 #endif

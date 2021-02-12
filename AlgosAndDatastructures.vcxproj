@@ -176,6 +176,7 @@
     <ClInclude Include="..\..\Catch2\single_include\catch2\catch.hpp" />
     <ClInclude Include="Algorithms\Backtracking\QueensProblem.h" />
     <ClInclude Include="Algorithms\Backtracking\Sudoku.h" />
+    <ClInclude Include="Algorithms\Backtracking\TowersOfHanoi.h" />
     <ClInclude Include="Algorithms\DivideAndConquer\BSAlgorithms.h" />
     <ClInclude Include="Algorithms\DivideAndConquer\MergeSort.h" />
     <ClInclude Include="Algorithms\DivideAndConquer\MinMax.h" />
@@ -204,6 +205,7 @@
     <ClInclude Include="DataStructures\Stack_Queue\Stack.h" />
     <ClInclude Include="DataStructures\Tests\LinkedList.h" />
     <ClInclude Include="DataStructures\Trees\BinarySearchTree.h" />
+    <ClInclude Include="DataStructures\Trees\BSTAlgorithms.h" />
     <ClInclude Include="Header.h" />
     <ClInclude Include="Helpers.h" />
   </ItemGroup>
