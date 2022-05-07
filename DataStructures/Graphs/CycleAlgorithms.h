@@ -113,6 +113,4 @@ namespace CycleAlgorithms
 	
 }
 
-
-
 #endif
