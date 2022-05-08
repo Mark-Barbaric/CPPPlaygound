@@ -1,7 +1,7 @@
 #ifndef CYCLE_AlGORITHMS_H
 #define CYCLE_ALGORITHMS_H
 
-#include "Graph.h"
+#include "../../DataStructures/Graphs/Graph.h"
 
 namespace CycleAlgorithms
 {

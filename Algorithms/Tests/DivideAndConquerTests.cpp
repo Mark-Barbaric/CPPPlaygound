@@ -6,7 +6,7 @@
 //  Copyright © 2020 Mark Barbaric. All rights reserved.
 //
 #include "../../catch.hpp"
-#include "../DivideAndConquer/QuickSort.h"
+#include "../Sorting/QuickSort.h"
 #include "../DivideAndConquer/MergeSort.h"
 #include "../DivideAndConquer/BSAlgorithms.h"
 

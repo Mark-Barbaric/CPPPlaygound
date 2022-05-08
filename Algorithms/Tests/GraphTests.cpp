@@ -1,8 +1,8 @@
 #include "../../catch.hpp"
-#include "../Graphs/Graph.h"
-#include "../Graphs/ShortestPathAlgorithms.h"
-#include "../Graphs/CycleAlgorithms.h"
-#include "../Graphs/MSTAlgorithms.h"
+#include "../../DataStructures/Graphs/Graph.h"
+#include "../Graph/ShortestPathAlgorithms.h"
+#include "../Graph/CycleAlgorithms.h"
+#include "../Graph/MSTAlgorithms.h"
 
 TEST_CASE("Graph Cycle Algorithm Tests")
 {

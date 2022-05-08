@@ -42,7 +42,9 @@ namespace DailyProblems
 				return true;
 
 			set.insert(diff);
-		}	
+		}
+
+        return false;
 	}
 
 	inline int LargestNonAdjacentSum(std::vector<int>& arr)

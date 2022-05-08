@@ -2,7 +2,7 @@
 #define BST_ALGORITHMS_H
 
 #include "../../Header.h"
-#include "BinarySearchTree.h"
+#include "../../DataStructures/Trees/BinarySearchTree.h"
 
 namespace BSTAlgorithms
 {

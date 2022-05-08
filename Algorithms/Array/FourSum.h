@@ -1,4 +1,4 @@
-namespace Algorithms::Array{
+namespace Algorithms::ArrayAlgorithms{
 
     inline void std::vector<int> twoSum(std::vector<int>& nums,
                                         std::vector<std::vector<int>>& ans,

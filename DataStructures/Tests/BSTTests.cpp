@@ -1,6 +1,6 @@
 #include "../../catch.hpp"
 #include "../Trees/BinarySearchTree.h"
-#include "../Trees/BSTAlgorithms.h"
+#include "../../Algorithms/BST/BSTAlgorithms.h"
 
 TEST_CASE("BST Basic Tests")
 {

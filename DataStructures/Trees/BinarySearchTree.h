@@ -2,8 +2,7 @@
 // Created by Mark Barbaric on 01/11/2019.
 //
 
-#ifndef BINARYSEARCHTREE_H
-#define BINARYSEARCHTREE_H
+#pragma once
 
 #include "../../Header.h"
 

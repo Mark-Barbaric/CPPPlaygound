@@ -2,6 +2,10 @@ CATCH_CONFIG_MAIN
 #include "../../catch.hpp"
 #include "FourSum.h"
 
-TEST_CASE("Four Sum Tests"){
+namespace Algorithms::ArrayAlgorithms {
+
+    TEST_CASE("Four Sum Tests") {
+
+    }
 
 }

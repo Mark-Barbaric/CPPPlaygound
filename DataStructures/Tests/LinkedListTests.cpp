@@ -1,5 +1,5 @@
 #include "../../catch.hpp"
-#include "../LinkedList/LinkedListAlgorithms.h"
+#include "../../Algorithms/LinkedList/LinkedListAlgorithms.h"
 
 TEST_CASE("Linked List Base Functionality Tests")
 {	

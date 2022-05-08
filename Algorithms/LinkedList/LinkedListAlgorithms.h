@@ -5,7 +5,7 @@
 #ifndef LINKED_LIST_ALGORITHMS_H
 #define LINKED_LIST_ALGORITHMS_H
 
-#include "../Tests/LinkedList.h"
+#include "../../DataStructures/Tests/LinkedList.h"
 
 
 namespace LinkedListAlgorithms

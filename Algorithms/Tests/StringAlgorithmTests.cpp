@@ -1,5 +1,5 @@
 #include "../../catch.hpp"
-#include "../GeneralAlgorithms/StringAlgorithms.h"
+#include "../String/StringAlgorithms.h"
 
 TEST_CASE("Medium String Algorithm Tests")
 {
