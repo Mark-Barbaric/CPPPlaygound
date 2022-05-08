@@ -6,14 +6,11 @@
 //  Copyright © 2020 Mark Barbaric. All rights reserved.
 //
 
-#ifndef SubsetSumAlgorithms_h
-#define SubsetSumAlgorithms_h
-
+#pragma once
 #include "../../Header.h"
 
-namespace SubsetSumAlgorithms
+namespace Algorithms::TwoSum
 {
-
   std::vector<int> twoSum(std::vector<int>& vec, int target)
   {
     std::map<int, int> m;
@@ -21,12 +18,10 @@ namespace SubsetSumAlgorithms
     for(int i = 0; i < vec.size(); ++i)
       m[vec[i]] = i;
     
-    for(int i = 0; i < vec.size(); ++i)
-    {
+    for(int i = 0; i < vec.size(); ++i) {
       const auto diff = target - vec[i];
       
-      if(m.find(diff) != m.end() && m[diff] != i)
-      {
+      if(m.find(diff) != m.end() && m[diff] != i){
         return {vec[i], diff};
       }
     }
@@ -38,21 +33,19 @@ namespace SubsetSumAlgorithms
     auto l = 0;
     auto r = vec.size() - 1;
     
-    while(l < r)
-    {
+    while(l < r){
       const auto sum = vec[l] + vec[r];
       
-      if(sum == target)
-        return {vec[l], vec[r]};
-  
-      else if(sum < target)
-        l++;
-      
-      else
-        r--;
-      
+      if(sum == target) {
+          return {vec[l], vec[r]};
+      }
+      else if(sum < target) {
+          l++;
+      }
+      else {
+          r--;
+      }
     }
-    
     return {};
   }
 
@@ -65,17 +58,14 @@ namespace SubsetSumAlgorithms
     {
       const auto sum = nums[i] + nums[l] + nums[r];
       
-      if(sum < 0 || (l > i + 1 && nums[l] == nums[l - 1]))
-      {
+      if(sum < 0 || (l > i + 1 && nums[l] == nums[l - 1])){
         ++l;
       }
       
-      else if(sum > 0 || (r < nums.size() - 1 && nums[r] == nums[r + 1]))
-      {
+      else if(sum > 0 || (r < nums.size() - 1 && nums[r] == nums[r + 1])){
         --r;
       }
-      else
-      {
+      else{
         res.push_back({nums[i], nums[l++], nums[r++]});
       }
       
@@ -94,8 +84,4 @@ namespace SubsetSumAlgorithms
   
     return ans;
   }
-  
-
 }
-
-#endif /* SubsetSumAlgorithms_h */

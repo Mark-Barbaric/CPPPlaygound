@@ -6,7 +6,7 @@
 //  Copyright © 2020 Mark Barbaric. All rights reserved.
 //
 #include "../../catch.hpp"
-#include "../SubsetSum/SubsetSumAlgorithms.h"
+#include "../Array/ThreeSum.h"
 
 TEST_CASE("Subset Sum Tests")
 {
