@@ -2,7 +2,7 @@
 #define HASH_SET_H
 
 #include "../Trees/BinarySearchTree.h"
-#include "../../Header.h"
+#include "include/Header.h"
 
 template <typename T>
 class Bucket

@@ -1,7 +1,7 @@
 //
 // Created by Mark Barbaric on 14/10/2019.
 //
-#include "../../catch.hpp"
+#include "include/catch.hpp"
 #include "../Stack_Queue/Queue.h"
 #include "../Stack_Queue/Stack.h"
 

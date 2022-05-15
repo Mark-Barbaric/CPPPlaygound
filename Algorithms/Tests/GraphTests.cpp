@@ -1,4 +1,4 @@
-#include "../../catch.hpp"
+#include "include/catch.hpp"
 #include "../../DataStructures/Graphs/Graph.h"
 #include "../Graph/ShortestPathAlgorithms.h"
 #include "../Graph/CycleAlgorithms.h"

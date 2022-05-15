@@ -1,4 +1,4 @@
-#include "../../catch.hpp"
+#include "include/catch.hpp"
 #include "../Backtracking/Sudoku.h"
 
 TEST_CASE("Sudoku Solution Tests")

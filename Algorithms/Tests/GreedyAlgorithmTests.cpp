@@ -1,4 +1,4 @@
-#include "../../catch.hpp"
+#include "include/catch.hpp"
 #include "../GreedyAlgorithms/MediumGreedyAlgorithms.h"
 #include "../GreedyAlgorithms/SimpleGreedyAlgorithms.h"
 

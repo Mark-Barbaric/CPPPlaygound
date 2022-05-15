@@ -1,4 +1,4 @@
-#include "../../catch.hpp"
+#include "include/catch.hpp"
 #include "../LRUCache/LRUCache.h"
 // Created by Mark Barbaric on 28/10/2019.
 //

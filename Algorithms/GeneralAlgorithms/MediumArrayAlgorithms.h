@@ -5,7 +5,7 @@
 #ifndef MEDIUMARRAYALGORITHMS_H
 #define MEDIUMARRAYALGORITHMS_H
 
-#include "../../Header.h"
+#include "include/Header.h"
 
 namespace MediumArrayAlgorithms
 {

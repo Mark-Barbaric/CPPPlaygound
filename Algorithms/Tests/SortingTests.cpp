@@ -1,4 +1,4 @@
-#include "../../catch.hpp"
+#include "include/catch.hpp"
 #include "../Sorting/SortingAlgorithms.h"
 
 TEST_CASE("Heap Sort")

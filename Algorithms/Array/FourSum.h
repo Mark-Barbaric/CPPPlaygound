@@ -1,10 +1,12 @@
+#include "../../include/Header.h"
+
 namespace Algorithms::ArrayAlgorithms{
 
-    inline void std::vector<int> twoSum(std::vector<int>& nums,
+    inline void twoSum(std::vector<int>& nums,
                                         std::vector<std::vector<int>>& ans,
                                         int i, int j, int target){
 
-        auto l = i + 1, r = nums.size() - 1;
+        int l = i + 1, r = nums.size() - 1;
 
         while(l < r){
             const auto sum = (nums[i] + nums[j] + nums[l] + nums[r]) - target;

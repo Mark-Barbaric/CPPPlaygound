@@ -1,7 +1,7 @@
 #ifndef SORTING_ALGORITHMS_H
 #define SORTING_ALGORITHMS_H
 
-#include "../../Header.h"
+#include "include/Header.h"
 
 namespace SortingAlgorithms
 {

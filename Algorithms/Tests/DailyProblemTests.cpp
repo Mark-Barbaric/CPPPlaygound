@@ -1,4 +1,4 @@
-#include "../../catch.hpp"
+#include "include/catch.hpp"
 #include "../GeneralAlgorithms/DailyProblems.h"
 
 TEST_CASE("Batch 1")

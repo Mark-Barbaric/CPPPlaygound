@@ -1,4 +1,4 @@
-#include "../../catch.hpp"
+#include "include/catch.hpp"
 #include "../../Algorithms/LinkedList/LinkedListAlgorithms.h"
 
 TEST_CASE("Linked List Base Functionality Tests")

@@ -5,7 +5,7 @@
 #ifndef GRAPH_H
 #define GRAPH_H
 
-#include "../../Header.h"
+#include "include/Header.h"
 
 class Graph
 {

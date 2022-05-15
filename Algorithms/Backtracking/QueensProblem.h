@@ -1,71 +1,108 @@
-#ifndef N_QUEENS_PROBLEM_H
-#define N_QUEENS_PROBLEM_H
+#pragma once
+#include "include/Header.h"
 
-#include  <vector>
-
-namespace NQueensProblem
+namespace Algorithms::Backtracking
 {
-	bool IsRowSafe(int r, int c, std::vector<std::vector<int>>& board)
-	{
-		for (int i = 0; i < c; i++)
-			if (board[r][i])
-				return false;
+    bool isRowSafe(int c, const std::string& row){
+        for(int i = 0; i < row.length(); ++i){
+            if(i != c){
+                if(row[i] == 'Q'){
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
 
-		return true;
-	}
-	
-	bool IsLeftDiagonalSafe(int r, int c, std::vector<std::vector<int>>& board)
-	{
-		for (int i = r, j = c; i >= 0 && j >= 0; --i, --j)
-			if (board[i][j])
-				return false;
+    bool isColumnSafe(int r, std::vector<std::string>& cur){
+        for(int i = 0; i < cur.size(); ++i){
+            if(i != r){
+                if(cur[i][0] == 'Q'){
+                    return false;
+                }
+            }
+        }
+        return true;
+    }
 
-		return true;		
-	}
-	
-	bool IsRightDiagonalSafe(int r, int c, std::vector<std::vector<int>>& board)
-	{
-		for(int i = r, j = c; i < board.size(), j >= 0, i < board.size(); ++i, --j)			
-			if (board[i][j])
-				return false;
+    std::tuple<int,int> findStartDiagonal(bool left, int r, int c, int n){
+        if(left){
+            while(r > 0 && c > 0){
+                r--;
+                c--;
 
-		return true;
-	}
-	
-	bool IsSafe(int r, int c, std::vector<std::vector<int>>& board)
-	{
-		if (IsRowSafe(r, c, board) &&
-			IsLeftDiagonalSafe(r, c, board) &&
-			IsRightDiagonalSafe(r, c, board))
-			return true;
+            }
 
-		return false;
-	}
+        } else {
+            while(r > 0 && c < n - 1){
+                r--;
+                c++;
+            }
+        }
 
-	bool SetQueens(int c, std::vector<std::vector<int>>& board)
-	{
-		if (c >= board.size())
-			return true;
+        return std::make_tuple(r, c);
+    }
 
-		for(int i = 0; i < board.size(); ++i)
-		{
-			if(IsSafe(i, c, board))
-			{
-				board[i][c]= 1;
-				SetQueens(c + 1, board);
-				board[i][c] = 0;
-			}
-		}
+    bool isDiagonalSafe(int r, int c, std::vector<std::string>& cur){
 
-		return false;		
-	}
+        auto [leftRow, leftCol] = findStartDiagonal(true, r, c, cur.size());
+        std::cout << "Size: " << cur.size() << std::endl;
 
-	std::vector<std::vector<int>> SolveQueens(int n)
-	{
-		std::vector<std::vector<int>> board(n, std::vector<int>(n, 0));
-		SetQueens(0, board);
-		return board;
-	}
+        for(auto i = leftRow, j = leftCol; i < cur.size(), j < cur.size(); ++i, ++j){
+
+            std::cout << "Left: " << i << " " << j << ", ";
+            if(i != r && j != c){
+                if(cur[i][j] == 'Q'){
+                    return false;
+                }
+            }
+        }
+
+        std::cout << std::endl;
+
+        auto [rightRow, rightCol] = findStartDiagonal(false, r, c, cur.size());
+
+        for(auto i = rightRow, j = rightCol; i < cur.size(), j > 0; ++i, --j){
+
+            std::cout << "Right: " << i << " " << j << ", ";
+            if(i != r && j != c){
+                if(cur[i][j] == 'Q'){
+                    return false;
+                }
+            }
+        }
+
+        std::cout << std::endl;
+
+        return true;
+    }
+
+    bool isSafe(int r, int c, std::vector<std::string>& cur){
+        return isRowSafe(c, cur[r]) && isColumnSafe(r, cur) && isDiagonalSafe(r, c, cur);
+    }
+
+    void setQueens(int r, std::vector<std::string>& cur, std::vector<std::vector<std::string>>& ans){
+
+        if(r == cur.size()){
+            ans.push_back(cur);
+            return;
+        }
+
+        for(int c = 0; c < cur.size(); ++c){
+            if(isSafe(r, c, cur)){
+                cur[r][c] = 'Q';
+                setQueens(r + 1, cur, ans);
+                cur[r][c] = '.';
+            }
+        }
+    }
+
+    std::vector<std::vector<std::string>> solveNQueens(int n) {
+
+        std::vector<std::vector<std::string>> ans;
+        std::vector<std::string> cur (n, std::string(n,'.'));
+        setQueens(0, cur, ans);
+        return ans;
+    }
 }
 
-#endif

@@ -5,7 +5,7 @@
 //  Created by Mark Barbaric on 25/04/2020.
 //  Copyright © 2020 Mark Barbaric. All rights reserved.
 //
-#include "../../catch.hpp"
+#include "include/catch.hpp"
 #include "../Sorting/QuickSort.h"
 #include "../DivideAndConquer/MergeSort.h"
 #include "../DivideAndConquer/BSAlgorithms.h"

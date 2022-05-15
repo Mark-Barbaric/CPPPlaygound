@@ -1,4 +1,4 @@
-#include "../../catch.hpp"
+#include "include/catch.hpp"
 #include "../DynamicProgramming/NumCombinations.h"
 #include "../DynamicProgramming/Knapsack.h"
 #include "../DynamicProgramming/PalindromeDP.h"

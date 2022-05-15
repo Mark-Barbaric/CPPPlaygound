@@ -1,4 +1,4 @@
-#include "../../catch.hpp"
+#include "include/catch.hpp"
 #include "../GeneralAlgorithms/MediumArrayAlgorithms.h"
 
 TEST_CASE("Subarray Algorithms")

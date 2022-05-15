@@ -1,7 +1,7 @@
 #ifndef MEDIAN_HEAP_H
 #define MEDIAN_HEAP_H
 
-#include "../../Header.h"
+#include "include/Header.h"
 
 template <typename Type>
 

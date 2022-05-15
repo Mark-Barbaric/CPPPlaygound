@@ -1,7 +1,7 @@
 #ifndef STRING_ALGORITHMS_H
 #define STRING_ALGORITMS_H
 
-#include "../../Header.h"
+#include "include/Header.h"
 
 namespace StringAlgorithms
 {

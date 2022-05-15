@@ -1,4 +1,4 @@
-#include "../../catch.hpp"
+#include "include/catch.hpp"
 #include "../Trees/BinarySearchTree.h"
 #include "../../Algorithms/BST/BSTAlgorithms.h"
 

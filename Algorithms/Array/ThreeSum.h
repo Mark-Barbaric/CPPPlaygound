@@ -7,7 +7,7 @@
 //
 
 #pragma once
-#include "../../Header.h"
+#include "include/Header.h"
 
 namespace Algorithms::TwoSum
 {

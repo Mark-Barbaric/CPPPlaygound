@@ -1,6 +1,6 @@
 #define CATCH_CONFIG_MAIN
-#include "../../catch.hpp"
-#include "../Strings/MultiplyStrings.h"
+#include "include/catch.hpp"
+#include "Algorithms/String/MultiplyStrings.h"
 
 TEST_CASE("Multiple Strings Test"){
     REQUIRE("0" == StringAlgorithms::multiplyStrings("0", "0"));

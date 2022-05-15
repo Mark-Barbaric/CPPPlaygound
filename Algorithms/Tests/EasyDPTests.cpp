@@ -1,4 +1,4 @@
-#include "../../catch.hpp"
+#include "include/catch.hpp"
 #include "../DynamicProgramming/EasyDPAlgos.h"
 
 TEST_CASE("Intro Algo Tests")

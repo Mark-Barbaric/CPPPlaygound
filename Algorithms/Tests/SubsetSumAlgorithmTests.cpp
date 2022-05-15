@@ -5,7 +5,7 @@
 //  Created by Mark Barbaric on 28/07/2020.
 //  Copyright © 2020 Mark Barbaric. All rights reserved.
 //
-#include "../../catch.hpp"
+#include "include/catch.hpp"
 #include "../Array/ThreeSum.h"
 
 TEST_CASE("Subset Sum Tests")

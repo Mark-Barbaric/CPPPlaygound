@@ -1,7 +1,7 @@
 #ifndef SHORTEST_PATH_ALGORITHMS_H
 #define SHORTEST_PATH_ALGORITHMS_H
 
-#include "../../Header.h"
+#include "include/Header.h"
 #include "../../DataStructures/Graphs/Graph.h"
 
 namespace ShortestPathAlgorithms

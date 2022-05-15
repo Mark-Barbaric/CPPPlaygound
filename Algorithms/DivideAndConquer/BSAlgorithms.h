@@ -1,7 +1,7 @@
 #ifndef BINARY_SEARCH_H
 #define BINARY_SEARCH_H
 
-#include "../../Header.h"
+#include "include/Header.h"
 
 namespace BSAlgorithms
 {
