@@ -44,3 +44,4 @@ include(${CMAKE_BINARY_DIR}/conan_paths.cmake)
 conan_basic_setup()
 
 add_subdirectory(Algorithms)
+add_subdirectory(Profiling)
