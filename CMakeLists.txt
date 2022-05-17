@@ -43,5 +43,8 @@ include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 include(${CMAKE_BINARY_DIR}/conan_paths.cmake)
 conan_basic_setup()
 
+enable_testing()
+
 add_subdirectory(Algorithms)
+add_subdirectory(PokerHands)
 add_subdirectory(Profiling)

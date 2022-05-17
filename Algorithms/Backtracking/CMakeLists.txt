@@ -5,9 +5,9 @@ project(BacktrackingTests)
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup(TARGETS)
 
-enable_testing()
+add_definitions(-DUSE_TIMER)
 add_test(NAME BacktrackingTests COMMAND BacktrackingTests)
 
-add_executable(BacktrackingTests main.cpp QueensProblem.h NumTiles.h BacktrackingTests.cpp)
+add_executable(BacktrackingTests QueensProblem.h NumTiles.h BacktrackingTests.cpp)
 target_link_libraries(BacktrackingTests
         CONAN_PKG::gtest)

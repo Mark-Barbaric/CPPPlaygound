@@ -30,7 +30,7 @@ namespace Profiling{
             auto stop = ClockType::now();
             auto duration = (stop - m_startPoint);
             const auto ms = duration_cast<microseconds>(duration).count();
-            std::cout << ms << " microseconds " << m_functionName << "\n";
+            std::cout  << ms << " microseconds " << m_functionName << "\n";
         }
 
         ScopedTimer(const ScopedTimer&) = delete;

@@ -1,6 +1,6 @@
 #pragma once
 #include "PokerHandBase.h"
-#include "ScopedTimer.h"
+#include "Profiling/ScopedTimer.h"
 
 namespace Profiling{
     class PokerHandAnalyzer : public PokerHandBase{

@@ -1,7 +1,7 @@
 #include "ScopedTimer.h"
 #include "ModuloImprovements.h"
-#include "PokerHandAnalyzer.h"
-#include "OptimizedPokerHandAnalyzer.h"
+#include "PokerHands/PokerHandAnalyzer.h"
+#include "PokerHands/OptimizedPokerHandAnalyzer.h"
 
 void analyzePokerHand(std::string_view string){
 
