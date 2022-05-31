@@ -1,15 +1,31 @@
 #pragma once
 #include "PokerHandBase.h"
-#include "Profiling/ScopedTimer.h"
+#include "../Profiling/ScopedTimer.h"
 
-namespace Profiling{
+namespace PokerHands{
     class PokerHandAnalyzer : public PokerHandBase{
 
     public:
 
         explicit PokerHandAnalyzer(std::string_view hand) : PokerHandBase(hand)
         {
+            analyzeCards();
+        }
 
+        Comparison compareWith(const PokerHandBase& opponent) override{
+            if(m_handRank > opponent.m_handRank){
+                return Comparison::Win;
+            } else if(m_handRank < opponent.m_handRank){
+                return Comparison::Loss;
+            } else {
+                if(m_handScore > opponent.m_handScore){
+                    return Comparison::Win;
+                } else if (m_handScore < opponent.m_handScore) {
+                    return Comparison::Loss;
+                } else {
+                    return Comparison::Tie;
+                }
+            }
         }
 
         void analyzeCards() override
@@ -38,7 +54,7 @@ namespace Profiling{
             setHandRank();
         }
 
-        void setHandRank() override
+        void setHandRank()
         {
             MEASURE_FUNCTION();
             if(m_containsFlush || m_containsStraight){
@@ -66,7 +82,7 @@ namespace Profiling{
             }
         }
 
-        void analyzeCardCount() override
+        void analyzeCardCount()
         {
             MEASURE_FUNCTION();
             for(auto& c : m_cardCount){

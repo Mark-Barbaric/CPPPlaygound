@@ -1,21 +1,5 @@
 #include "ScopedTimer.h"
 #include "ModuloImprovements.h"
-#include "PokerHands/PokerHandAnalyzer.h"
-#include "PokerHands/OptimizedPokerHandAnalyzer.h"
-
-void analyzePokerHand(std::string_view string){
-
-    std::cout << "\n\n Analyzing " << string << ".\n";
-    Profiling::PokerHandAnalyzer hand1(string);
-    hand1.analyzeHand();
-}
-
-void analyzeOptimizedPokerHand(std::string_view string){
-
-    std::cout << "\n\n Analyzing " << string << ".\n";
-    Profiling::OptimizedPokerHandAnalyzer hand1(string);
-    hand1.analyzeHand();
-}
 
 int getHandRankBySorting(std::vector<int> arr){
     MEASURE_FUNCTION();
@@ -63,12 +47,6 @@ int main(int argc, char* argv[]){
     getHandRankBySorting(arr);
     std::cout << "\n\n Profiling hand analysis.\n";
     getHandRankByHashMap(arr);
-
-    std::cout << "\n\n PokerHandAnalyzer.\n";
-    analyzePokerHand("AH AD AS AC 9H");
-
-    std::cout << "\n\n PokerHandAnalyzer.\n";
-    analyzeOptimizedPokerHand("AH AD AS AC 9H");
 
     return 0;
 

@@ -10,6 +10,33 @@
 
 namespace LinkedListAlgorithms
 {
+    struct Node{
+        int val;
+        Node* next;
+    };
+
+    Node* removeEvenNode(Node** root){
+        Node* cur = *root, *prev = nullptr;
+
+        // iterate till first node is odd
+        while(cur && cur->val % 2 == 0){
+            root->next = cur->next;
+            prev = cur;
+            cur = cur->next;
+        }
+
+        while(cur){
+            if(cur->val % 2 == 0){
+                prev->next = cur->next;
+            } else {
+                prev = cur;
+            }
+
+            cur = cur->next;
+        }
+
+        return root;
+    }
 
     ListNode<int>* containsCycle(ListNode<int>* root)
     {

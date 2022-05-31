@@ -7,7 +7,7 @@ add_definitions(-DUSE_TIMER)
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup(TARGETS)
 
-set(POKER_HAND_SOURCES PokerHandAnalyzer.h PokerHandBase.h OptimizedPokerHandAnalyzer.h)
+set(POKER_HAND_SOURCES PokerHandHelpers.h PokerHandAnalyzer.h PokerHandBase.h OptimizedPokerHandAnalyzer.h)
 
 set(TEST_SOURCES PokerHandAnalyzerTests.cpp)
 add_executable(PokerHandAnalyzerTests ${TEST_SOURCES} ${POKER_HAND_SOURCES})
