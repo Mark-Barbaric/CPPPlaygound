@@ -2,15 +2,17 @@
 // Created by Mark Barbaric on 27/10/2019.
 //
 
-#ifndef LINKED_LIST_ALGORITHMS_H
-#define LINKED_LIST_ALGORITHMS_H
-
+#pragma once
 #include "../../DataStructures/Tests/LinkedList.h"
-
 
 namespace LinkedListAlgorithms
 {
     struct Node{
+
+        explicit Node(int v):val(v){
+
+        }
+
         int val;
         Node* next;
     };
@@ -193,5 +195,3 @@ namespace LinkedListAlgorithms
         return head;    	
     }
 }
-
-#endif //BACKTRACKING_ListNode<int>ALGORITHMS_H
