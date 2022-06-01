@@ -14,7 +14,7 @@ namespace LinkedListAlgorithms
         }
 
         int val;
-        Node* next;
+        Node* next {nullptr};
     };
 
     Node* removeEvenNode(Node** root){
@@ -22,9 +22,9 @@ namespace LinkedListAlgorithms
 
         // iterate till first node is odd
         while(cur && cur->val % 2 == 0){
-            root->next = cur->next;
             prev = cur;
             cur = cur->next;
+            *root = cur;
         }
 
         while(cur){
@@ -37,7 +37,7 @@ namespace LinkedListAlgorithms
             cur = cur->next;
         }
 
-        return root;
+        return *root;
     }
 
     ListNode<int>* containsCycle(ListNode<int>* root)
