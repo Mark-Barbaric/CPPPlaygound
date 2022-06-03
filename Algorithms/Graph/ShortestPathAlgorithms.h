@@ -79,11 +79,8 @@ namespace ShortestPathAlgorithms
 			}
 		}
 
-		return values;			
-		
+		return values;
 	}
-
-	
 }
 
 
