@@ -5,7 +5,8 @@ set(CMAKE_CXX_STANDARD 20)
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup(TARGETS)
 
-set(SOURCES BinarySearch.h)
+add_definitions(-DUSE_TIMER)
+set(SOURCES BinarySearchTemplate2.h BinarySearchTemplate3.h BinarySearch.h)
 
 set(TEST_SOURCES BinarySearchTests.cpp)
 
