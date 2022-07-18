@@ -10,4 +10,4 @@ conan_basic_setup(TARGETS)
 set(SOURCES ../Profiling/main.cpp ../Profiling/ScopedTimer.h ../Profiling/ModuloImprovements.h ../Profiling/MicroBenchmarkTest.h)
 add_executable(Profiling ${SOURCES})
 target_link_libraries(Profiling
-        CONAN_PKG::benchmark)
+        CONAN_PKG::gtest)

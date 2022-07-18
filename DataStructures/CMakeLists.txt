@@ -1,1 +1,1 @@
-add_subdirectory(CircularQueues)
+add_subdirectory(Queues)
