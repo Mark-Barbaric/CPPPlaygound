@@ -8,3 +8,4 @@ class CustomConanFile(ConanFile):
 
     def requirements(self):
         self.requires('gtest/1.8.1@bincrafters/stable')
+        self.requires('benchmark/1.6.1')
