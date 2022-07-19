@@ -1,5 +1,5 @@
 #pragma once
-#include "PokerHandHelpers.h"
+#include "../include/Header.h"
 
 namespace PokerHands{
 

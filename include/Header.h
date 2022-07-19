@@ -13,4 +13,7 @@
 #include <memory>
 #include <string>
 #include <list>
+#include <climits>
+#include <sstream>
+#include <complex>
 #endif

@@ -7,5 +7,9 @@ class CustomConanFile(ConanFile):
     generators = 'cmake', 'cmake_find_package', 'cmake_paths', 'txt'
 
     def requirements(self):
-        self.requires('gtest/1.8.1@bincrafters/stable')
-        self.requires('benchmark/1.6.1')
+
+        if self.settings.os == 'Windows':
+            self.requires('gtest/1.8.1@bincrafters/stable')
+            self.requires('benchmark/1.6.1')
+        else:
+            self.requires('gtest/1.8.1')

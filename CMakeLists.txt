@@ -46,5 +46,5 @@ conan_basic_setup()
 enable_testing()
 
 add_subdirectory(Algorithms)
-add_subdirectory(PokerHands)
+add_subdirectory(DataStructures)
 add_subdirectory(Profiling)
