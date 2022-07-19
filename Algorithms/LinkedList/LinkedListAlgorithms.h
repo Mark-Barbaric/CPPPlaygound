@@ -2,14 +2,43 @@
 // Created by Mark Barbaric on 27/10/2019.
 //
 
-#ifndef LINKED_LIST_ALGORITHMS_H
-#define LINKED_LIST_ALGORITHMS_H
-
+#pragma once
 #include "../../DataStructures/Tests/LinkedList.h"
-
 
 namespace LinkedListAlgorithms
 {
+    struct Node{
+
+        explicit Node(int v):val(v){
+
+        }
+
+        int val;
+        Node* next {nullptr};
+    };
+
+    Node* removeEvenNode(Node** root){
+        Node* cur = *root, *prev = nullptr;
+
+        // iterate till first node is odd
+        while(cur && cur->val % 2 == 0){
+            prev = cur;
+            cur = cur->next;
+            *root = cur;
+        }
+
+        while(cur){
+            if(cur->val % 2 == 0){
+                prev->next = cur->next;
+            } else {
+                prev = cur;
+            }
+
+            cur = cur->next;
+        }
+
+        return *root;
+    }
 
     ListNode<int>* containsCycle(ListNode<int>* root)
     {
@@ -166,5 +195,3 @@ namespace LinkedListAlgorithms
         return head;    	
     }
 }
-
-#endif //BACKTRACKING_ListNode<int>ALGORITHMS_H

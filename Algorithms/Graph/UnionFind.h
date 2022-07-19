@@ -2,30 +2,25 @@
 
 namespace Algorithms::Graph{
 
-    inline void unionJoin(int u, int v, std::vector<int>& parent)
-    {
+    inline void unionJoin(int u, int v, std::vector<int>& parent){
         parent[u] = v;
     }
 
-    inline int unionFind(int u, std::vector<int>& parent)
-    {
-        if(u == parent[u])
-        {
+    inline int unionFind(int u, std::vector<int>& parent){
+
+        if(u == parent[u]){
             return u;
         }
-        else
-        {
+        else{
             return unionFind(parent[u], parent);
         }
     }
 
-    inline bool containsCycleUnionFind(Graph& graph)
-    {
+    inline bool containsCycleUnionFind(Graph& graph){
         const auto n = graph.adjacencyList.size();
         std::vector<int> parent(n, -1);
 
-        for(int i = 1; i < n; ++i)
-        {
+        for(int i = 1; i < n; ++i){
             parent[i] = i;
         }
 
@@ -39,8 +34,7 @@ namespace Algorithms::Graph{
             const auto parentU = unionFind(u, parent);
             const auto parentV = unionFind(v, parent);
 
-            if(parentU == parentV)
-            {
+            if(parentU == parentV){
                 return true;
             }
 
@@ -48,6 +42,5 @@ namespace Algorithms::Graph{
         }
 
         return false;
-
     }
 }
