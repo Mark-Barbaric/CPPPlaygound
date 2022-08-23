@@ -1,5 +1,5 @@
 #include "include/catch.hpp"
-#include "../Sorting/SortingAlgorithms.h"
+#include "SortingAlgorithms.h"
 
 TEST_CASE("Heap Sort")
 {

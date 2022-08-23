@@ -2,9 +2,7 @@
 // Created by Mark Barbaric on 28/10/2019.
 //
 
-#ifndef MEDIUMARRAYALGORITHMS_H
-#define MEDIUMARRAYALGORITHMS_H
-
+#pragma once
 #include "include/Header.h"
 
 namespace MediumArrayAlgorithms

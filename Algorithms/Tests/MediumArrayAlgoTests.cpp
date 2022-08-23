@@ -1,5 +1,5 @@
 #include "include/catch.hpp"
-#include "../GeneralAlgorithms/MediumArrayAlgorithms.h"
+#include "Algorithms/Array/MediumArrayAlgorithms.h"
 
 TEST_CASE("Subarray Algorithms")
 {
