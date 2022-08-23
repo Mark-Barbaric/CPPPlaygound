@@ -1,5 +1,6 @@
 #include "ScopedTimer.h"
 #include "ModuloImprovements.h"
+#include "PreVsPostCrement.h"
 
 int getHandRankBySorting(std::vector<int> arr){
     MEASURE_FUNCTION();
@@ -47,6 +48,12 @@ int main(int argc, char* argv[]){
     getHandRankBySorting(arr);
     std::cout << "\n\n Profiling hand analysis.\n";
     getHandRankByHashMap(arr);
+
+    std::vector<int> nums(10000000, 1);
+    std::cout << "\n\n Profiling Pre Increment.\n";
+    preIncrement(nums);
+    std::cout << "\n\n Profiling Post Increment.\n";
+    postIncrement(nums);
 
     return 0;
 

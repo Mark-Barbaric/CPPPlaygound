@@ -1,6 +1,7 @@
 #pragma once
 #include "PokerHandBase.h"
 #include "Profiling/ScopedTimer.h"
+#include <algorithm>
 
 namespace PokerHands{
 
@@ -94,6 +95,38 @@ namespace PokerHands{
             int cardCount[14];
             size_t tripCount = 0, pairCount = 0, quadCount = 0;
 
+            std::for_each(std::begin(m_handValues), std::end(m_handValues), [&](auto& v){
+                cardCount[v]++;
+            });
+
+            std::for_each(std::begin(cardCount), std::end(cardCount), [&](auto& c){
+               if(c == 2){
+                   pairCount++;
+               } else if(c == 3){
+                   tripCount++;
+               } else if(c == 4){
+                   quadCount++;
+               }
+            });
+
+            //TODO refactor this!!!!!
+
+            if(quadCount){
+                m_handRank = HandRank::FourOfaKind;
+                return;
+            }
+
+            if(tripCount){
+                m_handRank = pairCount ? HandRank::FullHouse : HandRank::ThreeOfAKind;
+                return;
+            }
+
+            if(pairCount){
+                m_handRank = pairCount == 2 ? HandRank::TwoPair : HandRank::OnePair;
+                return;
+            }
+
+            m_handRank = HandRank::HighCard;
         }
 
     };

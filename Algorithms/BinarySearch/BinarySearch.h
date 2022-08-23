@@ -2,7 +2,7 @@
 #include "../../include/Header.h"
 
 namespace Algorithms::BinarySearch{
-
+    // https://leetcode.com/problems/frequency-of-the-most-frequent-element/
     int binarySearchTemplate1(const std::vector<int>& nums, int target){
 
         int l = 0, r = nums.size() - 1;

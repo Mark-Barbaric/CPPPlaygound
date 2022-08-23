@@ -1,12 +1,9 @@
-#ifndef NUM_COMBINATIONS_H
-#define NUM_COMBINATIONS_H
-
+#pragma once
 #include <iostream>
 #include <vector>
 
-namespace CombinationDP
+namespace MediumDP
 {
-
     inline int numUniqueCombinationsTabulated(const int finalScore, std::vector<int> scores)
     {
          std::vector<int> dp (finalScore + 1, 0);
@@ -126,9 +123,4 @@ namespace CombinationDP
         recursiveCombinationsSearch(0, finalScore, scores, temp, scoreCombinations);
         return scoreCombinations;
     }
-
-
 }
-
-
-#endif

@@ -1,17 +1,9 @@
-//
-// Created by Mark Barbaric on 16/10/2019.
-//
-
-#ifndef GREEDY_FINALSCOREALGO_H
-#define GREEDY_FINALSCOREALGO_H
-
+#pragma once
 #include <vector>
 #include <algorithm>
 #include <unordered_set>
 
-using namespace std;
-
-namespace EasyDynamicProgrammingAlgos
+namespace EasyDP
 {
 	int fibonnacci(std::vector<int>& fibArr, int n)
 	{
@@ -21,8 +13,7 @@ namespace EasyDynamicProgrammingAlgos
 		if(n == 1)
             return 1;
 
-        if (fibArr[n] == 0)
-        {
+        if (fibArr[n] == 0){
             fibArr[n] = fibonnacci(fibArr, n - 1) + fibonnacci(fibArr, n - 2);
         }
 		
@@ -41,10 +32,3 @@ namespace EasyDynamicProgrammingAlgos
 		return paths[row][col];
 	}
 }
-
-
-
-
-
-
-#endif //GREEDY_FINALSCOREALGO_H

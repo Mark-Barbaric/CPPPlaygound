@@ -1,6 +1,6 @@
 #include "include/catch.hpp"
-#include "../GreedyAlgorithms/MediumGreedyAlgorithms.h"
-#include "../GreedyAlgorithms/SimpleGreedyAlgorithms.h"
+#include "MediumGreedyAlgorithms.h"
+#include "SimpleGreedyAlgorithms.h"
 
 TEST_CASE("Change Problem")
 {

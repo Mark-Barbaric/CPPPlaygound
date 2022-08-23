@@ -7,7 +7,7 @@
 //
 #include "include/catch.hpp"
 #include "../Sorting/QuickSort.h"
-#include "../DivideAndConquer/MergeSort.h"
+#include "Algorithms/Sorting/MergeSort.h"
 #include "../DivideAndConquer/BSAlgorithms.h"
 
 TEST_CASE("Divide And Conquery Sorting Tests")

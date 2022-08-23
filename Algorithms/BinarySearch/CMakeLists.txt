@@ -6,7 +6,7 @@ include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup(TARGETS)
 
 add_definitions(-DUSE_TIMER)
-set(SOURCES BinarySearchTemplate2.h BinarySearchTemplate3.h BinarySearch.h)
+set(SOURCES Pow.h BinarySearchTemplate2.h BinarySearchTemplate3.h BinarySearch.h)
 
 set(TEST_SOURCES BinarySearchTests.cpp)
 

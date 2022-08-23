@@ -1,6 +1,4 @@
-#ifndef PALINDROME_DP_H
-#define PALINDROME_DP_H
-
+#pragma once
 #include <string>
 
 namespace PalindromeDP
@@ -85,6 +83,3 @@ namespace PalindromeDP
 		return res.length();
 	}
 }
-
-
-#endif
