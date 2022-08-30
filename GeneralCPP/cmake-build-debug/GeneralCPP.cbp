@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="GeneralCPP"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="msvc8"/>
+		<Option virtualFolders="CMake Files\;CMake Files\DesignPatterns\;CMake Files\DesignPatterns\Behavioral\;CMake Files\DesignPatterns\Creational\;CMake Files\CPP_GuideLines\;CMake Files\Concurrency\;CMake Files\Datastructures\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Makefile VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Makefile VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GeneralCPP">
+				<Option output="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/cmake-build-debug/GeneralCPP.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Makefile VERBOSE=1 GeneralCPP"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="GeneralCPP/fast">
+				<Option output="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/cmake-build-debug/GeneralCPP.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Makefile VERBOSE=1 GeneralCPP/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="DesignPatterns">
+				<Option output="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/cmake-build-debug/DesignPatterns.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Makefile VERBOSE=1 DesignPatterns"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="DesignPatterns/fast">
+				<Option output="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/cmake-build-debug/DesignPatterns.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Makefile VERBOSE=1 DesignPatterns/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SOLID">
+				<Option output="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/cmake-build-debug/SOLID.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Makefile VERBOSE=1 SOLID"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="SOLID/fast">
+				<Option output="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/cmake-build-debug/SOLID.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Makefile VERBOSE=1 SOLID/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Makefile VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Datastructures">
+				<Option output="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/cmake-build-debug/Datastructures/Datastructures.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/cmake-build-debug/Datastructures"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Datastructures\Makefile VERBOSE=1 Datastructures"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Datastructures\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Datastructures\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Datastructures\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Datastructures/fast">
+				<Option output="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/cmake-build-debug/Datastructures/Datastructures.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/cmake-build-debug/Datastructures"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Datastructures\Makefile VERBOSE=1 Datastructures/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Datastructures\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Datastructures\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Datastructures\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CPP_Guidelines">
+				<Option output="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/cmake-build-debug/CPP_GuideLines/CPP_Guidelines.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/cmake-build-debug/CPP_GuideLines"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\CPP_GuideLines\Makefile VERBOSE=1 CPP_Guidelines"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\CPP_GuideLines\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\CPP_GuideLines\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\CPP_GuideLines\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="CPP_Guidelines/fast">
+				<Option output="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/cmake-build-debug/CPP_GuideLines/CPP_Guidelines.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/cmake-build-debug/CPP_GuideLines"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\CPP_GuideLines\Makefile VERBOSE=1 CPP_Guidelines/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\CPP_GuideLines\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\CPP_GuideLines\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\CPP_GuideLines\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Concurrency">
+				<Option output="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/cmake-build-debug/Concurrency/Concurrency.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/cmake-build-debug/Concurrency"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Concurrency\Makefile VERBOSE=1 Concurrency"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Concurrency\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Concurrency\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Concurrency\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Concurrency/fast">
+				<Option output="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/cmake-build-debug/Concurrency/Concurrency.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/cmake-build-debug/Concurrency"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Concurrency\Makefile VERBOSE=1 Concurrency/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Concurrency\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Concurrency\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\Concurrency\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Behavioral">
+				<Option output="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/cmake-build-debug/DesignPatterns/Behavioral/Behavioral.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/cmake-build-debug/DesignPatterns/Behavioral"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\DesignPatterns\Behavioral\Makefile VERBOSE=1 Behavioral"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\DesignPatterns\Behavioral\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\DesignPatterns\Behavioral\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\DesignPatterns\Behavioral\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Behavioral/fast">
+				<Option output="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/cmake-build-debug/DesignPatterns/Behavioral/Behavioral.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/cmake-build-debug/DesignPatterns/Behavioral"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\DesignPatterns\Behavioral\Makefile VERBOSE=1 Behavioral/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\DesignPatterns\Behavioral\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\DesignPatterns\Behavioral\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\DesignPatterns\Behavioral\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Creational">
+				<Option output="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/cmake-build-debug/DesignPatterns/Creational/Creational.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/cmake-build-debug/DesignPatterns/Creational"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\DesignPatterns\Creational\Makefile VERBOSE=1 Creational"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\DesignPatterns\Creational\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\DesignPatterns\Creational\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\DesignPatterns\Creational\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Creational/fast">
+				<Option output="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/cmake-build-debug/DesignPatterns/Creational/Creational.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/cmake-build-debug/DesignPatterns/Creational"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\DesignPatterns\Creational\Makefile VERBOSE=1 Creational/fast"/>
+					<CompileFile command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\DesignPatterns\Creational\Makefile VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\DesignPatterns\Creational\Makefile VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f C:\Users\mark.barbaric\Documents\Mirriad\Developer\CPP\GeneralCPP\cmake-build-debug\DesignPatterns\Creational\Makefile VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/CPP_GuideLines/Move.h">
+			<Option target="CPP_Guidelines"/>
+		</Unit>
+		<Unit filename="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/CPP_GuideLines/Move2.h">
+			<Option target="CPP_Guidelines"/>
+		</Unit>
+		<Unit filename="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/CPP_GuideLines/VectorBestPractice.h">
+			<Option target="CPP_Guidelines"/>
+		</Unit>
+		<Unit filename="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/CPP_GuideLines/main.cpp">
+			<Option target="CPP_Guidelines"/>
+		</Unit>
+		<Unit filename="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/Chapter1/SOLID/RunSOLIDExamples.cpp">
+			<Option target="SOLID"/>
+		</Unit>
+		<Unit filename="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/Chapter1/SOLID/SingleResponsability.h">
+			<Option target="SOLID"/>
+		</Unit>
+		<Unit filename="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/Concurrency/CV.h">
+			<Option target="Concurrency"/>
+		</Unit>
+		<Unit filename="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/Concurrency/main.cpp">
+			<Option target="Concurrency"/>
+		</Unit>
+		<Unit filename="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/Datastructures/Matrix.h">
+			<Option target="Datastructures"/>
+		</Unit>
+		<Unit filename="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/Datastructures/main.cpp">
+			<Option target="Datastructures"/>
+		</Unit>
+		<Unit filename="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/DesignPatterns/Behavioral/Element.h">
+			<Option target="Behavioral"/>
+		</Unit>
+		<Unit filename="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/DesignPatterns/Behavioral/Visitor.cpp">
+			<Option target="Behavioral"/>
+		</Unit>
+		<Unit filename="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/DesignPatterns/Behavioral/Visitor.h">
+			<Option target="Behavioral"/>
+		</Unit>
+		<Unit filename="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/DesignPatterns/Behavioral/main.cpp">
+			<Option target="Behavioral"/>
+		</Unit>
+		<Unit filename="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/DesignPatterns/Creational/Builder/HTML.h">
+			<Option target="DesignPatterns"/>
+			<Option target="Creational"/>
+		</Unit>
+		<Unit filename="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/DesignPatterns/Creational/Builder/RunBuilderPatterns.cpp">
+			<Option target="DesignPatterns"/>
+			<Option target="Creational"/>
+		</Unit>
+		<Unit filename="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/DesignPatterns/Creational/Singleton.h">
+			<Option target="DesignPatterns"/>
+			<Option target="Creational"/>
+		</Unit>
+		<Unit filename="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/DesignPatterns/RunDesignPatterns.cpp">
+			<Option target="DesignPatterns"/>
+		</Unit>
+		<Unit filename="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/main.cpp">
+			<Option target="GeneralCPP"/>
+		</Unit>
+		<Unit filename="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/DesignPatterns/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\DesignPatterns\"/>
+		</Unit>
+		<Unit filename="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/DesignPatterns/Behavioral/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\DesignPatterns\Behavioral\"/>
+		</Unit>
+		<Unit filename="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/DesignPatterns/Creational/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\DesignPatterns\Creational\"/>
+		</Unit>
+		<Unit filename="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/CPP_GuideLines/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\CPP_GuideLines\"/>
+		</Unit>
+		<Unit filename="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/Concurrency/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Concurrency\"/>
+		</Unit>
+		<Unit filename="C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/Datastructures/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\Datastructures\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

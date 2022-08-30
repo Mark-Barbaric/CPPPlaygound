@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/Concurrency/CV.h
+queue
+-
+condition_variable
+-
+iostream
+-
+chrono
+-
+thread
+-
+
+C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/Concurrency/main.cpp
+CV.h
+C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/Concurrency/CV.h
+

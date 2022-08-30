@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/Datastructures/Matrix.h
+iostream
+-
+vector
+-
+
+C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/Datastructures/main.cpp
+Matrix.h
+C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/Datastructures/Matrix.h
+

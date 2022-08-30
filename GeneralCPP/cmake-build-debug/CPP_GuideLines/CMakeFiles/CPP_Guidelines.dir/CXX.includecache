@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/CPP_GuideLines/Move.h
+iostream
+-
+utility
+-
+
+C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/CPP_GuideLines/Move2.h
+
+C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/CPP_GuideLines/VectorBestPractice.h
+iostream
+-
+vector
+-
+
+C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/CPP_GuideLines/main.cpp
+Move.h
+C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/CPP_GuideLines/Move.h
+Move2.h
+C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/CPP_GuideLines/Move2.h
+VectorBestPractice.h
+C:/Users/mark.barbaric/Documents/Mirriad/Developer/CPP/GeneralCPP/CPP_GuideLines/VectorBestPractice.h
+
