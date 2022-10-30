@@ -1,10 +1,10 @@
 #include "include/catch.hpp"
-#include "../LRUCache/LRUCache.h"
+#include "../../DataStructures/LRUCache.h"
 // Created by Mark Barbaric on 28/10/2019.
 //
 TEST_CASE("Basic Testing")
 {
-    SECTION("Basic Functionality Tests")
+    SECTION("Basic Functionality Datastructures")
     {
         LRUCache<int> lRUCache(2);
         lRUCache.put(1, 1);
@@ -18,7 +18,7 @@ TEST_CASE("Basic Testing")
         CHECK(lRUCache.get(3) == 3);
     }
 
-    SECTION("New Tests")
+    SECTION("New Datastructures")
     {
         LRUCache<int> lRUCache(1);
         lRUCache.put(2, 1);

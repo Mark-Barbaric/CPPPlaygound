@@ -1,7 +1,7 @@
 #include "include/catch.hpp"
 #include "../String/StringAlgorithms.h"
 
-TEST_CASE("Medium Strings Algorithm Tests")
+TEST_CASE("Medium Strings Algorithm Datastructures")
 {
 	const std::string word1 = "anagram", word2 = "nagaram";
 

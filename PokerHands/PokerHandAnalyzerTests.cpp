@@ -6,7 +6,7 @@ namespace PokerHands{
 
     TEST(PokerHandAnalyzerTests, StraightAndRoyalFlushTests){
 
-        std::cout << "Straight Flush Tests Succeeded.\n\n\n";
+        std::cout << "Straight Flush Datastructures Succeeded.\n\n\n";
         PokerHandAnalyzer straightFlush {"9H TH JH QH KH"};
         OptimizedPokerHandAnalyzer straightFlush2 {"9H TH JH QH KH"};
         EXPECT_EQ(straightFlush.getHandRank(), HandRank::StraightFlush);

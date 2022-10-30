@@ -1,9 +1,9 @@
 #include "include/catch.hpp"
 #include "../DynamicProgramming/EasyDPAlgos.h"
 
-TEST_CASE("Intro Algo Tests")
+TEST_CASE("Intro Algo Datastructures")
 {
-	SECTION("Fibonacci Tests")
+	SECTION("Fibonacci Datastructures")
 	{
 		const auto n = 10;
 		std::vector<int> fibArr(11, 0);
@@ -11,7 +11,7 @@ TEST_CASE("Intro Algo Tests")
 	}
 }
 
-TEST_CASE("Count Paths Tests")
+TEST_CASE("Count Paths Datastructures")
 {
 	std::vector<std::vector<int>> blocks = { {},{2,6},{4},{0,2,5},{2},{3,4,6},{1,5} };
 	std::vector<std::vector<int>> grid(8, std::vector<int>(8, 0));

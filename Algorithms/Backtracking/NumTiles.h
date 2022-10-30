@@ -1,6 +1,8 @@
 #pragma once
-#include "../../include/Header.h"
-#include "../../Profiling/ScopedTimer.h"
+#include <map>
+#include <unordered_map>
+#include <string>
+#include <Profiling/ScopedTimer.h>
 
 namespace Algorithms::Backtracking{
 

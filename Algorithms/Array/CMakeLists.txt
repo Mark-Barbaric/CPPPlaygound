@@ -8,6 +8,6 @@ set(SOURCES Kadane.h FourSum.h ContainsDuplicate.h ThreeSum.h TrappingWater.h)
 add_library(ArrayAlgorithms STATIC ${SOURCES})
 set_target_properties(ArrayAlgorithms PROPERTIES LINKER_LANGUAGE CXX)
 
-target_include_directories(ArrayAlgorithms PUBLIC ${CMAKE_BINARY_DIR}/lib)
+target_include_directories(ArrayAlgorithms PRIVATE ${CMAKE_BINARY_DIR}/Profiling/)
 target_link_libraries(ArrayAlgorithms
         Profiling)

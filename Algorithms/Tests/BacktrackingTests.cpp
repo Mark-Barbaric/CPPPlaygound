@@ -1,7 +1,7 @@
 #include "include/catch.hpp"
 #include "../Backtracking/Sudoku.h"
 
-TEST_CASE("Sudoku Solution Tests")
+TEST_CASE("Sudoku Solution Datastructures")
 {
     std::vector<std::vector<int>> grid = { {3, 0, 6, 5, 0, 8, 4, 0, 0},
          {5, 2, 0, 0, 0, 0, 0, 0, 0},
@@ -28,7 +28,7 @@ TEST_CASE("Sudoku Solution Tests")
     REQUIRE(grid == result);
 }
 
-TEST_CASE("N Queens Problem Tests")
+TEST_CASE("N Queens Problem Datastructures")
 {
 	
 }

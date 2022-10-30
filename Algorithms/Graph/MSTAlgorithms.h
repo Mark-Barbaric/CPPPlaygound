@@ -1,7 +1,7 @@
 #ifndef MST_ALGORITHMS_H
 #define MST_ALGORITHMS_H
 
-#include "../../DataStructures/Graphs/Graph.h"
+#include "../../DataStructures/Graph.h"
 
 typedef std::pair<int, std::pair<int, int>> WeightedEdge;
 

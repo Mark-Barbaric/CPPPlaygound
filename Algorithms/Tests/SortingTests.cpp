@@ -13,7 +13,7 @@ TEST_CASE("Heap Sort")
 	}
 }
 
-TEST_CASE("Merge Sort Tests")
+TEST_CASE("Merge Sort Datastructures")
 {
     
     std::vector<int> arr1{ 2, 1, 3, 1, 2 };

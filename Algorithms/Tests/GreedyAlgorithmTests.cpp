@@ -5,13 +5,13 @@
 TEST_CASE("Change Problem")
 {
     SimpleGreedyAlgorithms<int, std::vector<int>> simpleGreedyAlgorithms;
-    SECTION("Brute Force Tests")
+    SECTION("Brute Force Datastructures")
     {
         std::vector<int> change {100, 50, 25, 10, 5, 1};
         REQUIRE(simpleGreedyAlgorithms.getChangeBruteForce(250, change, change.size()) == 3);
     }
 
-    SECTION("Optimised Algorithm Tests")
+    SECTION("Optimised Algorithm Datastructures")
     {
         std::vector<int> change {100, 50, 25, 10, 5, 1};
         REQUIRE(simpleGreedyAlgorithms.getChangeOptimised(250, change, change.size()) == 3);
@@ -22,7 +22,7 @@ TEST_CASE("Max Substring")
 {
     SimpleGreedyAlgorithms<int, std::vector<int>> simpleGreedyAlgorithms;
 
-    SECTION("Simple Tests")
+    SECTION("Simple Datastructures")
     {
         REQUIRE(simpleGreedyAlgorithms.optimisedMaximumSubstring("abcabcbb") == 3);
         REQUIRE(simpleGreedyAlgorithms.optimisedMaximumSubstring("bbbbb") == 1);
@@ -34,7 +34,7 @@ TEST_CASE("Max Palindromic Substring")
 {
     SimpleGreedyAlgorithms<std::string, std::string> simpleGreedyAlgorithms;
 
-    SECTION("Simple Tests")
+    SECTION("Simple Datastructures")
     {
         REQUIRE(simpleGreedyAlgorithms.longestPalindromicSubstring("babad") == "bab");
         REQUIRE(simpleGreedyAlgorithms.longestPalindromicSubstring("cbbd") == "bb");
@@ -45,7 +45,7 @@ TEST_CASE("Max Palindromic Substring")
 TEST_CASE("Medium Greedy Algorithms")
 {
 
-  SECTION("Container of Water Tests")
+  SECTION("Container of Water Datastructures")
   {
       std::vector<int> v {4,1,1,7};
       REQUIRE(MediumGreedyAlgorithms::maximumWaterUnderVerticalLines(v) == 12);

@@ -8,6 +8,6 @@ set(SOURCES NumTiles.h QueensProblem.h Sudoku.h TowersOfHanoi.h)
 add_library(BacktrackingAlgorithms STATIC ${SOURCES})
 set_target_properties(BacktrackingAlgorithms PROPERTIES LINKER_LANGUAGE CXX)
 
-target_include_directories(BacktrackingAlgorithms PUBLIC ${CMAKE_BINARY_DIR}/lib)
+target_include_directories(BacktrackingAlgorithms PRIVATE ${CMAKE_BINARY_DIR}/lib)
 target_link_libraries(BacktrackingAlgorithms
         Profiling)

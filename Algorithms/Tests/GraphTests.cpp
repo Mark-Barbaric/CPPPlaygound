@@ -1,12 +1,12 @@
 #include "include/catch.hpp"
-#include "../../DataStructures/Graphs/Graph.h"
+#include "../../DataStructures/Graph.h"
 #include "../Graph/ShortestPathAlgorithms.h"
 #include "../Graph/CycleAlgorithms.h"
 #include "../Graph/MSTAlgorithms.h"
 
-TEST_CASE("Graph Cycle Algorithm Tests")
+TEST_CASE("Graph Cycle Algorithm Datastructures")
 {
-	SECTION("Undirected Graph Cycle Tests")
+	SECTION("Undirected Graph Cycle Datastructures")
 	{
         Graph graph(7);
         graph.addEdge(1, 3);
@@ -28,7 +28,7 @@ TEST_CASE("Graph Cycle Algorithm Tests")
         }
 	}
 
-    SECTION("Directed Graph Cycle Tests")
+    SECTION("Directed Graph Cycle Datastructures")
     {
         Graph graph(7, true);
         graph.addEdge(1, 3);
@@ -51,7 +51,7 @@ TEST_CASE("Graph Cycle Algorithm Tests")
     }
 }
 
-TEST_CASE("Shortest Path Algorithm Tests")
+TEST_CASE("Shortest Path Algorithm Datastructures")
 {
 	SECTION("Dijkstra's Shortest Path")
 	{
@@ -70,7 +70,7 @@ TEST_CASE("Shortest Path Algorithm Tests")
 
 }
 
-TEST_CASE("MST Tests")
+TEST_CASE("MST Datastructures")
 {
     Graph graph(10);
     graph.addEdge(1, 2, 4);

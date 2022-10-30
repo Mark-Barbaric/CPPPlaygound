@@ -2,10 +2,10 @@
 // Created by Mark Barbaric on 14/10/2019.
 //
 #include "include/catch.hpp"
-#include "../Stack_Queue/Queue.h"
-#include "../Stack_Queue/Stack.h"
+#include "../../DataStructures/Queue.h"
+#include "../../DataStructures/Stack.h"
 
-SCENARIO("Queue Functionality Tests")
+SCENARIO("Queue Functionality Datastructures")
 {
     TwoStackQueue <int> q;
 
@@ -48,7 +48,7 @@ TEST_CASE("Stack Functionality Checks")
     s.pop();
 }
 
-TEST_CASE("Stack LIFO Tests")
+TEST_CASE("Stack LIFO Datastructures")
 {
     TwoQueueStack<int> s;
     s.push(1);

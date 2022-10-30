@@ -1,10 +1,10 @@
 #define CATCH_CONFIG_MAIN
 #include "include/catch.hpp"
-#include "CircularQueue.h"
+#include <DataStructures/CircularQueue.h>
 
 namespace DataStructures::Queues{
 
-    TEST_CASE("Circular Queue Tests"){
+    TEST_CASE("Circular Queue Datastructures"){
 
         CircularQueue<int> queue1(3);
         REQUIRE(queue1.pop() == -1);

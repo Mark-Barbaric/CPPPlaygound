@@ -10,9 +10,9 @@
 #include "../../../Algorithms/DivideAndConquer/MergeSort.h"
 #include "../../../Algorithms/DivideAndConquer/BSAlgorithms.h"
 
-TEST_CASE("Divide And Conquery Sorting Tests")
+TEST_CASE("Divide And Conquery Sorting Datastructures")
 {
-  SECTION("Quick Sort Tests")
+  SECTION("Quick Sort Datastructures")
   {
     std::vector<int> arr1 {10, 80, 30, 90, 40, 50, 70};
     const std::vector<int> sortedArr {10, 30, 40, 50, 70, 80, 90};
@@ -21,7 +21,7 @@ TEST_CASE("Divide And Conquery Sorting Tests")
     REQUIRE(arr1 == sortedArr);
   }
   
-  SECTION("Merge Sort Tests")
+  SECTION("Merge Sort Datastructures")
   {
     std::vector<int> arr1 {2, 1, 3, 1, 2};
     const std::vector<int> sortedArr {1, 1, 2, 2, 3};
@@ -33,7 +33,7 @@ TEST_CASE("Divide And Conquery Sorting Tests")
   }
 }
 
-TEST_CASE("Divide And Conquery Binary Search Tests")
+TEST_CASE("Divide And Conquery Binary Search Datastructures")
 {
 	SECTION("Binary Search")
 	{

@@ -3,9 +3,9 @@
 #include "../DynamicProgramming/Knapsack.h"
 #include "../DynamicProgramming/PalindromeDP.h"
 
-TEST_CASE("Score Combination Tests")
+TEST_CASE("Score Combination Datastructures")
 {
-	SECTION("Num Combination Tests")
+	SECTION("Num Combination Datastructures")
 	{
 		REQUIRE(CombinationDP::numCombinationsTabulated(4, { 1,2,3 }) == 7);
 		REQUIRE(CombinationDP::numCombinationsMemoization(4, { 1,2,3 }) == 7);
@@ -18,9 +18,9 @@ TEST_CASE("Score Combination Tests")
 
 }
 
-TEST_CASE("Knapsack Tests")
+TEST_CASE("Knapsack Datastructures")
 {
-	SECTION("Maximum Value Tests")
+	SECTION("Maximum Value Datastructures")
 	{
 		std::vector<knapsack::Item> items = { {6, 5}, {5, 3}, {7, 4}, {3, 2} };
 		const auto maxWeight = 5;
@@ -28,9 +28,9 @@ TEST_CASE("Knapsack Tests")
 	}
 }
 
-TEST_CASE("Palindrome Tests")
+TEST_CASE("Palindrome Datastructures")
 {
-	SECTION("IsPalindrome Tests")
+	SECTION("IsPalindrome Datastructures")
 	{
 		std::string p1 = "babab";
 		REQUIRE(PalindromeDP::IsPalindrome(p1) == true);

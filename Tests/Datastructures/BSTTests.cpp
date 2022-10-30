@@ -1,8 +1,8 @@
 #include "include/catch.hpp"
-#include "../Trees/BinarySearchTree.h"
+#include "../../DataStructures/BinarySearchTree.h"
 #include "../../Algorithms/BST/BSTAlgorithms.h"
 
-TEST_CASE("BST Basic Tests")
+TEST_CASE("BST Basic Datastructures")
 {
 	BinarySearchTree<int> bst;
 
@@ -49,7 +49,7 @@ TEST_CASE("BST Basic Tests")
 
 }
 
-TEST_CASE("BST Path Sum Tests")
+TEST_CASE("BST Path Sum Datastructures")
 {
 
 	BinarySearchTree<int> bst;

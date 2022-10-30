@@ -1,5 +1,5 @@
 #pragma once
-#include "include/Header.h"
+#include <vector>
 
 namespace Algorithms::Backtracking
 {
@@ -30,16 +30,13 @@ namespace Algorithms::Backtracking
             while(r > 0 && c > 0){
                 r--;
                 c--;
-
             }
-
         } else {
             while(r > 0 && c < n - 1){
                 r--;
                 c++;
             }
         }
-
         return std::make_tuple(r, c);
     }
 

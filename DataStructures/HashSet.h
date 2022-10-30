@@ -1,7 +1,7 @@
 #ifndef HASH_SET_H
 #define HASH_SET_H
 
-#include "../Trees/BinarySearchTree.h"
+#include "BinarySearchTree.h"
 #include "include/Header.h"
 
 template <typename T>

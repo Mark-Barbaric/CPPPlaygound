@@ -1,7 +1,7 @@
 #include "include/catch.hpp"
 #include "../../Algorithms/LinkedList/LinkedListAlgorithms.h"
 
-TEST_CASE("Linked List Base Functionality Tests")
+TEST_CASE("Linked List Base Functionality Datastructures")
 {	
 	LinkedList<int> linkedList;
 	linkedList.insertNode(0);
@@ -43,7 +43,7 @@ TEST_CASE("Linked List Base Functionality Tests")
 	}	
 }
 
-TEST_CASE("Linked List Algorithm Tests")
+TEST_CASE("Linked List Algorithm Datastructures")
 {
 	LinkedList<int> linkedList;
 	linkedList.insertNode(0);
@@ -60,7 +60,7 @@ TEST_CASE("Linked List Algorithm Tests")
 	REQUIRE(LinkedListAlgorithms::traverseNodesUtil(reversedHead) == ans);
 }
 
-TEST_CASE("Linked List Cycle Tests")
+TEST_CASE("Linked List Cycle Datastructures")
 {
 
 	SECTION("Cycle Test 1")
@@ -86,9 +86,9 @@ TEST_CASE("Linked List Cycle Tests")
 }
 
 //
-//TEST_CASE("Linked List Sum Two Number Tests")
+//TEST_CASE("Linked List Sum Two Number Datastructures")
 //{
-//	SECTION("Sum Two Numbers Tests")
+//	SECTION("Sum Two Numbers Datastructures")
 //	{
 //		std::vector<int> arr1 = { 2, 4, 3 };
 //		std::vector<int> arr2 = { 5, 6 ,4 };
@@ -101,7 +101,7 @@ TEST_CASE("Linked List Cycle Tests")
 //		REQUIRE(LinkedListTestHelpers::linkedListToVector(resultLinkedList) == resultArr);
 //	}
 //
-//	SECTION("Sum Two Numbers Tests Two")
+//	SECTION("Sum Two Numbers Datastructures Two")
 //	{
 //		std::vector<int> arr1 = { 7, 2, 4, 3};
 //		std::vector<int> arr2 = { 5, 6 ,4 };

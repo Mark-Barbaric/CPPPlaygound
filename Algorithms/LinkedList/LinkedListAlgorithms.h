@@ -3,7 +3,7 @@
 //
 
 #pragma once
-#include "../../DataStructures/Tests/LinkedList.h"
+#include "../../DataStructures/LinkedList.h"
 
 namespace LinkedListAlgorithms
 {
