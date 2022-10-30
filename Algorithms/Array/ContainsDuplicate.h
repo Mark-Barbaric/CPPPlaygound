@@ -1,8 +1,8 @@
 #pragma once
-#include "../../include/Header.h"
-#include "../../Profiling/ScopedTimer.h"
+#include <algorithm>
+#include <Profiling/ScopedTimer.h>
 
-namespace Algorithms::ArrayAlgorithms{
+namespace Algorithms::Array{
 
     bool containsDuplicateSorting(std::vector<int> nums){
         MEASURE_FUNCTION();
@@ -31,5 +31,4 @@ namespace Algorithms::ArrayAlgorithms{
 
         return false;
     }
-
 }

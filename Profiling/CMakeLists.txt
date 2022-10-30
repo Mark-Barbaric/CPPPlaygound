@@ -4,10 +4,5 @@ set(CMAKE_CXX_STANDARD 20)
 
 add_definitions(-DUSE_TIMER)
 
-include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
-conan_basic_setup(TARGETS)
-
-set(SOURCES ../Profiling/main.cpp ../Profiling/ScopedTimer.h ../Profiling/ModuloImprovements.h ../Profiling/MicroBenchmarkTest.h)
-add_executable(Profiling ${SOURCES})
-target_link_libraries(Profiling
-        CONAN_PKG::gtest)
+add_library(Profiling STATIC ScopedTimer.h)
+set_target_properties(Profiling PROPERTIES LINKER_LANGUAGE CXX)

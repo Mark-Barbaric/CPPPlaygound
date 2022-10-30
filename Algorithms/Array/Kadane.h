@@ -1,5 +1,5 @@
 
-namespace Algorithms::ArrayAlgorithms{
+namespace Algorithms::Array{
 
     inline int KadaneMaxSubArray(std::vector<int>& arr)
     {

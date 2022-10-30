@@ -1,7 +1,7 @@
 #pragma once
 #include "../../include/Header.h"
 
-namespace Algorithms::ArrayAlgorithms{
+namespace Algorithms::Array{
 
     int trappingRainWaterNaive(std::vector<int>& height){
 

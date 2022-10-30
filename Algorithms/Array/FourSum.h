@@ -1,6 +1,9 @@
-#include "../../include/Header.h"
+#pragma once
 
-namespace Algorithms::ArrayAlgorithms{
+#include <vector>
+#include <algorithm>
+
+namespace Algorithms::Array{
 
     inline void twoSum(std::vector<int>& nums,
                                         std::vector<std::vector<int>>& ans,

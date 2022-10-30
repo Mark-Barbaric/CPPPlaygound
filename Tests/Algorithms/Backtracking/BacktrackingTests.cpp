@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
-#include "QueensProblem.h"
-#include "NumTiles.h"
+#include "../../../Algorithms/Backtracking/QueensProblem.h"
+#include "../../../Algorithms/Backtracking/NumTiles.h"
 
 namespace Algorithms::Backtracking{
 

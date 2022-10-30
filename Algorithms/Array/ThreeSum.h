@@ -7,10 +7,12 @@
 //
 
 #pragma once
-#include "include/Header.h"
 
-namespace Algorithms::TwoSum
-{
+#include <vector>
+#include <map>
+#include <algorithm>
+
+namespace Algorithms::Array{
   std::vector<int> twoSum(std::vector<int>& vec, int target)
   {
     std::map<int, int> m;
@@ -54,23 +56,17 @@ namespace Algorithms::TwoSum
     auto l = i + 1;
     auto r = nums.size() - 1;
     
-    while(l < r)
-    {
-      const auto sum = nums[i] + nums[l] + nums[r];
-      
-      if(sum < 0 || (l > i + 1 && nums[l] == nums[l - 1])){
-        ++l;
-      }
-      
-      else if(sum > 0 || (r < nums.size() - 1 && nums[r] == nums[r + 1])){
-        --r;
-      }
-      else{
-        res.push_back({nums[i], nums[l++], nums[r++]});
-      }
-      
+    while(l < r) {
+        const auto sum = nums[i] + nums[l] + nums[r];
+
+        if (sum < 0 || (l > i + 1 && nums[l] == nums[l - 1])) {
+            ++l;
+        } else if (sum > 0 || (r < nums.size() - 1 && nums[r] == nums[r + 1])) {
+            --r;
+        } else {
+            res.push_back({nums[i], nums[l++], nums[r++]});
+        }
     }
-    
   }
 
   std::vector<std::vector<int>> threeSum(std::vector<int>& nums)

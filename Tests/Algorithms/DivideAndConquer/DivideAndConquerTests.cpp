@@ -6,9 +6,9 @@
 //  Copyright © 2020 Mark Barbaric. All rights reserved.
 //
 #include "include/catch.hpp"
-#include "../Sorting/QuickSort.h"
-#include "../DivideAndConquer/MergeSort.h"
-#include "../DivideAndConquer/BSAlgorithms.h"
+#include "../../../Algorithms/Sorting/QuickSort.h"
+#include "../../../Algorithms/DivideAndConquer/MergeSort.h"
+#include "../../../Algorithms/DivideAndConquer/BSAlgorithms.h"
 
 TEST_CASE("Divide And Conquery Sorting Tests")
 {

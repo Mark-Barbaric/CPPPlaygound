@@ -38,13 +38,9 @@ execute_process(
         ERROR_VARIABLE conan_install_error
         RESULT_VARIABLE conan_result)
 
-
-include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
-include(${CMAKE_BINARY_DIR}/conan_paths.cmake)
-conan_basic_setup()
-
-enable_testing()
-
 add_subdirectory(Algorithms)
 add_subdirectory(DataStructures)
 add_subdirectory(Profiling)
+
+enable_testing()
+add_subdirectory(Tests)
