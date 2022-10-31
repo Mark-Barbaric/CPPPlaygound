@@ -38,6 +38,10 @@ execute_process(
         ERROR_VARIABLE conan_install_error
         RESULT_VARIABLE conan_result)
 
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}")
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}")
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}")
+
 add_subdirectory(Algorithms)
 add_subdirectory(DataStructures)
 add_subdirectory(Profiling)

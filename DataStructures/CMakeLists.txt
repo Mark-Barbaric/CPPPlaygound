@@ -15,3 +15,6 @@ set(SOURCES BinarySearchTree.h
 
 add_library(Datastructures STATIC ${SOURCES})
 set_target_properties(Datastructures PROPERTIES LINKER_LANGUAGE CXX)
+set_target_properties(Datastructures PROPERTIES APPEND_STRING PROPERTY 
+    COMPILE_FLAGS " ${CMAKE_INCLUDE_SYSTEM_FLAG_CXX} /foo")
+add_subdirectory(Tree)

@@ -1,6 +1,18 @@
-#include "include/catch.hpp"
-#include "../../DataStructures/BinarySearchTree.h"
-#include "../../Algorithms/BST/BSTAlgorithms.h"
+#include <gtest/gtest.h>
+#include <BST.h>
+//#include "../../DataStructures/BinarySearchTree.h"
+//#include "../../Algorithms/BST/BSTAlgorithms.h"
+
+namespace Datastructures::BST::Tests{
+
+	TEST(DatastructureTests, BSTTests){
+		
+		Datastructures::Tree::BST<int> bst;
+		bst.insertNode(1);
+	}
+}
+
+/*
 
 TEST_CASE("BST Basic Datastructures")
 {
@@ -67,3 +79,5 @@ TEST_CASE("BST Path Sum Datastructures")
 	std::sort(arr.begin(), arr.end());
 	REQUIRE(arr == ans);
 }
+
+*/
