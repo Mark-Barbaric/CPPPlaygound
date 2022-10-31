@@ -9,7 +9,8 @@ add_definitions(-DUSE_TIMER)
 
 enable_testing()
 
-set(TEST_SOURCES TrappingWaterTests.cpp ThreeSumTests.cpp)
+set(TEST_SOURCES ThreeSumTests.cpp)
+
 add_executable(ArrayAlgorithmTests ${TEST_SOURCES})
 add_test(NAME AlgorithmTests COMMAND ArrayAlgorithmTests)
 

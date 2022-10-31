@@ -5,7 +5,8 @@
 #ifndef GRAPH_H
 #define GRAPH_H
 
-#include "include/Header.h"
+#include <vector>
+#include <list>
 
 class Graph
 {
@@ -46,7 +47,7 @@ public:
 
     	if(!directed)
     	{
-            adjacencyMatrix[v][u] = w;
+          adjacencyMatrix[v][u] = w;
     	}
     }
  

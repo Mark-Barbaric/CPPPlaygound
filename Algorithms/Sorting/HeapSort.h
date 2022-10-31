@@ -1,3 +1,6 @@
+#pragma once
+#include <vector>
+
 namespace Algorithms::SortingAlgorithms{
 
     void heapify(int index, int size, std::vector<int>& nums, bool max)
@@ -23,12 +26,12 @@ namespace Algorithms::SortingAlgorithms{
     void heapSort(std::vector<int>& nums, bool max)
     {
         for(int i = nums.size() / 2 - 1; i >= 0; --i){
-            Heapify(i, nums.size(), nums, max);
+            heapify(i, nums.size(), nums, max);
         }
 
         for(int i = nums.size() - 1; i>= 0; --i){
             std::swap(nums[0], nums[i]);
-            Heapify(0, i, nums, max);
+            heapify(0, i, nums, max);
         }
     }
 }

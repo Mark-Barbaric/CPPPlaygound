@@ -4,7 +4,6 @@ set(CMAKE_CXX_STANDARD 20)
 
 set(SOURCES BinarySearchTree.h
         CircularDeque.h CircularQueue.h
-        Graph.h
         HashMap.h HashSet.h
         LinkedList.h
         LRUCache.h
