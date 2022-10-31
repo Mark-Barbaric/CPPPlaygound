@@ -13,9 +13,6 @@ set(TEST_SOURCES TrappingWaterTests.cpp ThreeSumTests.cpp)
 add_executable(ArrayAlgorithmTests ${TEST_SOURCES})
 add_test(NAME AlgorithmTests COMMAND ArrayAlgorithmTests)
 
-target_include_directories(ArrayAlgorithmTests PUBLIC
-        ${CMAKE_BINARY_DIR}/lib)
-
 target_link_libraries(ArrayAlgorithmTests
         ArrayAlgorithms
         CONAN_PKG::gtest)

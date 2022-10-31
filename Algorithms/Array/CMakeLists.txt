@@ -4,10 +4,11 @@ set(CMAKE_CXX_STANDARD 20)
 
 add_definitions(-DUSE_TIMER)
 
-set(SOURCES Kadane.h FourSum.h ContainsDuplicate.h ThreeSum.h TrappingWater.h)
+set(SOURCES include/Kadane.h include/FourSum.h include/ContainsDuplicate.h include/ThreeSum.h include/TrappingWater.h)
+
 add_library(ArrayAlgorithms STATIC ${SOURCES})
+target_include_directories(ArrayAlgorithms PUBLIC include)
 set_target_properties(ArrayAlgorithms PROPERTIES LINKER_LANGUAGE CXX)
 
-include_directories(ArrayAlgorithms PRIVATE ${CMAKE_BINARY_DIR}/Profiling/)
 target_link_libraries(ArrayAlgorithms
         Profiling)

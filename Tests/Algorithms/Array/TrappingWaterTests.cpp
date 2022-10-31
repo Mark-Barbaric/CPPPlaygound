@@ -1,6 +1,6 @@
 #include <gtest/gtest.h>
 #include <Profiling/ScopedTimer.h>
-#include <Algorithms/Array/TrappingWater.h>
+#include <TrappingWater.h>
 
 namespace Tests::Algorithms::Array {
 

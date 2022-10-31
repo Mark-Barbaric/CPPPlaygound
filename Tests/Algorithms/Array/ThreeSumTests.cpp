@@ -6,8 +6,8 @@
 //  Copyright © 2020 Mark Barbaric. All rights reserved.
 //
 
-#include <Algorithms/Array/ThreeSum.h>
 #include <gtest/gtest.h>
+#include <ThreeSum.h>
 
 namespace Algorithms::Array::Tests{
 
