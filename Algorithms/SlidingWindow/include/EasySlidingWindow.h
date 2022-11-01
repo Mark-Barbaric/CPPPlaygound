@@ -17,7 +17,13 @@ namespace Algorithms::SlidingWindow::Easy{
     Input: [2, 1, 5, 2, 3, 2], S=12
     Output: 0
     Explanation: The smallest subarray with a sum greater than or equal to ‘7’ is [5, 2].
+
+    Time Complexity
     O(N + N)
+
+    Space Complexity
+    O(K)
+    
     */
 
    int smallestSubarraySum(std::vector<int>& nums, int s){
