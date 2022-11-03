@@ -19,4 +19,11 @@ namespace Algorithms::SlidingWindow::Medium{
         std::vector<char> trees1 = {'A', 'B', 'C', 'A', 'C'};
         ASSERT_EQ(Algorithms::SlidingWindow::Medium::maxNumberOfFruits(trees1), 3);
     }
+
+    TEST(MediumSlidingWindowTests, MaxConsecutiveOneTests){
+        std::vector<int> arr1 = {1,1,1,0,0,0,1,1,1,1,0};
+        ASSERT_EQ(Algorithms::SlidingWindow::Medium::maxConsecutiveOnesIII(arr1, 2), 6);
+        std::vector<int> arr2 = {0,0,1,1,0,0,1,1,1,0,1,1,0,0,0,1,1,1,1};
+        ASSERT_EQ(Algorithms::SlidingWindow::Medium::maxConsecutiveOnesIII(arr2, 3), 10);
+    }
 }

@@ -84,4 +84,34 @@ namespace Algorithms::SlidingWindow::Medium{
 
         return maxLength;
     }
+
+    /*
+    Given a binary array nums and an integer k, return the maximum number of consecutive 1's in the array if you can flip at most k 0's.
+    */
+    int maxConsecutiveOnesIII(const std::vector<int>& nums, int k){
+
+        int l = 0, longestSubstring = 0, zeroCount = 0;
+
+        for(int r = 0; r < nums.size(); ++r){
+            
+            if(nums[r] == 0){
+                zeroCount++;
+            }
+
+            while(zeroCount > k){
+                
+                if(nums[l] == 0){
+                    zeroCount--;
+                }
+                
+                l++;
+            }
+
+            longestSubstring = std::max(r - l + 1, longestSubstring);
+        }
+
+        return longestSubstring;
+    }
+
+    // https://leetcode.com/problems/max-consecutive-ones-iii/
 }
