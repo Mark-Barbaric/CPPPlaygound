@@ -1,5 +1,9 @@
 cmake_minimum_required(VERSION 3.16)
 set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib")
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/lib")
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${CMAKE_BINARY_DIR}/bin")
+
 project(AlgorithmsAndDatastructures)
 
 include_directories(BEFORE ${PROJECT_SOURCE_DIR})
@@ -9,6 +13,8 @@ if(NOT EXISTS "${CMAKE_BINARY_DIR}/conan.cmake")
     file(DOWNLOAD "https://github.com/conan-io/cmake-conan/raw/v0.13/conan.cmake"
             "${CMAKE_BINARY_DIR}/conan.cmake")
 endif()
+
+message(INFO "Binary dir ${CMAKE_BINARY_DIR}")
 
 include(${CMAKE_BINARY_DIR}/conan.cmake)
 
@@ -34,15 +40,14 @@ execute_process(
         COMMAND conan install "${conan_file}"
         -pr ${conan_profile_file}
         ${conan_install_opts}
+        -if ${CMAKE_BINARY_DIR}
         OUTPUT_FILE conan_install_output.txt
         ERROR_VARIABLE conan_install_error
         RESULT_VARIABLE conan_result)
 
-set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}")
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}")
-set(CMAKE_RUNTIME_OUTPUT_DIRECTORY "${PROJECT_BINARY_DIR}")
 
 add_subdirectory(Algorithms)
+add_subdirectory(Advanced_CPP_Topics)
 add_subdirectory(DataStructures)
 add_subdirectory(Profiling)
 
