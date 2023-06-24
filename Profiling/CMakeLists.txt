@@ -6,3 +6,5 @@ add_definitions(-DUSE_TIMER)
 
 add_library(Profiling STATIC ScopedTimer.h)
 set_target_properties(Profiling PROPERTIES LINKER_LANGUAGE CXX)
+
+add_subdirectory(Examples)

@@ -21,6 +21,10 @@ void processNums(std::vector<int>& nums, int start, int end, int threadNum){
     }
 }
 
+void multiThreadedCalcs() {
+    
+}
+
 int main(int argc, char** argv){
 
     std::vector<int> nums;
@@ -31,7 +35,7 @@ int main(int argc, char** argv){
     std::vector<std::thread> threads;
     threads.reserve(numThreads);
     auto count = 0;
-    
+
     MEASURE_FUNCTION();
     for(int i = 0; i <= size - chunks; i += chunks){
         count += 1;

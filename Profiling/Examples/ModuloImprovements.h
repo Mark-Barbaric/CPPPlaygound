@@ -1,6 +1,5 @@
 #pragma once
-#include "../include/Header.h"
-#include "ScopedTimer.h"
+#include <Profiling/ScopedTimer.h>
 
 namespace Profiling{
 
