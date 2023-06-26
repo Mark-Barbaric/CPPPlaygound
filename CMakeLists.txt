@@ -50,6 +50,8 @@ add_subdirectory(Algorithms)
 add_subdirectory(Advanced_CPP_Topics)
 add_subdirectory(DataStructures)
 add_subdirectory(Profiling)
+add_subdirectory(interview_questions)
+
 
 enable_testing()
 add_subdirectory(Tests)
