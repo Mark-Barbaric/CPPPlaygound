@@ -1,7 +1,7 @@
 #pragma once
 #include <memory>
 
-namespace DataStructures::Tree {
+namespace Datastructures::Tree {
     template<typename T>
     struct Node {
 
