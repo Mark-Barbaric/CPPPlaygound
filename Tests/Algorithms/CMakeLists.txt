@@ -1,6 +1,7 @@
 add_subdirectory(Array)
 add_subdirectory(Backtracking)
-add_subdirectory(GreedyAlgorithms)
+#add_subdirectory(GreedyAlgorithms)
 #add_subdirectory(DivideAndConquer)
 add_subdirectory(SlidingWindow)
 add_subdirectory(TwoPointers)
+add_subdirectory(Tree)

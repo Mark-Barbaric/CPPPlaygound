@@ -4,4 +4,4 @@ set(CMAKE_CXX_STANDARD 20)
 
 add_subdirectory(RAII)
 add_subdirectory(Perfect_Forwarding)
-add_subdirectory(concurrency)
+add_subdirectory(Concurrency)

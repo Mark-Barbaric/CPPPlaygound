@@ -9,7 +9,7 @@ namespace Datastructures::Tree {
 
         Node(T v);
 
-        std::unique_ptr<Node> left;
-        std::unique_ptr<Node> right;
+        Node* left;
+        Node* right;
     };
 }
