@@ -2,9 +2,6 @@ project(Recursion)
 cmake_minimum_required(VERSION 3.16)
 set(CMAKE_CXX_STANDARD  20)
 
-include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
-conan_basic_setup(TARGETS)
-
 add_definitions(-DUSE_TIMER)
 
 set(SOURCES Fibonacci.h)

@@ -2,9 +2,6 @@ project(Profiling)
 
 add_definitions(-DUSE_TIMER)
 
-include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
-conan_basic_setup(TARGETS)
-
 set(SOURCES main.cpp ModuloImprovements.h MicroBenchmarkTest.h)
 add_executable(ProfilingPractice ${SOURCES})
 target_link_libraries(ProfilingPractice

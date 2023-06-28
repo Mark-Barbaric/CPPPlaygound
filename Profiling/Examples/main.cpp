@@ -1,5 +1,8 @@
 #include <Profiling/ScopedTimer.h>
 #include "ModuloImprovements.h"
+#include <vector>
+#include <algorithm>
+#include <limits.h>
 
 int getHandRankBySorting(std::vector<int> arr){
     MEASURE_FUNCTION();

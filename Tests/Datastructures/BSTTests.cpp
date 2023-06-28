@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include <BST.h>
+#include <Datastructures/Tree/Node.h>
 //#include "../../DataStructures/BinarySearchTree.h"
 //#include "../../Algorithms/BST/BSTAlgorithms.h"
 

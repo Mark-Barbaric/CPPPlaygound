@@ -6,9 +6,6 @@ set(TEST_SOURCES EasySlidingWindowTests.cpp MediumSlidingWindowTests.cpp HardSli
 add_executable(SlidingWindowTests ${TEST_SOURCES})
 add_test(NAME AlgorithmTests COMMAND SlidingWindowTests)
 
-include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
-conan_basic_setup(TARGETS)
-
 #include_directories(${CMAKE_BINARY_DIR})
 include_directories(${CMAKE_SOURCE_DIR}/Algorithms/SlidingWindow/include)
 target_link_libraries(SlidingWindowTests

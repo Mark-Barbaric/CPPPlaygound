@@ -1,0 +1,3 @@
+/home/mbarbari/dev/CPP/CPPPlaygound/practice/cmake-build/CMakeFiles/test.dir
+/home/mbarbari/dev/CPP/CPPPlaygound/practice/cmake-build/CMakeFiles/edit_cache.dir
+/home/mbarbari/dev/CPP/CPPPlaygound/practice/cmake-build/CMakeFiles/rebuild_cache.dir

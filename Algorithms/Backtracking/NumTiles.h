@@ -3,6 +3,7 @@
 #include <unordered_map>
 #include <string>
 #include <Profiling/ScopedTimer.h>
+#include <unordered_set>
 
 namespace Algorithms::Backtracking{
 

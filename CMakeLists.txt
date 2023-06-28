@@ -24,12 +24,10 @@ if(NOT CONAN_CMD AND CONAN_REQUIRED)
     message(FATAL_ERROR "Conan executable not found!")
 endif()
 
+
 set(CONAN_DISABLE_CHECK_COMPILER True)
 
 set(conan_file "${CMAKE_SOURCE_DIR}/conanfile.py")
-set(conan_install_optss "-g cmake --build=missing")
-
-message("CMake Host System Name ${CMAKE_HOST_SYSTEM_NAME}")
 
 set(conan_profile_file "${CMAKE_SOURCE_DIR}/conan_profiles/${CMAKE_HOST_SYSTEM_NAME}.profile")
 
@@ -39,12 +37,14 @@ message(STATUS "conan install ${conan_file} -pr ${conan_profile_file} ${conan_in
 execute_process(
         COMMAND conan install "${conan_file}"
         -pr ${conan_profile_file}
-        ${conan_install_opts}
         -if ${CMAKE_BINARY_DIR}
+        --update --build=missing
         OUTPUT_FILE conan_install_output.txt
         ERROR_VARIABLE conan_install_error
         RESULT_VARIABLE conan_result)
 
+include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
+conan_basic_setup(TARGETS NO_OUTPUT_DIRS)
 
 add_subdirectory(Algorithms)
 add_subdirectory(Advanced_CPP_Topics)

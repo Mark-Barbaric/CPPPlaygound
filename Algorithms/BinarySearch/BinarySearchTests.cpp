@@ -1,4 +1,5 @@
 #include <gtest/gtest.h>
+#include <math.h>
 #include "BinarySearch.h"
 #include "BinarySearchTemplate2.h"
 #include "BinarySearchTemplate3.h"

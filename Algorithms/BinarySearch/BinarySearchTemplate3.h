@@ -1,5 +1,5 @@
 #pragma once
-#include "../../Profiling/ScopedTimer.h"
+#include <Profiling/ScopedTimer.h>
 
 namespace Algorithms::BinarySearch{
 

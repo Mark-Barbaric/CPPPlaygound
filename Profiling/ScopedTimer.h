@@ -1,6 +1,6 @@
 #pragma once
 #include <chrono>
-#include "../include/Header.h"
+#include <iostream>
 
 #if USE_TIMER
 #define MEASURE_FUNCTION() Profiling::ScopedTimer timer {__func__}
@@ -30,7 +30,7 @@ namespace Profiling{
             auto stop = ClockType::now();
             auto duration = (stop - m_startPoint);
             const auto ms = duration_cast<microseconds>(duration).count();
-            std::cout  << ms << " microseconds " << m_functionName << "\n";
+            std::cout  << ms << " microseconds " << m_functionName << std::endl;
         }
 
         ScopedTimer(const ScopedTimer&) = delete;

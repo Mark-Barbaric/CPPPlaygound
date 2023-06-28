@@ -1,12 +1,17 @@
 project(Tree)
-cmake_minimum_required(VERSION 3.16)
+set(CMAKE_MINIMUM_REQUIRED_VERSION VERSION 3.16)
 set(CMAKE_CXX_STANDARD 20)
 
-set(SOURCES src/BST.cpp include/BST.h include/Node.h)
-add_library(BinarySearchTree STATIC ${SOURCES})
+set(SOURCES Node.cpp)
 
-target_include_directories(BinarySearchTree PUBLIC include)
+add_library(${PROJECT_NAME} STATIC ${SOURCES})
 
-#set_target_properties(BinarySearchTree PROPERTIES LINKER_LANGUAGE CXX)
-#set_target_properties(BinarySearchTree PROPERTIES INCLUDE_DIRECTORIES "/include")
+target_include_directories(${PROJECT_NAME} PUBLIC
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include/Tree>
+    $<INSTALL_INTERFACE:include/Tree>
+)
+
+set_target_properties(${PROJECT_NAME} PROPERTIES LINKER_LANGUAGE CXX
+
+INTERFACE_INCLUDE_DIRECTORIES "${CMAKE_CURRENT_SOURCE_DIR}/include")
 
