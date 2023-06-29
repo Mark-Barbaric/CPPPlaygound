@@ -5,8 +5,34 @@
 #pragma once
 #include <vector>
 #include <list>
+#include <cassert>
 
 namespace Datastructures {
+
+  class DirectedGraph {
+    const unsigned int m_vertices;
+    std::vector<std::vector<int>> m_matrix;
+    public:
+
+      DirectedGraph(const unsigned int v):m_vertices(v)
+      {
+        m_matrix.resize(m_vertices, std::vector<int>(m_vertices, 0));
+      }
+
+      void addEdge(int u, int v){
+        assert(u < m_vertices && v < m_vertices);
+        m_matrix[u][v] = 1;
+      }
+
+      int valueAt(int u, int v) const noexcept{
+        return m_matrix[u][v];
+      }
+
+      std::vector<std::vector<int>> const& getMatrix() const noexcept {return m_matrix;}
+
+      int numVertices() const noexcept {return m_vertices;}
+
+  };
 
   class Graph
   {
