@@ -9,8 +9,10 @@ namespace Algorithms::Graph {
         if(visited[u][v] || !g.getMatrix()[u][v]){
             return;
         }
-        
-        cur += static_cast<char>(v) + '0';
+        cur += (u + '0');
+        cur += '-';
+        cur += (v + '0');
+        cur += ',';
         visited[u][v]=1;
 
         for(auto it = g.getMatrix()[u].begin(); it != g.getMatrix()[u].end(); ++it){

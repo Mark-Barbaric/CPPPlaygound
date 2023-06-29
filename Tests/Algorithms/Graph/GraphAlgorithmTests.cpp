@@ -24,6 +24,10 @@ namespace Algorithms::Graph{
         std::vector<std::vector<int>> m = {{0,1,0,0,0,0},{0,0,1,0,0,0},{0,0,0,1,1,0},{0,0,0,0,0,0},{0,0,0,0,0,1},{0,0,0,0,0,0}};
         const auto newGraph = GraphFromMatrix(m);
         const auto dfsResult = DFS(newGraph);
-        EXPECT_EQ(dfsResult, "12345");
+        EXPECT_EQ(dfsResult, "0-1,1-2,2-3,2-4,4-5,");
+        std::vector<std::vector<int>> m2 = {{0,1,1,0,0,0},{1,0,1,0,0,0},{0,0,0,1,1,1},{0,0,0,0,0,0},{0,0,0,0,0,1},{1,1,1,0,0,0}};
+        const auto newGraph2 = GraphFromMatrix(m2);
+        const auto dfsResult2 = DFS(newGraph2);
+        EXPECT_EQ(dfsResult2, "0-1,0-2,1-0,1-2,2-3,2-4,2-5,4-5,5-0,5-1,5-2,");
     }
 }
