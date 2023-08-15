@@ -1,4 +1,4 @@
-#include "BigInt.h"
+#include "big_int.h"
 #include <gtest/gtest.h>
 
 TEST(BigIntTests, BasicFunctionalityTests)

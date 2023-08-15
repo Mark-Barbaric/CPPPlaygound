@@ -2,4 +2,4 @@
 
 struct Token {
     int count = 0;
-}
+};
