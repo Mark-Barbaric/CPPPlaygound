@@ -1,0 +1,63 @@
+runtime polymorphism
+
+
+- virtual functions
+- function overriding
+
+compile time polymorphism
+
+having different arguments or signatures and different return types
+
+the definition of functions and their calls is determined at compile time
+early binding
+
+-function overloading: function can have different number of parameters and types which are resolved at compile time
+-operator overloading: developers can change behavior of operators for 
+
+t is less preferred for handling complex problems since all the methods and details come to light only during the compile time. Hence, debugging becomes tougher.
+
+what operators can't you overload
+
+- scope operator ::
+- dot operator .
+- ternary operator ?
+- sizeof
+
+runtime polymorphism
+
+This type of polymorphism is executed through virtual functions and function overridin
+
+lvalue vs rvalue
+
+lvalues is an object reference, variable name, dereferenced pointer
+rvalue is value
+
+"this" keyword
+
+- pointer to instance of class
+
+
+new vs malloc
+
+memory allocation is the same, malloc doesn't call the constructor
+malloc is just a pointer
+
+similar to delete and free
+need to call delete operator which calls free
+
+delete calls destructor
+
+what is an inline function
+
+compilers puts the function code wherever the function is used during compile time
+all methods defined in headers and implicitly inlined
+
+Inline functions are best used for small functions such as accessing private data members. 
+
+What is a pointer?
+
+a variable that stores the memory address as its value
+
+What is a reference
+
+similar to a pointer except the memory address of a reference can't be changed.

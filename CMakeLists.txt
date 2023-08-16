@@ -51,6 +51,7 @@ add_subdirectory(Advanced_CPP_Topics)
 add_subdirectory(DataStructures)
 add_subdirectory(Profiling)
 add_subdirectory(Practice)
+add_subdirectory(PokerHands)
 
 
 enable_testing()
